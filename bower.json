@@ -1,0 +1,11 @@
+{
+  "name": "plugmedia",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.6.2",
+    "jquery": "~1.11.0",
+    "normalize.css": "~3.0.1",
+    "font-awesome": "~4.1.0"
+  },
+  "devDependencies": {}
+}
