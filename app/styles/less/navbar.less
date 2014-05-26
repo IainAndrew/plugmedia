@@ -34,7 +34,7 @@ nav li:last-child a {
 	border-right: 0;
 }
 nav a:hover, nav a:active {
-	background-color: #8c99a4;
+	background:rgba(0, 0, 0, 0.4);
 }
 nav a#pull {
 	display: none;
@@ -54,7 +54,7 @@ nav a#pull {
   		height: auto;
   	}
   	nav ul {
-  		width: 100%;
+  		width: 100vw;
   		display: block;
   		height: auto;
   	}
@@ -64,8 +64,9 @@ nav a#pull {
   		position: relative;
   	}
   	nav li a {
-		border-bottom: 1px solid #576979;
-		border-right: 1px solid #576979;
+		//border-bottom: 1px solid #576979;
+		//border-right: 1px solid #576979;
+		border:0;
 		padding:0;
 	}
   	nav a {
@@ -75,10 +76,10 @@ nav a#pull {
   	}
 }
 
-/*Styles for screen 515px and lower*/
 @media only screen and (max-width : 480px) {
 	nav {
 		border-bottom: 0;
+		background:rgba(59, 61, 66, 0.9);
 	}
 	nav ul {
 		display: none;
@@ -86,6 +87,11 @@ nav a#pull {
 	}
 	nav li {
 		float:none;
+	}
+	nav li a {
+		width:85%;
+		margin-left:-1.5rem;
+		border-bottom:1px solid lightgrey;
 	}
 	nav a#pull {
 		display: block;

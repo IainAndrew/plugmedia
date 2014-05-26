@@ -34,14 +34,15 @@ header {
 		max-height:9rem;
 		max-width:9rem;
 		vertical-align: middle;
-		overflow: hidden;
+		//overflow: hidden;
 	}
 	.header-text {
 		color:white;
 		h1 {
-			font-size:3.3rem;
+			font-size:3.3em;
 			margin:0;
 			font-family:@logo-font;
+			font-weight:normal;
 		}
 		p.tagline {
 			text-transform:uppercase;
@@ -58,13 +59,30 @@ header {
 	left:0;
 	background-color:rgba(255, 255, 255, 0.2);
 	height:1.2rem;
+	-webkit-transition: height 0.3s;
+	transition: height 0.3s;
+	&:hover {
+		height:1.5rem;
+		.semi-circle {
+			height:2.3rem;
+			width:4.5rem;
+			margin-top:-2.3rem;
+		}
+	}
 	.semi-circle {
-	     height:2rem;
-	     width:4rem;
-	     margin:0 auto;
-	     margin-top:-2rem;
-	     border-radius: 90px 90px 0 0;
-	     background-color:rgba(255, 255, 255, 0.2);
+		height:2rem;
+		width:4rem;
+		margin:0 auto;
+		margin-top:-2rem;
+		border-radius: 90px 90px 0 0;
+		background-color:rgba(255, 255, 255, 0.2);
+		-webkit-transition: height 0.3s, width 0.3s, margin-top 0.3s;
+		transition: height 0.3s, width 0.3s, margin-top 0.3s;
+		&.semi-circle-hover {
+			height:2.3rem;
+			width:4.5rem;
+			margin-top:-2.3rem;
+		}
 	}
 	.chevron {
 		height:1.6rem;
