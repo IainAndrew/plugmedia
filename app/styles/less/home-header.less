@@ -1,8 +1,12 @@
 .browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+html, body {
+	font-size:16px;
 }
 
 /////////////////////////
@@ -25,7 +29,7 @@ header {
 }
 .header-text-and-logo {
 	width:100%;
-	top:20vh;
+	top:25vh;
 	z-index:-2;
 	.svg-icon {
 		display: inline-block;
@@ -52,6 +56,23 @@ header {
 		}
 	}
 }
+.plug-and-socket {
+	position:absolute;
+	left:0;
+	top:7rem;
+	display:none;
+	.socket {
+		margin-left:2rem;
+	}
+	.plug {
+		position:absolute;
+		margin-top:-4.3rem;
+		left:-6rem;
+		cursor:pointer;
+		cursor:hand;
+		.plug-rotate;
+	}
+}
 .scroll-down {
 	width:100%;
 	position:absolute;
@@ -61,6 +82,11 @@ header {
 	height:1.2rem;
 	-webkit-transition: height 0.3s;
 	transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	-o-transition: height 0.3s;
+	-ms-transition: height 0.3s;
+	cursor:pointer;
+	cursor:hand;
 	&:hover {
 		height:1.5rem;
 		.semi-circle {
@@ -78,6 +104,9 @@ header {
 		background-color:rgba(255, 255, 255, 0.2);
 		-webkit-transition: height 0.3s, width 0.3s, margin-top 0.3s;
 		transition: height 0.3s, width 0.3s, margin-top 0.3s;
+		-moz-transition: height 0.3s, width 0.3s, margin-top 0.3s;
+		-o-transition: height 0.3s, width 0.3s, margin-top 0.3s;
+		-ms-transition: height 0.3s, width 0.3s, margin-top 0.3s;
 		&.semi-circle-hover {
 			height:2.3rem;
 			width:4.5rem;
@@ -103,7 +132,7 @@ header {
 	height:100vh;
 }
 section {
-	background-color:orange;
+	background-color:#ecf0f1;
 	color:black;
 	height:40rem;
 	padding:5rem;

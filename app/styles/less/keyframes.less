@@ -1,3 +1,5 @@
+// NEON GLOW EFFECT -----------------------------
+
 @-webkit-keyframes neon {
   from {
     text-shadow: 0 0 10px #fff,
@@ -10,11 +12,110 @@
 }
 @-webkit-keyframes neonsvg {
 	from {
-		-webkit-filter: drop-shadow( 0 0 10px #fff );
 		filter: drop-shadow( 0 0 10px #fff );
+    -webkit-filter: drop-shadow( 0 0 10px #fff );
+    -moz-filter: drop-shadow( 0 0 10px #fff );
+    -o-filter: drop-shadow( 0 0 10px #fff );
+    -ms-filter: drop-shadow( 0 0 10px #fff );
 	}
 	to {
-		-webkit-filter: drop-shadow( 0 0 5px #fff );
 		filter: drop-shadow( 0 0 5px #fff );
+    -webkit-filter: drop-shadow( 0 0 5px #fff );
+    -moz-filter: drop-shadow( 0 0 5px #fff );
+    -o-filter: drop-shadow( 0 0 5px #fff );
+    -ms-filter: drop-shadow( 0 0 5px #fff );
 	}
+}
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff
+  }
+}
+@keyframes neonsvg {
+  from {
+    filter: drop-shadow( 0 0 10px #fff );
+    -webkit-filter: drop-shadow( 0 0 10px #fff );
+    -moz-filter: drop-shadow( 0 0 10px #fff );
+    -o-filter: drop-shadow( 0 0 10px #fff );
+    -ms-filter: drop-shadow( 0 0 10px #fff );
+  }
+  to {
+    filter: drop-shadow( 0 0 5px #fff );
+    -webkit-filter: drop-shadow( 0 0 5px #fff );
+    -moz-filter: drop-shadow( 0 0 5px #fff );
+    -o-filter: drop-shadow( 0 0 5px #fff );
+    -ms-filter: drop-shadow( 0 0 5px #fff );
+  }
+}
+@-moz-keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff
+  }
+}
+@-moz-keyframes neonsvg {
+  from {
+    filter: drop-shadow( 0 0 10px #fff );
+    -webkit-filter: drop-shadow( 0 0 10px #fff );
+    -moz-filter: drop-shadow( 0 0 10px #fff );
+    -o-filter: drop-shadow( 0 0 10px #fff );
+    -ms-filter: drop-shadow( 0 0 10px #fff );
+  }
+  to {
+    filter: drop-shadow( 0 0 5px #fff );
+    -webkit-filter: drop-shadow( 0 0 5px #fff );
+    -moz-filter: drop-shadow( 0 0 5px #fff );
+    -o-filter: drop-shadow( 0 0 5px #fff );
+    -ms-filter: drop-shadow( 0 0 5px #fff );
+  }
+}
+@-o-keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff
+  }
+}
+@-o-keyframes neonsvg {
+  from {
+    filter: drop-shadow( 0 0 10px #fff );
+    -webkit-filter: drop-shadow( 0 0 10px #fff );
+    -moz-filter: drop-shadow( 0 0 10px #fff );
+    -o-filter: drop-shadow( 0 0 10px #fff );
+    -ms-filter: drop-shadow( 0 0 10px #fff );
+  }
+  to {
+    filter: drop-shadow( 0 0 5px #fff );
+    -webkit-filter: drop-shadow( 0 0 5px #fff );
+    -moz-filter: drop-shadow( 0 0 5px #fff );
+    -o-filter: drop-shadow( 0 0 5px #fff );
+    -ms-filter: drop-shadow( 0 0 5px #fff );
+  }
+}
+
+// END NEON GLOW EFFECT -----------------------------
+
+
+@-webkit-keyframes icon-nudge {
+  0% {
+    margin-left:-1rem;
+  }
+  50% {
+    margin-left:-0.6rem;
+  }
+  100% {
+    margin-left:-1rem;
+  }
 }

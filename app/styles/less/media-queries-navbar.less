@@ -1,69 +1,103 @@
-/*@media screen and (max-width: 600px) {
-	nav { 
-  		height: auto;
-  		ul {
-  			width: 100%;
-	  		display: block;
-	  		height: auto;
-  			li {
-  				width: 50%;
-		  		float: left;
-		  		position: relative;
-  				a {
-					//border-bottom: 1px solid #576979;
-					//border-right: 1px solid #576979;
-					padding:0;
-  				}
-  			}
-  		}
-  		a {
-			text-align: left;
-		  	width: 100%;
-		  	text-indent: 25px;
-  		}
-  	}
-}
-
-@media only screen and (max-width : 480px) {
+@media screen and (min-width: 48rem) {
 	nav {
-		border-bottom: 0;
+		height:5rem;
 		ul {
-			display: none;
-			height: auto;
 			li {
-				float:none;
-			}
-		}
-		a {
-			&#pull {
-				display: block;
-				width: 100%;
-				position:fixed;
-				&:after {
-					content:"";
-					background: url('https://www.neffheadwear.com/sites/all/themes/neff_foundation/images/svg-offcanvas-nav-icon.svg') no-repeat;
-					background-size:contain;
-					width: 30px;
-					height: 30px;
-					display: inline-block;
-					position: absolute;
-					right: 15px;
-					top: 10px;
+
+				a {
+					vertical-align:middle;
+					line-height:5rem;
+					height:5rem;
+					margin-left:0.4rem;
 				}
 			}
 		}
 	}
 }
-
-@media only screen and (max-width : 320px) {
+@media screen and (min-width: 40rem) {
+	nav {
+		ul {
+			li {
+				a {
+					&:hover {
+						background:rgba(0, 0, 0, 0.1);
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 48rem) {
+	nav {
+		height:auto;
+		ul {
+			width: 100vw;
+	  		display: block;
+	  		height: auto;
+		}
+		li {
+			width: 50%;
+  			float: left;
+  			position: relative;
+  			border-right:0;
+  			a {
+  				border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+				border-right: 1px solid rgba(255, 255, 255, 0.1);
+				padding:0;
+  			}
+		}
+		a {
+		  	width: 100%;
+		}
+	}
+}
+@media only screen and (max-width : 30rem) {
+	nav {
+		border-bottom: 0;
+		background:@mobile-nav-bg-color;
+		ul {
+			display: none;
+			height: auto;
+		}
+		li {
+			float:none;
+			a {
+				width:85%;
+				margin-left:-1.5rem;
+				border-bottom:1px solid lightgrey;
+				border-right:0;
+			}
+			&:last-child {
+				a {
+					margin-bottom:2rem;
+				}
+			}
+			&:first-child {
+				a {
+					margin-top:1rem;
+				}
+			}
+		}
+		a {
+			text-align: left;
+		  	text-indent: 25px;
+		}
+		#nav-toggle {
+			display: block;
+			//width: 100%;
+			position: fixed;
+			i {
+				display:block;
+			}
+		}
+	}
+}
+@media only screen and (max-width : 20rem) {
 	nav {
 		li {
 			display: block;
 			float: none;
 			width: 100%;
-			a {
-				//border-bottom: 1px solid #576979;
-			}
 		}
 	}
-}*/
+}
