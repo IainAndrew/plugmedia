@@ -57,7 +57,7 @@ $(function() {
 		width = window.innerWidth;
 	if (width > 768) {
 
-		$('section').waypoint(function(direction) {
+		$('.what-we-do').waypoint(function(direction) {
 			if (direction === 'down') {
 				nav.stop().animate({height:'2.5rem'}, {duration:300});
 				a.stop().animate({height:'2.5rem', lineHeight:'2.5rem'}, {duration:300});
