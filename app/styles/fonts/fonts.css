@@ -56,3 +56,16 @@
     font-style: normal;
 
 }
+
+
+@font-face {
+    font-family: 'bulolight';
+    src: url('bulolight-webfont.eot');
+    src: url('bulolight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('bulolight-webfont.woff') format('woff'),
+         url('bulolight-webfont.ttf') format('truetype'),
+         url('bulolight-webfont.svg#bulolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

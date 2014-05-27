@@ -88,11 +88,11 @@ html {
   animation: neonsvg 1.1s ease-in-out infinite alternate;
 }
 .icon-nudge {
-  -webkit-animation: icon-nudge 0.5s ease-in-out alternate;
-  -moz-animation: icon-nudge 0.5s ease-in-out alternate;
-  -o-animation: icon-nudge 0.5s ease-in-out alternate;
-  -ms-animation: icon-nudge 0.5s ease-in-out alternate;
-  animation: icon-nudge 0.5s ease-in-out alternate;
+  -webkit-transition: margin-left 0.3s;
+  transition: margin-left 0.3s;
+  -moz-transition: margin-left 0.3s;
+  -o-transition: margin-left 0.3s;
+  -ms-transition: margin-left 0.3s;
 }
 .plug-rotate {
   -webkit-transition-duration: 0.5s;
@@ -108,6 +108,13 @@ html {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
+}
+.scroll-down-animation {
+  -webkit-animation: scrolldown 0.8s ease-in-out infinite;
+  -moz-animation: scrolldown 0.8s ease-in-out infinite;
+  -o-animation: scrolldown 0.8s ease-in-out infinite;
+  -ms-animation: scrolldown 0.8s ease-in-out infinite;
+  animation: scrolldown 0.8s ease-in-out infinite;
 }
 nav {
   height: 2.5rem;
@@ -177,13 +184,14 @@ nav #nav-toggle .svg-icon-nav {
   vertical-align: middle;
   margin-left: -1rem;
   margin-top: 0.2rem;
+  -webkit-transition: margin-left 0.3s;
+  transition: margin-left 0.3s;
+  -moz-transition: margin-left 0.3s;
+  -o-transition: margin-left 0.3s;
+  -ms-transition: margin-left 0.3s;
 }
 nav #nav-toggle .svg-icon-nav:hover {
-  -webkit-animation: icon-nudge 0.5s ease-in-out alternate;
-  -moz-animation: icon-nudge 0.5s ease-in-out alternate;
-  -o-animation: icon-nudge 0.5s ease-in-out alternate;
-  -ms-animation: icon-nudge 0.5s ease-in-out alternate;
-  animation: icon-nudge 0.5s ease-in-out alternate;
+  margin-left: -0.6rem;
 }
 nav #nav-toggle i {
   float: right;
@@ -304,7 +312,6 @@ header .header-img {
   position: absolute;
   left: 0;
   top: 7rem;
-  display: none;
 }
 .plug-and-socket .socket {
   margin-left: 2rem;
@@ -374,6 +381,11 @@ header .header-img {
   margin: 0 auto;
   margin-top: -1rem;
   text-align: center;
+  -webkit-animation: scrolldown 0.8s ease-in-out infinite;
+  -moz-animation: scrolldown 0.8s ease-in-out infinite;
+  -o-animation: scrolldown 0.8s ease-in-out infinite;
+  -ms-animation: scrolldown 0.8s ease-in-out infinite;
+  animation: scrolldown 0.8s ease-in-out infinite;
 }
 .scroll-down .chevron i {
   font-size: 1.6em;
@@ -382,12 +394,50 @@ header .header-img {
 .header-spacer {
   height: 100vh;
 }
-section {
+section.what-we-do {
   background-color: #ecf0f1;
-  color: black;
-  height: 40rem;
-  padding: 5rem;
-  text-align: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+}
+section.what-we-do .what-we-do-block {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+section.what-we-do h2 {
+  font-family: 'baufrabold';
+  font-size: 4em;
+  margin-bottom: 0;
+}
+section.what-we-do p.what-we-do-description {
+  font-family: 'bulolight';
+  font-size: 1.3em;
+}
+section.what-we-do h3 {
+  font-family: 'bauframedium';
+  font-weight: normal;
+  font-size: 1.8em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+section.what-we-do i {
+  font-size: 5em;
+  color: #2c3e50;
+}
+section.what-we-do p {
+  font-family: 'bulolight';
+}
+section.what-we-do ul.what-we-do-list {
+  padding: 0;
+}
+section.what-we-do ul.what-we-do-list li {
+  display: inline-block;
+  list-style-type: none;
+  font-family: 'bauframedium';
+  text-transform: uppercase;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 1.4em;
 }
 @media screen and (min-width: 48rem) {
   nav {
@@ -432,7 +482,7 @@ section {
 @media only screen and (max-width: 30rem) {
   nav {
     border-bottom: 0;
-    background: rgba(59, 61, 74, 0.93);
+    background: #3b3d4a;
   }
   nav ul {
     display: none;
@@ -568,14 +618,47 @@ section {
     -ms-filter: drop-shadow(0 0 5px #ffffff);
   }
 }
-@-webkit-keyframes icon-nudge {
+@-webkit-keyframes scrolldown {
   0% {
-    margin-left: -1rem;
+    margin-top: -1rem;
   }
   50% {
-    margin-left: -0.6rem;
+    margin-top: -1.2rem;
   }
   100% {
-    margin-left: -1rem;
+    margin-top: -1rem;
+  }
+}
+@keyframes scrolldown {
+  0% {
+    margin-top: -1rem;
+  }
+  50% {
+    margin-top: -1.2rem;
+  }
+  100% {
+    margin-top: -1rem;
+  }
+}
+@-moz-keyframes scrolldown {
+  0% {
+    margin-top: -1rem;
+  }
+  50% {
+    margin-top: -1.2rem;
+  }
+  100% {
+    margin-top: -1rem;
+  }
+}
+@-o-keyframes scrolldown {
+  0% {
+    margin-top: -1rem;
+  }
+  50% {
+    margin-top: -1.2rem;
+  }
+  100% {
+    margin-top: -1rem;
   }
 }

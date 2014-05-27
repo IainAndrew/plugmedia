@@ -52,19 +52,18 @@ $(function() {
 // Waypoints //
 
 $(function() {
-
-	if(window.innerWidth > 768) {
-
-		var nav = $('nav'),
-			a = $('nav li a');
+	var nav = $('nav'),
+		a = $('nav li a'),
+		width = window.innerWidth;
+	if (width > 768) {
 
 		$('section').waypoint(function(direction) {
-			if (direction == 'down') {
-				nav.stop().animate({height:"2.5rem"}, {duration:300});
-				a.stop().animate({height:"2.5rem", lineHeight:"2.5rem"}, {duration:300});
-			} else if (direction == 'up') {
-				nav.stop().animate({height:"5rem"}, {duration:300});
-				a.stop().animate({height:"5rem", lineHeight:"5rem"}, {duration:300});
+			if (direction === 'down') {
+				nav.stop().animate({height:'2.5rem'}, {duration:300});
+				a.stop().animate({height:'2.5rem', lineHeight:'2.5rem'}, {duration:300});
+			} else if (direction === 'up') {
+				nav.stop().animate({height:'5rem'}, {duration:300});
+				a.stop().animate({height:'5rem', lineHeight:'5rem'}, {duration:300});
 			}
 		}, { offset: 80 });
 
