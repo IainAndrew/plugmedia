@@ -94,7 +94,8 @@ html {
   -o-transition: margin-left 0.3s;
   -ms-transition: margin-left 0.3s;
 }
-.plug-rotate {
+.plug-rotate,
+.icon-rotate {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
@@ -108,6 +109,11 @@ html {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
+}
+.icon-rotated {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 .scroll-down-animation {
   -webkit-animation: scrolldown 0.8s ease-in-out infinite;
@@ -292,6 +298,14 @@ header .header-img {
   max-height: 9rem;
   max-width: 9rem;
   vertical-align: middle;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
 }
 .header-text-and-logo .header-text {
   color: white;
@@ -309,7 +323,7 @@ header .header-img {
   padding-top: 0.4rem;
 }
 .plug-and-socket {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 7rem;
 }
@@ -394,11 +408,27 @@ header .header-img {
 .header-spacer {
   height: 100vh;
 }
+.plug-scroll {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: -60rem;
+  z-index: 103;
+}
+.test-section {
+  background: orange;
+  color: white;
+  width: 100%;
+  padding: 5rem;
+  font-size: 2em;
+  position: relative;
+}
 section.what-we-do {
   background-color: #ecf0f1;
   padding-left: 3rem;
   padding-right: 3rem;
   padding-bottom: 3rem;
+  position: relative;
 }
 section.what-we-do .what-we-do-block {
   margin-bottom: 2rem;

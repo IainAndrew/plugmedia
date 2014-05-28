@@ -39,6 +39,7 @@ header {
 		max-width:9rem;
 		vertical-align: middle;
 		//overflow: hidden;
+		.icon-rotate;
 	}
 	.header-text {
 		color:white;
@@ -57,7 +58,7 @@ header {
 	}
 }
 .plug-and-socket {
-	position:absolute;
+	position:fixed;
 	left:0;
 	top:7rem;
 	//display:none;
@@ -132,4 +133,27 @@ header {
 }
 .header-spacer {
 	height:100vh;
+	//position:relative;
+	//background:red;
+	//z-index:-101;
+}
+
+
+
+.plug-scroll {
+	width:100%;
+	text-align:center;
+	position:fixed;
+	top:-60rem;
+	//z-index:-102;
+	z-index:103;
+}
+
+.test-section {
+	background:orange;
+	color:white;
+	width:100%;
+	padding:5rem;
+	font-size:2em;
+	position:relative;
 }

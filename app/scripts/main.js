@@ -69,3 +69,18 @@ $(function() {
 
 	}
 });
+
+$(function() {
+	var plug = $('#plug-scroll');
+
+	$('.test-section').waypoint(function(direction) {
+		if (direction === 'down') {
+			plug.stop().animate({top:'-25rem'}, {duration:500});
+			$('.svg-icon').addClass('icon-rotated').delay(200).animate({opacity:0}, {duration:200});
+		}
+		else if (direction === 'up') {
+			plug.stop().animate({top:'-60rem'}, {duration:500});
+			$('.svg-icon').removeClass('icon-rotated').animate({opacity:1}, {duration:200});
+		}
+	}, { offset: 400 });
+});
