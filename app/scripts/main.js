@@ -72,60 +72,55 @@ $(function() {
 
 //// TEST CODE BELOW //////////////////
 
-/*
+
 $(function() {
 	var plug = $('#plug-scroll');
+	var svg = $('.svg-icon');
 
 	$('.test-section').waypoint(function(direction) {
 		if (direction === 'down') {
-			plug.stop().animate({top:'-25rem'}, {duration:500});
-			$('.svg-icon').addClass('icon-rotated').delay(200).animate({opacity:0}, {duration:200});
+			plug.stop().animate({top:'-1rem'}, {duration:500});
+			svg.addClass('icon-rotated').delay(200).animate({opacity:0}, {duration:200});
 		}
 		else if (direction === 'up') {
-			plug.stop().animate({top:'-60rem'}, {duration:500});
-			$('.svg-icon').removeClass('icon-rotated').animate({opacity:1}, {duration:200});
+			plug.stop().animate({top:'-30rem'}, {duration:500});
+			svg.removeClass('icon-rotated').animate({opacity:1}, {duration:200});
 		}
 	}, { offset: 400 });
 });
-*/
-
-
-
 
 var stickyElement = function () {
-    // element to be sticky
-    var $sticky = $('#plug-scroll');
-    // element that will stop the sticky element
-    var $stopper = $('.div-box');
+	var $sticky = $('#plug-scroll');
+	var $stopper = $('.div-box');
 
-    $sticky.waypoint('unsticky', {
-        wrapper: '<div class="sticky-wrapper" />',
-        stuckClass: 'sticky',
-        //offset: -1
-    });
+	$sticky.waypoint('unsticky', {
+		wrapper: '<div class="sticky-wrapper" />',
+		stuckClass: 'sticky',
+		//offset: -1
+	});
 
-    $stopper.waypoint(function (direction) {
-        if (direction === 'down') {
-            // when scrolling down
-            // replace pos:fixed with absolute and set top value to
-            // the distance from $stopper to viewport top minus the 
-            // height of the stickyElement 
-            var stopperOffset = $stopper.offset();
-            $sticky.css({
-                position: 'absolute',
-                top: stopperOffset.top - $sticky.outerHeight() + 50
-            });
-        } else if (direction === 'up') {
-            // remove the inline styles so sticky styles apply again
-            $sticky.attr('style', '');
-        }
+	$stopper.waypoint(function (direction) {
+		if (direction === 'down') {
+			var stopperOffset = $stopper.offset();
+			// on scroll down, set position to absolute, and top to the distance from $stopper to viewport top minus the height of $sticky
+			$sticky.css({
+				position: 'absolute',
+				top: stopperOffset.top - $sticky.outerHeight() + 50
+			});
+		} else if (direction === 'up') {
+			// resetting .sticky styles
+			$sticky.css({
+				position: 'fixed',
+				top:'-1rem'
+			});
+		}
 
-    }, {
-        // trigger the waypoint when the bottom of stickyEl touches top of stopEl
-        offset: function () {
-            return $sticky.outerHeight() - 50;
-        }
-    });
+	}, {
+		// trigger waypoint when bottom of $sticky touches top of $stopper - 50px
+		offset: function () {
+			return $sticky.outerHeight() - 50;
+		}
+	});
 };
 
 stickyElement();

@@ -413,7 +413,7 @@ header .header-img {
   text-align: center;
   z-index: 103;
   position: fixed;
-  top: 0;
+  top: -30rem;
 }
 .test-section {
   background: orange;
@@ -426,13 +426,13 @@ header .header-img {
 .test-section .box .div-box {
   height: 10rem;
   width: 20rem;
-  background: green;
+  background: white;
   margin: 0 auto;
   position: relative;
 }
 .sticky {
   position: fixed;
-  top: 0;
+  top: -30rem;
 }
 section.what-we-do {
   background-color: #ecf0f1;
