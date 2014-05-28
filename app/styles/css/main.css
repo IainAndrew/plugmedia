@@ -411,9 +411,9 @@ header .header-img {
 .plug-scroll {
   width: 100%;
   text-align: center;
-  position: fixed;
-  top: -60rem;
   z-index: 103;
+  position: fixed;
+  top: 0;
 }
 .test-section {
   background: orange;
@@ -422,6 +422,17 @@ header .header-img {
   padding: 5rem;
   font-size: 2em;
   position: relative;
+}
+.test-section .box .div-box {
+  height: 10rem;
+  width: 20rem;
+  background: green;
+  margin: 0 auto;
+  position: relative;
+}
+.sticky {
+  position: fixed;
+  top: 0;
 }
 section.what-we-do {
   background-color: #ecf0f1;

@@ -138,15 +138,16 @@ header {
 	//z-index:-101;
 }
 
-
+// TEST STUFF BELOW ///////////////////////////////////
 
 .plug-scroll {
 	width:100%;
 	text-align:center;
-	position:fixed;
-	top:-60rem;
+	//position:fixed;
+	//top:-60rem;
 	//z-index:-102;
 	z-index:103;
+	.sticky;
 }
 
 .test-section {
@@ -156,4 +157,18 @@ header {
 	padding:5rem;
 	font-size:2em;
 	position:relative;
+	.box {
+		.div-box {
+			height:10rem;
+			width:20rem;
+			background:green;
+			margin:0 auto;
+			position:relative;
+		}
+	}
+}
+
+.sticky {
+    position: fixed;
+    top:0;
 }

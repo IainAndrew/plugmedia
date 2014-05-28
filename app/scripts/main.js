@@ -57,7 +57,7 @@ $(function() {
 		width = window.innerWidth;
 	if (width > 768) {
 
-		$('.what-we-do').waypoint(function(direction) {
+		$('.test-section').waypoint(function(direction) { // change to '.what-we-do'
 			if (direction === 'down') {
 				nav.stop().animate({height:'2.5rem'}, {duration:300});
 				a.stop().animate({height:'2.5rem', lineHeight:'2.5rem'}, {duration:300});
@@ -70,6 +70,9 @@ $(function() {
 	}
 });
 
+//// TEST CODE BELOW //////////////////
+
+/*
 $(function() {
 	var plug = $('#plug-scroll');
 
@@ -84,3 +87,45 @@ $(function() {
 		}
 	}, { offset: 400 });
 });
+*/
+
+
+
+
+var stickyElement = function () {
+    // element to be sticky
+    var $sticky = $('#plug-scroll');
+    // element that will stop the sticky element
+    var $stopper = $('.div-box');
+
+    $sticky.waypoint('unsticky', {
+        wrapper: '<div class="sticky-wrapper" />',
+        stuckClass: 'sticky',
+        //offset: -1
+    });
+
+    $stopper.waypoint(function (direction) {
+        if (direction === 'down') {
+            // when scrolling down
+            // replace pos:fixed with absolute and set top value to
+            // the distance from $stopper to viewport top minus the 
+            // height of the stickyElement 
+            var stopperOffset = $stopper.offset();
+            $sticky.css({
+                position: 'absolute',
+                top: stopperOffset.top - $sticky.outerHeight() + 50
+            });
+        } else if (direction === 'up') {
+            // remove the inline styles so sticky styles apply again
+            $sticky.attr('style', '');
+        }
+
+    }, {
+        // trigger the waypoint when the bottom of stickyEl touches top of stopEl
+        offset: function () {
+            return $sticky.outerHeight() - 50;
+        }
+    });
+};
+
+stickyElement();
