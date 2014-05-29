@@ -91,7 +91,7 @@ $(function() {
 
 var stickyElement = function () {
 	var $sticky = $('#plug-scroll');
-	var $stopper = $('.div-box');
+	var $stopper = $('.office-img');
 
 	$sticky.waypoint('unsticky', {
 		wrapper: '<div class="sticky-wrapper" />',
