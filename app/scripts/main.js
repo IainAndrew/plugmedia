@@ -57,7 +57,7 @@ $(function() {
 		width = window.innerWidth;
 	if (width > 768) {
 
-		$('.test-section').waypoint(function(direction) { // change to '.what-we-do'
+		$('.process').waypoint(function(direction) {
 			if (direction === 'down') {
 				nav.stop().animate({height:'2.5rem'}, {duration:300});
 				a.stop().animate({height:'2.5rem', lineHeight:'2.5rem'}, {duration:300});
@@ -77,7 +77,7 @@ $(function() {
 	var plug = $('#plug-scroll');
 	var svg = $('.svg-icon');
 
-	$('.test-section').waypoint(function(direction) {
+	$('.process').waypoint(function(direction) {
 		if (direction === 'down') {
 			plug.stop().animate({top:'-1rem'}, {duration:500});
 			svg.addClass('icon-rotated').delay(200).animate({opacity:0}, {duration:200});
@@ -124,3 +124,28 @@ var stickyElement = function () {
 };
 
 stickyElement();
+
+
+// NOT WORKING VVVVVVVV 
+	
+function flash(){
+	var del = Math.floor((Math.random()*300)+50);
+    $('.darken').toggleClass("display-none").delay(del);
+	$('.darken').promise().done(function(){
+		flash();
+	});
+}
+$('.office-img').waypoint(function(direction) {
+	if (direction === 'down') {
+		flash();
+		var timesRun = 0;
+		var interval = setInterval(function(){
+		    timesRun += 1;
+		    if(timesRun === 1){
+		        clearInterval(interval);
+		    }
+		    flash().stop();
+		    $('.darken').addClass('display-none');
+		}, 1500); 
+	} 
+});
