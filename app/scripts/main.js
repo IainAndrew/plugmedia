@@ -1,4 +1,6 @@
-//'use strict';
+'use strict';
+
+var s = skrollr.init();
 
 // Navbar //
 
@@ -26,30 +28,34 @@ $(function() {
 });
 
 
-// Full plug animation //
+// Full plug/socket animation //
 
 $(function() {
-	var plug = $('.plug');
+	var plug = $('.plug'),
+		bg = $('.home-header-bg'),
+		textandlogo = $('.header-text-and-logo'),
+		icon = $('.svg-icon svg');
+
 	plug.click(function() {
 		plug.toggleClass('plug-rotated');
 		if ( plug.hasClass('plug-rotated') ) {
-			$('.home-header-bg').css({
+			bg.css({
 				'background-color' : 'rgba(0, 0, 0, 0.8)'
 			});
-			$('.header-text-and-logo').addClass('neon');
-			$('.svg-icon svg').attr('class', 'neonsvg');
+			textandlogo.addClass('neon');
+			icon.attr('class', 'neonsvg');
 
 		} else if ( !plug.hasClass('plug-rotated') ) {
-			$('.home-header-bg').css({
+			bg.css({
 				'background-color' : 'rgba(231, 76, 60, 0.93)'
 			});
-			$('.header-text-and-logo').removeClass('neon');
-			$('.svg-icon svg').removeAttr('class', 'neonsvg');
+			textandlogo.removeClass('neon');
+			icon.removeAttr('class', 'neonsvg');
 		}
 	});
 });
 
-// Waypoints //
+// Navbar resize 
 
 $(function() {
 	var nav = $('nav'),
@@ -78,6 +84,10 @@ var flicker = function() {
 	darken.animate({opacity:0}, {duration:1})
 	.animate({opacity:0}, {duration:1})
 	.animate({opacity:0}, {duration:1})
+	.animate({opacity:0.4}, {duration:1})
+	.animate({opacity:0}, {duration:1})
+	.animate({opacity:0.5}, {duration:1})
+	.animate({opacity:0}, {duration:1})
 	.animate({opacity:0.4}, {duration:100})
 	.animate({opacity:0}, {duration:1})
 	.animate({opacity:0.5}, {duration:1})
@@ -89,9 +99,7 @@ var flicker = function() {
 	.animate({opacity:0}, {duration:1});
 };
 
-//// TEST CODE BELOW //////////////////
-
-
+// Logo flip & plug animate down
 $(function() {
 	var plug = $('#plug-scroll');
 	var svg = $('.svg-icon');
@@ -108,12 +116,13 @@ $(function() {
 	}, { offset: 400 });
 });
 
+// Scrolling plug
 var stickyElement = function () {
 	var $sticky = $('#plug-scroll');
 	var $stopper = $('.office-img');
 
 	$sticky.waypoint('unsticky', {
-		wrapper: '<div class="sticky-wrapper" />',
+		//wrapper: '<div class="sticky-wrapper" />',
 		stuckClass: 'sticky',
 		//offset: -1
 	});
@@ -147,37 +156,4 @@ var stickyElement = function () {
 };
 
 stickyElement();
-
-
-// NOT WORKING VVVVVVVV FLICKER EFFECT
-	
-/*function flash(){
-	var del = Math.floor((Math.random()*300)+50);
-    $('.darken').toggleClass("display-none").delay(del);
-	$('.darken').promise().done(function(){
-		flash();
-	});
-}
-$('.office-img').waypoint(function(direction) {
-	if (direction === 'down') {
-		flash();
-		var timesRun = 0;
-		var interval = setInterval(function(){
-		    timesRun += 1;
-		    if(timesRun === 1){
-		        clearInterval(interval);
-		    }
-		    flash().stop();
-		    $('.darken').addClass('display-none');
-		}, 1500); 
-	} 
-});
-*/
-
-//////////////////
-
-// SKROLLR
-
-var s = skrollr.init();
-
 

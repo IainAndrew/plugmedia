@@ -22,14 +22,8 @@
 		&:last-child {
 			margin-bottom:5rem;
 		}
-		.box {
-			width:30%;
-			height:10rem;
-			border:2px solid white;
-			margin:0 auto;
-			p {
-				font-family:@primary-font-reg;
-			}
+		&:nth-child(2) {
+			margin-bottom:25rem;
 		}
 		.column.half {
 			text-align:center;
@@ -52,7 +46,22 @@
 		font-size:2.5em;
 	}
 }
-
+.box-container {
+	position:absolute;
+	z-index:1000;
+	width:100%;
+	top:80rem;
+	.box {
+		width:30%;
+		height:10rem;
+		background:white;
+		margin:0 auto;
+		border-radius:4px;
+		p {
+			font-family:@primary-font-reg;
+		}
+	}
+}
 .sticky {
     position: fixed;
     top:-30rem;
@@ -92,7 +101,7 @@
 		text-transform:uppercase;
 		width:15rem;
 		height:5rem;
-		border:1px solid white;
+		border:2px solid white;
 		background:none;
 		margin-top:3rem;
 	}
