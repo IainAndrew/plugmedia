@@ -33,14 +33,14 @@ $(function() {
 	plug.click(function() {
 		plug.toggleClass('plug-rotated');
 		if ( plug.hasClass('plug-rotated') ) {
-			$('.home-header').css({
+			$('.home-header-bg').css({
 				'background-color' : 'rgba(0, 0, 0, 0.8)'
 			});
 			$('.header-text-and-logo').addClass('neon');
 			$('.svg-icon svg').attr('class', 'neonsvg');
 
 		} else if ( !plug.hasClass('plug-rotated') ) {
-			$('.home-header').css({
+			$('.home-header-bg').css({
 				'background-color' : 'rgba(231, 76, 60, 0.93)'
 			});
 			$('.header-text-and-logo').removeClass('neon');

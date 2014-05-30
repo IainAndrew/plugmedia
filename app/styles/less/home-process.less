@@ -1,0 +1,99 @@
+.plug-scroll {
+	width:100%;
+	text-align:center;
+	//position:fixed;
+	//top:-60rem;
+	//z-index:-102;
+	z-index:103;
+	//opacity:0;
+	//margin-top:-30rem;
+	.sticky;
+}
+.process {
+	background:#3498db;
+	color:white;
+	width:100%;
+	padding:5rem;
+	font-size:1.3em;
+	position:relative;
+	.clearfix {
+		margin-top:4rem;
+		margin-bottom:10rem;
+		&:last-child {
+			margin-bottom:5rem;
+		}
+		.box {
+			width:30%;
+			height:10rem;
+			border:2px solid white;
+			margin:0 auto;
+			p {
+				font-family:@primary-font-reg;
+			}
+		}
+		.column.half {
+			text-align:center;
+			p {
+				padding-right:5rem;
+				font-family:@primary-font-reg;
+			}
+			&.flow-opposite {
+				p {
+					padding-left:5rem;
+					padding-right:0;
+				}
+			}
+		}
+	}
+	i {
+		border: 2px solid white;
+		padding:.5em;
+		border-radius:50%;
+		font-size:2.5em;
+	}
+}
+
+.sticky {
+    position: fixed;
+    top:-30rem;
+}
+
+
+.office-img {
+	background:url('../../images/office.jpg');
+	background-size:cover;
+	background-position:center;
+	width:100%;
+	height:100vh;
+	position:relative;
+	z-index:103;
+	text-align:center;
+	.darken {
+		width:100%;
+		height:100%;
+		position:absolute;
+		background-color:black;
+		opacity:0.4;
+		z-index:-1;
+	}
+	h3 {
+		color:white;
+		font-family:@primary-font-bold;
+		text-transform:uppercase;
+		margin:0;
+		font-size:2.5em;
+		//vertical-align:middle;
+		//line-height:100vh;
+	}
+	button {
+		color:white;
+		font-family:@primary-font-reg;
+		font-size:1.4em;
+		text-transform:uppercase;
+		width:15rem;
+		height:5rem;
+		border:1px solid white;
+		background:none;
+		margin-top:3rem;
+	}
+}

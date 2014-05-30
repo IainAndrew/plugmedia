@@ -73,6 +73,20 @@ html {
 .text-center {
   text-align: center;
 }
+.display-none {
+  display: none;
+}
+.v-align:after {
+  display: inline-block;
+  height: 100%;
+  width: 0;
+  vertical-align: middle;
+  content: '';
+}
+.v-align > .v-aligned {
+  display: inline-block;
+  vertical-align: middle;
+}
 .neon {
   -webkit-animation: neon 1.5s ease-in-out infinite alternate;
   -moz-animation: neon 1.5s ease-in-out infinite alternate;
@@ -129,6 +143,14 @@ nav {
   position: fixed;
   text-align: center;
   z-index: 1000;
+  /*&.nav-reduced {
+		height:2.5rem;
+		a {
+			line-height:2.5rem;
+			height:2.5rem;
+		}
+	}*/
+
 }
 nav ul {
   padding: 0;
@@ -138,6 +160,9 @@ nav ul {
 nav li {
   display: inline;
   border-right: 1px solid white;
+}
+nav li.nav-active a {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 nav li:last-child {
   border-right: 0;
@@ -270,15 +295,15 @@ html,
 body {
   font-size: 16px;
 }
-header {
+header.home-header {
   z-index: -100;
 }
-header .home-header {
+header.home-header .home-header-bg {
   background-color: rgba(231, 76, 60, 0.93);
   width: 100vw;
   height: 100vh;
 }
-header .header-img {
+header.home-header .header-img {
   width: 100vw;
   height: 100vh;
   z-index: -1;
@@ -307,16 +332,16 @@ header .header-img {
   -o-transition-property: -o-transform;
   transition-property: transform;
 }
-.header-text-and-logo .header-text {
+.header-text-and-logo .home-header-text {
   color: white;
 }
-.header-text-and-logo .header-text h1 {
+.header-text-and-logo .home-header-text h1 {
   font-size: 3.3em;
   margin: 0;
   font-family: 'coolvetica_rgregular';
   font-weight: normal;
 }
-.header-text-and-logo .header-text p.tagline {
+.header-text-and-logo .home-header-text p.tagline {
   text-transform: uppercase;
   font-family: 'baufraregular';
   margin: 0;
@@ -408,104 +433,6 @@ header .header-img {
 .header-spacer {
   height: 100vh;
 }
-.plug-scroll {
-  width: 100%;
-  text-align: center;
-  z-index: 103;
-  position: fixed;
-  top: -30rem;
-}
-.process {
-  background: #3498db;
-  color: white;
-  width: 100%;
-  padding: 5rem;
-  font-size: 1.3em;
-  position: relative;
-}
-.process .clearfix {
-  margin-top: 4rem;
-}
-.process .clearfix .box {
-  width: 30%;
-  height: 10rem;
-  border: 2px solid white;
-  margin: 0 auto;
-}
-.process .clearfix .box p {
-  font-family: 'baufraregular';
-}
-.process .clearfix .column.half {
-  text-align: center;
-}
-.process .clearfix .column.half p {
-  padding-right: 5rem;
-  font-family: 'baufraregular';
-}
-.process .clearfix .column.half.flow-opposite p {
-  padding-left: 5rem;
-  padding-right: 0;
-}
-.process i {
-  border: 2px solid white;
-  padding: .5em;
-  border-radius: 50%;
-  font-size: 2.5em;
-}
-.sticky {
-  position: fixed;
-  top: -30rem;
-}
-.office-img {
-  background: url('../../images/office.jpg');
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  z-index: 1000;
-  text-align: center;
-}
-.office-img .darken {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: black;
-  opacity: 0.4;
-  z-index: -1;
-}
-.office-img h3 {
-  color: white;
-  font-family: 'baufrabold';
-  text-transform: uppercase;
-  margin: 0;
-  font-size: 2.5em;
-}
-.office-img button {
-  color: white;
-  font-family: 'baufraregular';
-  font-size: 1.4em;
-  text-transform: uppercase;
-  width: 15rem;
-  height: 5rem;
-  border: 1px solid white;
-  background: none;
-  margin-top: 3rem;
-}
-.display-none {
-  display: none;
-}
-.v-align:after {
-  display: inline-block;
-  height: 100%;
-  width: 0;
-  vertical-align: middle;
-  content: '';
-}
-.v-align > .v-aligned {
-  display: inline-block;
-  vertical-align: middle;
-}
 section.what-we-do {
   background-color: #ecf0f1;
   padding-left: 3rem;
@@ -552,9 +479,140 @@ section.what-we-do ul.what-we-do-list li {
   padding-left: 0.5rem;
   font-size: 1.4em;
 }
+.plug-scroll {
+  width: 100%;
+  text-align: center;
+  z-index: 103;
+  position: fixed;
+  top: -30rem;
+}
+.process {
+  background: #3498db;
+  color: white;
+  width: 100%;
+  padding: 5rem;
+  font-size: 1.3em;
+  position: relative;
+}
+.process .clearfix {
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+}
+.process .clearfix:last-child {
+  margin-bottom: 5rem;
+}
+.process .clearfix .box {
+  width: 30%;
+  height: 10rem;
+  border: 2px solid white;
+  margin: 0 auto;
+}
+.process .clearfix .box p {
+  font-family: 'baufraregular';
+}
+.process .clearfix .column.half {
+  text-align: center;
+}
+.process .clearfix .column.half p {
+  padding-right: 5rem;
+  font-family: 'baufraregular';
+}
+.process .clearfix .column.half.flow-opposite p {
+  padding-left: 5rem;
+  padding-right: 0;
+}
+.process i {
+  border: 2px solid white;
+  padding: .5em;
+  border-radius: 50%;
+  font-size: 2.5em;
+}
+.sticky {
+  position: fixed;
+  top: -30rem;
+}
+.office-img {
+  background: url('../../images/office.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 103;
+  text-align: center;
+}
+.office-img .darken {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  opacity: 0.4;
+  z-index: -1;
+}
+.office-img h3 {
+  color: white;
+  font-family: 'baufrabold';
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 2.5em;
+}
+.office-img button {
+  color: white;
+  font-family: 'baufraregular';
+  font-size: 1.4em;
+  text-transform: uppercase;
+  width: 15rem;
+  height: 5rem;
+  border: 1px solid white;
+  background: none;
+  margin-top: 3rem;
+}
+header.about-header {
+  z-index: -1;
+  background: url(../../images/digitaldepot.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+.header-text {
+  width: 100%;
+  top: 40vh;
+  color: white;
+  z-index: -1;
+}
+.header-text h1 {
+  font-size: 7em;
+  margin: 0;
+  font-family: 'baufrabold';
+  text-transform: uppercase;
+}
+.block-work-better {
+  background: #e74c3c;
+  height: 20rem;
+}
+.block-work-better p {
+  font-family: 'baufraregular';
+  font-size: 2.4em;
+  text-transform: uppercase;
+  color: white;
+  vertical-align: center;
+  line-height: 20rem;
+  margin: 0;
+}
+section.about-us {
+  background: white;
+  padding: 5rem;
+  font-family: 'bulolight';
+  font-size: 1.5em;
+}
 @media screen and (min-width: 48rem) {
   nav {
     height: 5rem;
+    /*&.nav-full-height {
+  			height:5rem;
+  		}*/
+  
   }
   nav ul li a {
     vertical-align: middle;
@@ -652,16 +710,16 @@ section.what-we-do ul.what-we-do-list li {
     -o-transition-property: -o-transform;
     transition-property: transform;
   }
-  .header-text-and-logo .header-text {
+  .header-text-and-logo .home-header-text {
     color: white;
   }
-  .header-text-and-logo .header-text h1 {
+  .header-text-and-logo .home-header-text h1 {
     font-size: 7em;
     margin: 0;
     font-family: 'coolvetica_rgregular';
     font-weight: normal;
   }
-  .header-text-and-logo .header-text p.tagline {
+  .header-text-and-logo .home-header-text p.tagline {
     text-transform: uppercase;
     font-family: 'baufraregular';
     font-size: 1.4em;
