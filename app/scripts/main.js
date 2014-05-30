@@ -1,4 +1,4 @@
-'use strict';
+//'use strict';
 
 // Navbar //
 
@@ -70,6 +70,25 @@ $(function() {
 	}
 });
 
+// Flicker effect 
+var flicker = function() {
+	var img = $('.office-img'),
+		darken = $('.darken');
+
+	darken.animate({opacity:0}, {duration:1})
+	.animate({opacity:0}, {duration:1})
+	.animate({opacity:0}, {duration:1})
+	.animate({opacity:0.4}, {duration:100})
+	.animate({opacity:0}, {duration:1})
+	.animate({opacity:0.5}, {duration:1})
+	.animate({opacity:0}, {duration:1})
+	.animate({opacity:6}, {duration:300})
+	.animate({opacity:0}, {duration:1})
+	.animate({opacity:0.3}, {duration:1})
+	.animate({opacity:0.7}, {duration:100})
+	.animate({opacity:0}, {duration:1});
+};
+
 //// TEST CODE BELOW //////////////////
 
 
@@ -107,11 +126,15 @@ var stickyElement = function () {
 				position: 'absolute',
 				top: stopperOffset.top - $sticky.outerHeight() + 50
 			});
+			flicker();
 		} else if (direction === 'up') {
 			// resetting .sticky styles
 			$sticky.css({
 				position: 'fixed',
 				top:'-1rem'
+			});
+			$('.darken').css({
+				opacity: 1
 			});
 		}
 
@@ -126,9 +149,9 @@ var stickyElement = function () {
 stickyElement();
 
 
-// NOT WORKING VVVVVVVV 
+// NOT WORKING VVVVVVVV FLICKER EFFECT
 	
-function flash(){
+/*function flash(){
 	var del = Math.floor((Math.random()*300)+50);
     $('.darken').toggleClass("display-none").delay(del);
 	$('.darken').promise().done(function(){
@@ -149,3 +172,12 @@ $('.office-img').waypoint(function(direction) {
 		}, 1500); 
 	} 
 });
+*/
+
+//////////////////
+
+// SKROLLR
+
+var s = skrollr.init();
+
+

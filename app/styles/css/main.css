@@ -295,6 +295,10 @@ html,
 body {
   font-size: 16px;
 }
+.wrap {
+  overflow-x: hidden;
+  width: 100%;
+}
 header.home-header {
   z-index: -100;
 }
@@ -546,7 +550,7 @@ section.what-we-do ul.what-we-do-list li {
   height: 100%;
   position: absolute;
   background-color: black;
-  opacity: 0.4;
+  opacity: 1;
   z-index: -1;
 }
 .office-img h3 {
