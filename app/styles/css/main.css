@@ -348,8 +348,9 @@ header.home-header .header-img {
 .header-text-and-logo .home-header-text p.tagline {
   text-transform: uppercase;
   font-family: 'baufraregular';
-  margin: 0;
-  padding-top: 0.4rem;
+  font-size: 1.2em;
+  margin-top: -1.4rem;
+  margin-left: 12.2rem;
 }
 .plug-and-socket {
   position: fixed;
@@ -572,7 +573,7 @@ section.what-we-do ul.what-we-do-list li {
 }
 .office-img button {
   color: white;
-  font-family: 'baufraregular';
+  font-family: 'baufrabold';
   font-size: 1.4em;
   text-transform: uppercase;
   width: 15rem;
@@ -709,36 +710,12 @@ section.about-us {
 }
 @media screen and (min-width: 48rem) {
   .header-text-and-logo .svg-icon {
-    display: inline-block;
-    position: relative;
     width: 50%;
     max-height: 10rem;
     max-width: 10rem;
-    vertical-align: middle;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-  }
-  .header-text-and-logo .home-header-text {
-    color: white;
   }
   .header-text-and-logo .home-header-text h1 {
     font-size: 7em;
-    margin: 0;
-    font-family: 'coolvetica_rgregular';
-    font-weight: normal;
-  }
-  .header-text-and-logo .home-header-text p.tagline {
-    text-transform: uppercase;
-    font-family: 'baufraregular';
-    font-size: 1.4em;
-    margin: 0;
-    padding-top: 0.4rem;
   }
 }
 @-webkit-keyframes neon {
