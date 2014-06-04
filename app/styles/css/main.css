@@ -455,7 +455,7 @@ section.what-we-do h2 {
   margin-bottom: 0;
 }
 section.what-we-do p.what-we-do-description {
-  font-family: 'bulolight';
+  font-family: 'cabrito_norm_regularnormRg';
   font-size: 1.3em;
 }
 section.what-we-do h3 {
@@ -470,7 +470,7 @@ section.what-we-do i {
   color: #2c3e50;
 }
 section.what-we-do p {
-  font-family: 'bulolight';
+  font-family: 'cabrito_norm_regularnormRg';
 }
 section.what-we-do ul.what-we-do-list {
   padding: 0;
@@ -618,7 +618,7 @@ header.about-header {
 section.about-us {
   background: white;
   padding: 5rem;
-  font-family: 'bulolight';
+  font-family: 'cabrito_norm_regularnormRg';
   font-size: 1.5em;
 }
 @media screen and (min-width: 48rem) {
