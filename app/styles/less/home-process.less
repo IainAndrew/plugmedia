@@ -106,3 +106,61 @@
 		margin-top:3rem;
 	}
 }
+ 
+// 'Our Process' Ribbon 
+
+.ribbon {
+    width: 70%;
+    height:4.5rem;
+    position: relative;
+    background: #ba89b6;
+    color: #fff;
+    text-align: center;
+    //padding: 1em 2em;
+    margin: 2em auto 3em;
+    line-height:4.5rem;
+    vertical-align:middle;
+    font-family:@primary-font-bold;
+    font-size:1em;
+    font-weight:normal;
+    .ribbon-content:before {
+        left: 0;
+        border-width: 1em 0 0 1em;
+    }
+    .ribbon-content:after {
+        right: 0;
+        border-width: 1em 1em 0 0;
+    }
+}
+.ribbon:before, .ribbon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1em;
+    border: 1.5em solid #986794;
+    z-index: -1;
+}
+.ribbon:before {
+    left: -2em;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+}
+.ribbon:after {
+    right: -2em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #804f7c transparent transparent transparent;
+    bottom: -1em;
+}
+.ribbon-protector {
+    position: relative;
+    z-index: 104;
+    margin-top:10rem;
+    margin-bottom:15rem;
+}
