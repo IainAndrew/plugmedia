@@ -1,6 +1,10 @@
 'use strict';
 
-var s = skrollr.init();
+var width = window.innerWidth;
+
+if (width > 640) {
+	var s = skrollr.init();
+}
 
 // Navbar //
 
@@ -59,8 +63,7 @@ $(function() {
 
 $(function() {
 	var nav = $('nav'),
-		a = $('nav li a'),
-		width = window.innerWidth;
+		a = $('nav li a');
 	if (width > 768) {
 
 		$('.process').waypoint(function(direction) {

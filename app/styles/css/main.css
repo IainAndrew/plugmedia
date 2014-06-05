@@ -300,6 +300,11 @@ body {
   width: 100%;
 }
 header.home-header {
+  background: url('../../images/bridge.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
   z-index: -100;
 }
 header.home-header .home-header-bg {
@@ -340,7 +345,7 @@ header.home-header .header-img {
   color: white;
 }
 .header-text-and-logo .home-header-text h1 {
-  font-size: 3.3em;
+  font-size: 4.7em;
   margin: 0;
   font-family: 'coolvetica_rgregular';
   font-weight: normal;
@@ -348,14 +353,15 @@ header.home-header .header-img {
 .header-text-and-logo .home-header-text p.tagline {
   text-transform: uppercase;
   font-family: 'baufraregular';
-  font-size: 1.2em;
-  margin-top: -1.4rem;
-  margin-left: 12.2rem;
+  font-size: 0.8em;
+  margin-top: -1.2rem;
+  margin-left: 8rem;
 }
 .plug-and-socket {
   position: fixed;
   left: 0;
-  top: 7rem;
+  top: 3rem;
+  left: -1.5rem;
 }
 .plug-and-socket .socket {
   margin-left: 2rem;
@@ -617,7 +623,11 @@ section.what-we-do ul.what-we-do-list li {
   height: 100vh;
   position: relative;
   z-index: 103;
-  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.office-img .column {
+  height: 100%;
 }
 .office-img .darken {
   width: 100%;
@@ -626,21 +636,25 @@ section.what-we-do ul.what-we-do-list li {
   background-color: black;
   opacity: 1;
   z-index: -1;
+  top: 0;
 }
-.office-img h3 {
+.office-img p {
   color: white;
   font-family: 'baufrabold';
   text-transform: uppercase;
-  margin: 0;
+  margin-top: 10rem;
   font-size: 2.5em;
 }
 section.home-blocks {
   position: relative;
+  font-size: 0.8em;
 }
 section.home-blocks .block-swarm-tactics {
   background: white;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 section.home-blocks .block-swarm-tactics .column {
   height: 100%;
@@ -684,6 +698,8 @@ section.home-blocks .block-bombarded {
   padding-top: 5rem;
   padding-bottom: 5rem;
   color: #e74c3c;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 section.home-blocks .block-bombarded .column {
   height: 100%;
@@ -716,19 +732,24 @@ section.home-blocks .block-collaboration {
   background-size: cover;
   background-position: center;
   width: 100%;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  /*.collab-darken {
+			//width:100%;
+			height:100%;
+			position:absolute;
+			background-color:rgba(0, 0, 0, 0.5);
+			opacity:0.5;
+			z-index:-1;
+			top:0;
+		}*/
+
 }
 section.home-blocks .block-collaboration .column {
   height: 100%;
-}
-section.home-blocks .block-collaboration .collab-darken {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: black;
-  opacity: 0.5;
-  z-index: -1;
+  background: rgba(0, 0, 0, 0.6);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 section.home-blocks .block-collaboration .text-and-button p {
   color: white;
@@ -755,13 +776,15 @@ section.home-blocks .block-contact {
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 section.home-blocks .block-contact .column {
   height: 100%;
 }
 section.home-blocks .block-contact .text-and-button p,
 section.home-blocks .block-contact .text-and-button button {
-  display: inline;
+  display: inline-block;
 }
 section.home-blocks .block-contact .text-and-button p {
   font-family: 'baufraregular';
@@ -774,10 +797,9 @@ section.home-blocks .block-contact .text-and-button button {
   font-size: 1.4em;
   text-transform: uppercase;
   width: 15rem;
-  height: 4rem;
+  height: 5rem;
   border: 2px solid white;
   background: none;
-  margin-left: 2rem;
 }
 section.home-blocks .block-contact .text-and-button button:hover {
   background: white;
@@ -1185,6 +1207,14 @@ section.footer p {
     line-height: 5rem;
     height: 5rem;
     margin-left: 0.4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media screen and (min-width: 51rem) {
+  nav ul li a {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 @media screen and (min-width: 40rem) {
@@ -1267,6 +1297,38 @@ section.footer p {
   }
   .header-text-and-logo .home-header-text h1 {
     font-size: 7em;
+  }
+  .header-text-and-logo .home-header-text p.tagline {
+    font-size: 1.2em;
+    margin-left: 12.2rem;
+    margin-top: -1.4rem;
+  }
+  .office-img p {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 30rem) {
+  .plug-and-socket {
+    top: 5.7rem;
+  }
+}
+@media screen and (min-width: 40rem) {
+  .header-text-and-logo .home-header-text h1 {
+    font-size: 5.5em;
+  }
+  .header-text-and-logo .home-header-text p.tagline {
+    font-size: 1em;
+    margin-top: -1.2rem;
+    margin-left: 9.3rem;
+  }
+  .block-contact button {
+    margin-left: 2rem;
+  }
+  .office-img p {
+    margin-top: 13rem;
+  }
+  section.home-blocks {
+    font-size: 1em;
   }
 }
 @-webkit-keyframes neon {

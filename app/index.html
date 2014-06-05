@@ -55,7 +55,7 @@
             <!-- Header -->
             <header class="fixed home-header">
                 <div class="home-header-bg"></div>
-                <img class="header-img"src="images/bridge.jpg" alt=""> 
+                <!--<img class="header-img"src="images/bridge.jpg" alt=""> -->
             </header>
             <div class="header-text-and-logo fixed text-center">
                 <div class="svg-icon">
@@ -140,13 +140,15 @@
                 </div>
             </div>
 
-            <section class="office-img v-align">
-                <div class="darken"></div>
-                <div class="text-and-button v-aligned">
-                    <h3>
-                        Transform your vision into a business reality
-                    </h3>
+            <section class="office-img">
+                <div class="column full text-center v-align">
+                    <div class="text-and-button v-aligned">
+                        <p>
+                            Transform your vision into a business reality
+                        </p>
+                    </div>
                 </div>
+                <div class="darken"></div>
             </section>
 
             <section class="home-blocks">
@@ -165,7 +167,7 @@
                     </div>
                 </div>
                 <div class="clearfix block-collaboration">
-                    <!--<div class="collab-darken"></div>-->
+                    <div class="collab-darken"></div>
                     <div class="column full text-center v-align">
                         <div class="text-and-button v-aligned">
                             <p>
@@ -184,7 +186,7 @@
                                 You are bombarded with hundreds of visual messages every day in varying forms.
                             </p>
                             <p>
-                                Our talent is engaging your audience to plug in to your messages.
+                                Our talent is engaging your audience to plug in to <u>your</u> messages.
                             </p>
                             <button>
                                 SERVICES
@@ -205,11 +207,11 @@
                     </div>
                 </div>
             </section>
-            <section class="footer">
+            <!--<section class="footer">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, nisi quos in blanditiis sint eligendi beatae repudiandae. Ipsum, perspiciatis, aliquam, ratione quasi illum expedita animi voluptate neque cumque saepe nobis.
                 </p>
-            </section>
+            </section>-->
         </div>
 
 
@@ -219,7 +221,6 @@
         <script src="../bower_components/jquery-waypoints/waypoints.min.js"></script>
         <script src="../bower_components/jquery-waypoints/shortcuts/sticky-elements/waypoints-sticky.min.js"></script>
         <script src="../bower_components/skrollr/dist/skrollr.min.js"></script>
-        <script src="scripts/footerreveal.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -234,6 +235,7 @@
         </script>
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/footerreveal.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>
