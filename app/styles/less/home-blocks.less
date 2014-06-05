@@ -1,0 +1,162 @@
+section.home-blocks {
+	position:relative;
+	.block-swarm-tactics {
+		background:white;
+		padding-top:5rem;
+		padding-bottom:5rem;
+		.column {
+			height:100%;
+		}
+		.title-and-text {
+			color:@primary-color;
+			h3 {
+				font-family:@primary-font-reg;
+				font-size:3em;
+				margin-bottom:1rem;
+				margin-top:0;
+			}
+			hr {
+				width:20%;
+				border:1px solid @primary-color;
+				margin-bottom:3rem;
+			}
+			p {
+				font-family:@secondary-font;
+				font-size:1.2em;
+			}
+			button {
+				color:@primary-color;
+				font-family:@primary-font-bold;
+				font-size:1.4em;
+				text-transform:uppercase;
+				width:15rem;
+				height:5rem;
+				border:2px solid @primary-color;
+				background:none;
+				margin-top:2rem;
+				&:hover {
+					background:@primary-color;
+					border-color:white;
+					color:white;
+				}
+			}
+		}
+	}
+	.block-bombarded {
+		background:white;
+		padding-top:5rem;
+		padding-bottom:5rem;
+		color:@primary-color;
+		.column {
+			height:100%;
+		}
+		.text-and-button {
+			p {
+				font-family:@secondary-font;
+				font-size:1.5em;
+				&:nth-child(2) {
+					font-size:2em;
+				}
+			}
+			button {
+				color:@primary-color;
+				font-family:@primary-font-bold;
+				font-size:1.4em;
+				text-transform:uppercase;
+				width:15rem;
+				height:5rem;
+				border:2px solid @primary-color;
+				background:none;
+				margin-top:2rem;
+				&:hover {
+					background:@primary-color;
+					border-color:white;
+					color:white;
+				}
+			}
+		}
+	}
+	.block-collaboration {
+		background:url('../../images/pen.jpg');
+		background-size:cover;
+		background-position:center;
+		width:100%;
+		padding-top:5rem;
+		padding-bottom:5rem;
+		//height:20rem;
+		//position:relative;
+		//z-index:103;
+		.column {
+			height:100%;
+		}
+		.collab-darken {
+			width:100%;
+			height:100%;
+			position:absolute;
+			background-color:black;
+			opacity:0.5;
+			z-index:-1;
+		}
+		.text-and-button {
+			p {
+				color:white;
+				font-family:@secondary-font;
+				font-size:2em;
+				//vertical-align:middle;
+				//line-height:100vh;
+			}
+			button {
+				color:white;
+				font-family:@primary-font-bold;
+				font-size:1.4em;
+				text-transform:uppercase;
+				width:15rem;
+				height:5rem;
+				border:2px solid white;
+				background:none;
+				//margin-top:3rem;
+				&:hover {
+					background:white;
+					border-color:white;
+					color:@primary-color;
+				}
+			}
+		}
+	}
+	.block-contact {
+		background:@primary-color;
+		padding-top:2rem;
+		padding-bottom:2rem;
+		color:white;
+		.column {
+			height:100%;
+		}
+		.text-and-button {
+			p, button {
+				display:inline;
+			}
+			p {
+				font-family:@primary-font-reg;
+				font-size:1.5em;
+				text-transform:uppercase;
+			}
+			button {
+				color:white;
+				font-family:@primary-font-bold;
+				font-size:1.4em;
+				text-transform:uppercase;
+				width:15rem;
+				height:4rem;
+				border:2px solid white;
+				background:none;
+				//margin-top:2rem;
+				margin-left:2rem;
+				&:hover {
+					background:white;
+					border-color:@primary-color;
+					color:@primary-color;
+				}
+			}
+		}
+	}
+}

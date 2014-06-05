@@ -157,3 +157,20 @@ var stickyElement = function () {
 
 stickyElement();
 
+// Footer reveal
+
+/*$(function() {
+	$('section.footer').footerReveal({
+		zIndex : 0
+	});
+});*/
+
+//////
+
+
+$(function() {
+	$('#scroll-down').click(function() {
+		$('html, body').animate({scrollTop:$('section.process').offset().top + 80}, {duration:1000});
+	});
+});
+
