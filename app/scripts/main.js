@@ -192,7 +192,7 @@ stickyElement();
 //////
 
 
-$('a').click(function(){
+$('a:not(nav a)').click(function(){
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 1000);
