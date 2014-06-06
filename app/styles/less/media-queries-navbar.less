@@ -6,7 +6,9 @@
 		}*/
 		ul {
 			li {
-
+				&:first-child {
+					display:none;
+				}
 				a {
 					vertical-align:middle;
 					line-height:5rem;
@@ -39,6 +41,17 @@
 					&:hover {
 						background:rgba(0, 0, 0, 0.1);
 					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 30rem) {
+	nav {
+		ul {
+			li {
+				&:first-child {
+					width:100%;
 				}
 			}
 		}

@@ -152,6 +152,25 @@ nav {
 	}*/
 
 }
+nav a#home-icon {
+  display: none;
+  float: left;
+  max-width: 2rem;
+  max-height: 2rem;
+  min-width: 2rem;
+  min-height: 2rem;
+  margin-top: -2.3rem;
+  margin-left: 0.5rem;
+  -webkit-transition: margin-left 0.3s;
+  transition: margin-left 0.3s;
+  -moz-transition: margin-left 0.3s;
+  -o-transition: margin-left 0.3s;
+  -ms-transition: margin-left 0.3s;
+}
+nav a#home-icon:hover {
+  margin-left: 1rem;
+  background: transparent;
+}
 nav ul {
   padding: 0;
   margin-top: 0;
@@ -541,6 +560,7 @@ section.what-we-do ul.what-we-do-list li {
 }
 .how-do-we .box {
   width: 30%;
+  min-width: 15rem;
   background: #3498db;
   margin: 0 auto;
   padding-top: 2rem;
@@ -623,8 +643,6 @@ section.what-we-do ul.what-we-do-list li {
   height: 100vh;
   position: relative;
   z-index: 103;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 .office-img .column {
   height: 100%;
@@ -1202,6 +1220,9 @@ section.footer p {
   		}*/
   
   }
+  nav ul li:first-child {
+    display: none;
+  }
   nav ul li a {
     vertical-align: middle;
     line-height: 5rem;
@@ -1220,6 +1241,11 @@ section.footer p {
 @media screen and (min-width: 40rem) {
   nav ul li a:hover {
     background: rgba(0, 0, 0, 0.1);
+  }
+}
+@media screen and (min-width: 30rem) {
+  nav ul li:first-child {
+    width: 100%;
   }
 }
 @media screen and (max-width: 48rem) {
@@ -1329,6 +1355,47 @@ section.footer p {
   }
   section.home-blocks {
     font-size: 1em;
+  }
+}
+@media screen and (min-width: 74rem) {
+  .office-img p {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .process {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media screen and (max-width: 40rem) {
+  .plug-scroll {
+    display: none;
+  }
+  .process .ribbon-protector {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .process .ribbon-protector .ribbon {
+    margin-top: 0;
+  }
+  .process .clearfix {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .process .clearfix:nth-child(3) {
+    margin-bottom: 22rem;
+  }
+  .process .clearfix:last-child {
+    margin-bottom: 1rem;
+  }
+  .process .clearfix .column.half p,
+  .process .clearfix .column.half.flow-opposite p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .how-do-we {
+    top: 78rem;
   }
 }
 @-webkit-keyframes neon {

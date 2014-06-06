@@ -60,7 +60,7 @@ $(function() {
 });
 
 // Navbar resize 
-
+/*
 $(function() {
 	var nav = $('nav'),
 		a = $('nav li a');
@@ -78,6 +78,31 @@ $(function() {
 
 	}
 });
+*/
+
+var navResize = function(section) {
+	var nav = $('nav'),
+		a = $('nav li a'),
+		icon = $('nav #home-icon');
+	if (width > 768) {
+
+		section.waypoint(function(direction) {
+			if (direction === 'down') {
+				nav.stop().animate({height:'2.5rem'}, {duration:300});
+				a.stop().animate({height:'2.5rem', lineHeight:'2.5rem'}, {duration:300});
+				icon.show(300);
+			} else if (direction === 'up') {
+				nav.stop().animate({height:'5rem'}, {duration:300});
+				a.stop().animate({height:'5rem', lineHeight:'5rem'}, {duration:300});
+				icon.hide(300);
+			}
+		}, { offset: 80 });
+
+	}
+};
+
+navResize($('.process'));
+navResize($('.block-work-better'));
 
 // Flicker effect 
 var flicker = function() {
