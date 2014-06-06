@@ -136,6 +136,13 @@ html {
   -ms-animation: scrolldown 0.8s ease-in-out infinite;
   animation: scrolldown 0.8s ease-in-out infinite;
 }
+.block-button-transition {
+  -webkit-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -moz-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -o-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -ms-transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
 nav {
   height: 2.5rem;
   width: 100%;
@@ -667,6 +674,16 @@ section.home-blocks {
   position: relative;
   font-size: 0.8em;
 }
+section.home-blocks button {
+  font-family: 'baufrabold';
+  font-size: 1.4em;
+  text-transform: uppercase;
+  width: 15rem;
+  height: 5rem;
+}
+section.home-blocks button:focus {
+  outline: none;
+}
 section.home-blocks .block-swarm-tactics {
   background: white;
   padding-top: 5rem;
@@ -705,6 +722,11 @@ section.home-blocks .block-swarm-tactics .title-and-text button {
   border: 2px solid #e74c3c;
   background: none;
   margin-top: 2rem;
+  -webkit-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -moz-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -o-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -ms-transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 section.home-blocks .block-swarm-tactics .title-and-text button:hover {
   background: #e74c3c;
@@ -731,14 +753,14 @@ section.home-blocks .block-bombarded .text-and-button p:nth-child(2) {
 }
 section.home-blocks .block-bombarded .text-and-button button {
   color: #e74c3c;
-  font-family: 'baufrabold';
-  font-size: 1.4em;
-  text-transform: uppercase;
-  width: 15rem;
-  height: 5rem;
   border: 2px solid #e74c3c;
   background: none;
   margin-top: 2rem;
+  -webkit-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -moz-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -o-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -ms-transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 section.home-blocks .block-bombarded .text-and-button button:hover {
   background: #e74c3c;
@@ -783,13 +805,18 @@ section.home-blocks .block-collaboration .text-and-button button {
   height: 5rem;
   border: 2px solid white;
   background: none;
+  -webkit-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -moz-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -o-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -ms-transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 section.home-blocks .block-collaboration .text-and-button button:hover {
   background: white;
   border-color: white;
   color: #e74c3c;
 }
-section.home-blocks .block-contact {
+.block-contact {
   background: #e74c3c;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -797,19 +824,19 @@ section.home-blocks .block-contact {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-section.home-blocks .block-contact .column {
+.block-contact .column {
   height: 100%;
 }
-section.home-blocks .block-contact .text-and-button p,
-section.home-blocks .block-contact .text-and-button button {
+.block-contact .text-and-button p,
+.block-contact .text-and-button button {
   display: inline-block;
 }
-section.home-blocks .block-contact .text-and-button p {
+.block-contact .text-and-button p {
   font-family: 'baufraregular';
   font-size: 1.5em;
   text-transform: uppercase;
 }
-section.home-blocks .block-contact .text-and-button button {
+.block-contact .text-and-button button {
   color: white;
   font-family: 'baufrabold';
   font-size: 1.4em;
@@ -818,8 +845,13 @@ section.home-blocks .block-contact .text-and-button button {
   height: 5rem;
   border: 2px solid white;
   background: none;
+  -webkit-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -moz-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -o-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -ms-transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
-section.home-blocks .block-contact .text-and-button button:hover {
+.block-contact .text-and-button button:hover {
   background: white;
   border-color: #e74c3c;
   color: #e74c3c;

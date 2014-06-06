@@ -6,7 +6,7 @@ if (width > 640) {
 	var s = skrollr.init();
 }
 
-// Navbar //
+// Mobile navbar functionality //
 
 $(function() {
 	var toggle = $('#nav-toggle'),
@@ -31,6 +31,42 @@ $(function() {
 	});
 });
 
+// Navbar resize on scroll //
+
+var navResize = function(section) {
+	var nav = $('nav'),
+		a = $('nav li a'),
+		icon = $('nav #home-icon');
+	if (width > 768) {
+
+		section.waypoint(function(direction) {
+			if (direction === 'down') {
+				nav.stop().animate({height:'2.5rem'}, {duration:300});
+				a.stop().animate({height:'2.5rem', lineHeight:'2.5rem'}, {duration:300});
+				icon.show(300);
+			} else if (direction === 'up') {
+				nav.stop().animate({height:'5rem'}, {duration:300});
+				a.stop().animate({height:'5rem', lineHeight:'5rem'}, {duration:300});
+				icon.hide(300);
+			}
+		}, { offset: 80 });
+
+	}
+};
+
+navResize($('.process'));
+navResize($('.block-work-better'));
+
+// Smooth scroll //
+
+var smoothScroll = function(click, section, spacing) {
+	click.click(function() {
+		$('html, body').animate({scrollTop:section.offset().top + spacing}, {duration:1000});
+	});
+};
+
+smoothScroll($('#scroll-down-home'), $('section.process'), 50);
+smoothScroll($('#scroll-down-about'), $('.block-work-better'), 0);
 
 // Full plug/socket animation //
 
@@ -59,50 +95,23 @@ $(function() {
 	});
 });
 
-// Navbar resize 
-/*
+// Logo flip & plug animate down //
+
 $(function() {
-	var nav = $('nav'),
-		a = $('nav li a');
-	if (width > 768) {
+	var plug = $('#plug-scroll');
+	var svg = $('.svg-icon');
 
-		$('.process').waypoint(function(direction) {
-			if (direction === 'down') {
-				nav.stop().animate({height:'2.5rem'}, {duration:300});
-				a.stop().animate({height:'2.5rem', lineHeight:'2.5rem'}, {duration:300});
-			} else if (direction === 'up') {
-				nav.stop().animate({height:'5rem'}, {duration:300});
-				a.stop().animate({height:'5rem', lineHeight:'5rem'}, {duration:300});
-			}
-		}, { offset: 80 });
-
-	}
+	$('.process').waypoint(function(direction) {
+		if (direction === 'down') {
+			plug.stop().animate({top:'-1rem'}, {duration:500});
+			svg.addClass('icon-rotated').delay(200).animate({opacity:0}, {duration:200});
+		}
+		else if (direction === 'up') {
+			plug.stop().animate({top:'-30rem'}, {duration:500});
+			svg.removeClass('icon-rotated').animate({opacity:1}, {duration:200});
+		}
+	}, { offset: 400 });
 });
-*/
-
-var navResize = function(section) {
-	var nav = $('nav'),
-		a = $('nav li a'),
-		icon = $('nav #home-icon');
-	if (width > 768) {
-
-		section.waypoint(function(direction) {
-			if (direction === 'down') {
-				nav.stop().animate({height:'2.5rem'}, {duration:300});
-				a.stop().animate({height:'2.5rem', lineHeight:'2.5rem'}, {duration:300});
-				icon.show(300);
-			} else if (direction === 'up') {
-				nav.stop().animate({height:'5rem'}, {duration:300});
-				a.stop().animate({height:'5rem', lineHeight:'5rem'}, {duration:300});
-				icon.hide(300);
-			}
-		}, { offset: 80 });
-
-	}
-};
-
-navResize($('.process'));
-navResize($('.block-work-better'));
 
 // Flicker effect 
 var flicker = function() {
@@ -127,24 +136,8 @@ var flicker = function() {
 	.animate({opacity:0}, {duration:1});
 };
 
-// Logo flip & plug animate down
-$(function() {
-	var plug = $('#plug-scroll');
-	var svg = $('.svg-icon');
+// Scrolling plug //
 
-	$('.process').waypoint(function(direction) {
-		if (direction === 'down') {
-			plug.stop().animate({top:'-1rem'}, {duration:500});
-			svg.addClass('icon-rotated').delay(200).animate({opacity:0}, {duration:200});
-		}
-		else if (direction === 'up') {
-			plug.stop().animate({top:'-30rem'}, {duration:500});
-			svg.removeClass('icon-rotated').animate({opacity:1}, {duration:200});
-		}
-	}, { offset: 400 });
-});
-
-// Scrolling plug
 var stickyElement = function () {
 	var $sticky = $('#plug-scroll');
 	var $stopper = $('.office-img');
@@ -185,6 +178,7 @@ var stickyElement = function () {
 
 stickyElement();
 
+
 // Footer reveal
 
 /*$(function() {
@@ -194,11 +188,4 @@ stickyElement();
 });*/
 
 //////
-
-
-$(function() {
-	$('#scroll-down').click(function() {
-		$('html, body').animate({scrollTop:$('section.process').offset().top + 80}, {duration:1000});
-	});
-});
 

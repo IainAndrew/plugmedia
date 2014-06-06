@@ -1,6 +1,16 @@
 section.home-blocks {
 	position:relative;
 	font-size:0.8em;
+	button {
+		&:focus {
+			outline:none;
+		}
+		font-family:@primary-font-bold;
+		font-size:1.4em;
+		text-transform:uppercase;
+		width:15rem;
+		height:5rem;
+	}
 	.block-swarm-tactics {
 		background:white;
 		padding-top:5rem;
@@ -37,6 +47,7 @@ section.home-blocks {
 				border:2px solid @primary-color;
 				background:none;
 				margin-top:2rem;
+				.block-button-transition;
 				&:hover {
 					background:@primary-color;
 					border-color:white;
@@ -65,14 +76,10 @@ section.home-blocks {
 			}
 			button {
 				color:@primary-color;
-				font-family:@primary-font-bold;
-				font-size:1.4em;
-				text-transform:uppercase;
-				width:15rem;
-				height:5rem;
 				border:2px solid @primary-color;
 				background:none;
 				margin-top:2rem;
+				.block-button-transition;
 				&:hover {
 					background:@primary-color;
 					border-color:white;
@@ -126,6 +133,7 @@ section.home-blocks {
 				border:2px solid white;
 				background:none;
 				//margin-top:3rem;
+				.block-button-transition;
 				&:hover {
 					background:white;
 					border-color:white;
@@ -134,40 +142,41 @@ section.home-blocks {
 			}
 		}
 	}
-	.block-contact {
-		background:@primary-color;
-		padding-top:2rem;
-		padding-bottom:2rem;
-		color:white;
-		padding-left:1rem;
-		padding-right:1rem;
-		.column {
-			height:100%;
+}
+.block-contact {
+	background:@primary-color;
+	padding-top:2rem;
+	padding-bottom:2rem;
+	color:white;
+	padding-left:1rem;
+	padding-right:1rem;
+	.column {
+		height:100%;
+	}
+	.text-and-button {
+		p, button {
+			display:inline-block;
 		}
-		.text-and-button {
-			p, button {
-				display:inline-block;
-			}
-			p {
-				font-family:@primary-font-reg;
-				font-size:1.5em;
-				text-transform:uppercase;
-			}
-			button {
-				color:white;
-				font-family:@primary-font-bold;
-				font-size:1.4em;
-				text-transform:uppercase;
-				width:15rem;
-				height:5rem;
-				border:2px solid white;
-				background:none;
-				//margin-left:2rem;
-				&:hover {
-					background:white;
-					border-color:@primary-color;
-					color:@primary-color;
-				}
+		p {
+			font-family:@primary-font-reg;
+			font-size:1.5em;
+			text-transform:uppercase;
+		}
+		button {
+			color:white;
+			font-family:@primary-font-bold;
+			font-size:1.4em;
+			text-transform:uppercase;
+			width:15rem;
+			height:5rem;
+			border:2px solid white;
+			background:none;
+			//margin-left:2rem;
+			.block-button-transition;
+			&:hover {
+				background:white;
+				border-color:@primary-color;
+				color:@primary-color;
 			}
 		}
 	}
