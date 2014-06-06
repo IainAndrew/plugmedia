@@ -56,6 +56,7 @@ var navResize = function(section) {
 
 navResize($('.process'));
 navResize($('.block-work-better'));
+navResize($('.showcase-intro'));
 
 // Smooth scroll //
 
@@ -67,6 +68,7 @@ var smoothScroll = function(click, section, spacing) {
 
 smoothScroll($('#scroll-down-home'), $('section.process'), 50);
 smoothScroll($('#scroll-down-about'), $('.block-work-better'), 0);
+smoothScroll($('#scroll-down-showcase'), $('.showcase-intro'), 0);
 
 // Full plug/socket animation //
 
@@ -182,10 +184,17 @@ stickyElement();
 // Footer reveal
 
 /*$(function() {
-	$('section.footer').footerReveal({
+	$('footer').footerReveal({
 		zIndex : 0
 	});
 });*/
 
 //////
 
+
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 1000);
+    return false;
+});

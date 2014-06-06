@@ -325,6 +325,9 @@ body {
   overflow-x: hidden;
   width: 100%;
 }
+h2 {
+  color: white;
+}
 header.home-header {
   background: url('../../images/bridge.jpg');
   background-size: cover;
@@ -895,14 +898,148 @@ section.about-us {
   font-family: 'cabrito_norm_regularnormRg';
   font-size: 1.5em;
 }
-h2 {
+header.showcase-header {
+  z-index: -1;
+  background: url(../../images/pencils.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+header.showcase-header .showcase-header-bg {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background: black;
+  opacity: 0.5;
+}
+.showcase-header-text {
+  width: 100%;
+  top: 40vh;
+  color: white;
+  z-index: -1;
+}
+.showcase-header-text h1 {
+  font-size: 7em;
+  margin: 0;
+  font-family: 'baufrabold';
+  text-transform: uppercase;
+}
+.showcase-header-text p {
+  font-family: 'baufraregular';
+  text-transform: uppercase;
+}
+.showcase-intro {
+  background: white;
+  padding-bottom: 3rem;
+}
+.showcase-intro .column.half {
+  padding: 3rem;
+}
+.showcase-intro .column.half:nth-child(2) {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.showcase-intro h3 {
+  font-family: 'cabrito_norm_regularnormRg';
+  font-size: 2em;
+  font-weight: normal;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.showcase-intro hr {
+  width: 20%;
+  border: 1px solid black;
+}
+.showcase-intro p {
+  font-family: 'cabrito_norm_regularnormRg';
+  color: #646464;
+  margin: 0;
+}
+.showcase-intro .showcase-intro-buttons i {
+  font-size: 3em;
+  color: #e74c3c;
+  margin-bottom: 2rem;
+}
+.showcase-intro .showcase-intro-buttons button {
+  font-family: 'baufrabold';
+  font-size: 1.4em;
+  text-transform: uppercase;
+  width: 15rem;
+  height: 5rem;
+  background: white;
+  border: 2px solid black;
+  color: black;
+  margin-bottom: 2rem;
+  -webkit-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -moz-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -o-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -ms-transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+.showcase-intro .showcase-intro-buttons button:focus {
+  outline: none;
+}
+.showcase-intro .showcase-intro-buttons button:hover {
+  background: #e74c3c;
+  border-color: white;
   color: white;
 }
-.bl-main {
-  position: absolute;
+.showcase-intro .showcase-intro-buttons p {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.block-case-studies {
+  background: url('../../images/pen.jpg');
+  background-size: cover;
+  background-position: center;
   width: 100%;
+}
+.block-case-studies .column {
   height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.block-case-studies .column h2 {
+  font-family: 'baufrabold';
+  font-size: 5em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.block-work {
+  background: url('../../images/pen.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.block-work .column {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.block-work .column h2 {
+  font-family: 'baufrabold';
+  font-size: 5em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.bl-main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
   overflow: hidden;
+}
+.bl-main h3 {
+  color: white;
+  font-family: 'baufraregular';
 }
 .bl-main > section {
   position: absolute;
@@ -924,22 +1061,22 @@ h2 {
 .bl-main > section:first-child {
   top: 0;
   left: 0;
-  background: #F06060;
+  background: #e74c3c;
 }
 .bl-main > section:nth-child(2) {
   top: 0;
   left: 50%;
-  background: #FA987D;
+  background: #dd4232;
 }
 .bl-main > section:nth-child(3) {
   top: 50%;
   left: 0;
-  background: #72CCA7;
+  background: #d33828;
 }
 .bl-main > section:nth-child(4) {
   top: 50%;
   left: 50%;
-  background: #10A296;
+  background: #c92e1e;
 }
 .bl-main > section.bl-expand {
   width: 100%;
@@ -951,7 +1088,7 @@ h2 {
   z-index: 100;
 }
 .bl-main > section:first-child.bl-expand {
-  background: #EE4444;
+  background: #ca5738;
 }
 .bl-main > section:nth-child(2).bl-expand {
   background: #F98262;
@@ -993,7 +1130,7 @@ h2 {
   -moz-transition: opacity 0.2s linear 0.5s;
   transition: opacity 0.2s linear 0.5s;
 }
-.bl-box h2 {
+.bl-box h3 {
   text-align: center;
   margin: 0;
   padding: 20px;
@@ -1056,7 +1193,7 @@ div.bl-panel-items  > div  > div {
   font-size: 1.7em;
   line-height: 1.8;
 }
-.bl-content h2 {
+.bl-content h3 {
   font-size: 3em;
   font-weight: 300;
   margin: 0 0 20px 0;
@@ -1204,7 +1341,7 @@ section.bl-expand .bl-box {
   -moz-transition: opacity 0s linear;
   transition: opacity 0s linear;
 }
-.no-touch section:not(.bl-expand) .bl-box:hover h2 {
+.no-touch section:not(.bl-expand) .bl-box:hover h3 {
   -webkit-transform: translateY(-15px);
   -moz-transform: translateY(-15px);
   -ms-transform: translateY(-15px);
@@ -1430,6 +1567,16 @@ section.footer p {
     top: 78rem;
   }
 }
+@media screen and (min-width: 40rem) {
+  .showcase-intro {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .showcase-intro .column.half:nth-child(2) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
 @-webkit-keyframes neon {
   from {
     text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
@@ -1569,4 +1716,16 @@ section.footer p {
   100% {
     margin-top: -1rem;
   }
+}
+html.no-js .darken {
+  opacity: 0;
+}
+html.no-js .plug-and-socket {
+  display: none;
+}
+html.no-js .ribbon-protector {
+  margin-top: 0;
+}
+html.no-js .how-do-we {
+  top: 88rem;
 }
