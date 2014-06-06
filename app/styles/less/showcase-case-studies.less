@@ -16,8 +16,8 @@
         transition: all 0.5s ease-in-out;
         .bl-icon-close {
             position: absolute;
-            top: 20px;
-            right: 20px;
+            top: 3rem;
+            right: 3rem;
             cursor: pointer;
             z-index: 100;
             opacity: 0;
@@ -111,7 +111,7 @@
     }
 }
 .bl-icon {
-    font-family: 'icomoon';
+    font-family: 'FontAwesome';
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -120,6 +120,7 @@
     line-height: 1;
     cursor: pointer;
     -webkit-font-smoothing: antialiased;
+    color:white;
 }
 .bl-icon:before {
     display: block;
@@ -139,7 +140,7 @@
     content: "\e003";
 }
 .bl-icon-close:before {
-    content: "\e005";
+    content: "\f057";
 }
 .bl-content,div.bl-panel-items &>div &>div {
     opacity: 0;
@@ -320,6 +321,7 @@ section.bl-expand {
                 -ms-transform: translateY(-15px);
                 transform: translateY(-15px);
             }
+            background: @primary-color + 5;
         }
     }
 }

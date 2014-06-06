@@ -1051,8 +1051,8 @@ header.showcase-header .showcase-header-bg {
 }
 .bl-main > section .bl-icon-close {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 3rem;
+  right: 3rem;
   cursor: pointer;
   z-index: 100;
   opacity: 0;
@@ -1144,7 +1144,7 @@ header.showcase-header .showcase-header-bg {
   transition: all 0.2s ease-in-out;
 }
 .bl-icon {
-  font-family: 'icomoon';
+  font-family: 'FontAwesome';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -1153,6 +1153,7 @@ header.showcase-header .showcase-header-bg {
   line-height: 1;
   cursor: pointer;
   -webkit-font-smoothing: antialiased;
+  color: white;
 }
 .bl-icon:before {
   display: block;
@@ -1172,7 +1173,7 @@ header.showcase-header .showcase-header-bg {
   content: "\e003";
 }
 .bl-icon-close:before {
-  content: "\e005";
+  content: "\f057";
 }
 .bl-content,
 div.bl-panel-items  > div  > div {
@@ -1341,6 +1342,9 @@ section.bl-expand .bl-box {
   -moz-transition: opacity 0s linear;
   transition: opacity 0s linear;
 }
+.no-touch section:not(.bl-expand) .bl-box:hover {
+  background: #ec5141;
+}
 .no-touch section:not(.bl-expand) .bl-box:hover h3 {
   -webkit-transform: translateY(-15px);
   -moz-transform: translateY(-15px);
@@ -1375,7 +1379,7 @@ section.bl-expand .bl-icon-close {
 }
 header.services-header {
   z-index: -1;
-  background: url(../../images/pencils.jpg);
+  background: url(../../images/meter.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
