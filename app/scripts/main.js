@@ -69,6 +69,7 @@ var smoothScroll = function(click, section, spacing) {
 smoothScroll($('#scroll-down-home'), $('section.process'), 50);
 smoothScroll($('#scroll-down-about'), $('.block-work-better'), 0);
 smoothScroll($('#scroll-down-showcase'), $('.showcase-intro'), 0);
+smoothScroll($('#scroll-down-connect'), $('.block-blog'), 0);
 
 // Smooth scroll for anchor links
 $('a:not(nav a)[href!="javascript:void(0)"]').click(function(){
