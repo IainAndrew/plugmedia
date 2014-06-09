@@ -1,0 +1,62 @@
+section.team {
+	background:white;
+	.in-house-team {
+		padding:3rem;
+		h3 {
+			color:black;
+			font-family:@primary-font-bold;
+			text-transform:uppercase;
+			font-size:2em;
+		}
+		hr {
+			width:20%;
+			border:1px solid @text-grey;
+		}
+		.team-members {
+			.team-member {
+				display:inline-block;
+				padding:2rem;
+			}
+		}
+	}
+	.freelancers {
+		padding:3rem;
+		padding-top:0;
+		h3 {
+			color:black;
+			font-family:@primary-font-bold;
+			text-transform:uppercase;
+			font-size:2em;
+		}
+		hr {
+			width:20%;
+			border:1px solid @text-grey;
+		}
+		.team-members-row {
+			.team-member {
+				display:inline-block;
+				padding:2rem;
+			}
+		}
+	}
+	.team-member {
+		position:relative;
+		overflow:hidden;
+	}
+	.team-member-overlay {
+		background:@primary-color;
+		height:100px;
+		position:absolute;
+		width:200px;
+		top:100%;
+		padding:1rem;
+		p {
+			color:white;
+			font-family:@primary-font-reg;
+			text-transform:uppercase;
+		}
+		.overlay-up {
+			top:50%;
+		}
+	}
+}

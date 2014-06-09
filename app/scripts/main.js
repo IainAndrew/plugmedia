@@ -55,8 +55,8 @@ var navResize = function(section) {
 };
 
 navResize($('.process'));
-navResize($('.block-work-better'));
-navResize($('.showcase-intro'));
+//navResize($('.block-work-better'));
+//navResize($('.showcase-intro'));
 
 // Smooth scroll //
 
