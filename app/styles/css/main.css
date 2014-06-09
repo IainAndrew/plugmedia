@@ -1655,6 +1655,177 @@ header.services-header .services-header-bg {
   font-family: 'baufraregular';
   text-transform: uppercase;
 }
+.block-blog {
+  background: white;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  color: #e74c3c;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-bottom: 1px solid lightgrey;
+}
+.block-blog .column {
+  height: 100%;
+}
+.block-blog .text-and-button p {
+  font-family: 'baufraregular';
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+.block-blog .text-and-button button {
+  color: #e74c3c;
+  border: 2px solid #e74c3c;
+  background: none;
+  margin-top: 2rem;
+  width: 15rem;
+  font-family: 'baufrabold';
+  font-size: 1.4em;
+  text-transform: uppercase;
+  width: 17rem;
+  height: 5rem;
+  -webkit-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -moz-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -o-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -ms-transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+.block-blog .text-and-button button:focus {
+  outline: none;
+}
+.block-blog .text-and-button button:hover {
+  background: #e74c3c;
+  border-color: white;
+  color: white;
+}
+section.contact {
+  background: white;
+  padding: 5rem;
+}
+.contact-form {
+  position: relative;
+  font-family: 'cabrito_norm_regularnormRg';
+}
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form label:active + input,
+.contact-form label:active + textarea {
+  outline: none;
+  border: 2px solid #e74c3c;
+}
+.contact-form label {
+  font-family: 'baufraregular';
+  display: block;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.contact-form input {
+  line-height: 1.5;
+  font-size: 1.4em;
+  padding: 5px 10px;
+  color: #646464;
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 2px solid #646464;
+}
+.contact-form textarea {
+  line-height: 1.5;
+  font-size: 1.4em;
+  padding: 5px 10px;
+  color: #646464;
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 2px solid #646464;
+  min-height: 200px;
+}
+.contact-form select {
+  line-height: 1.5;
+  font-size: 1.4em;
+  padding: 5px 10px;
+  color: #646464;
+  display: block;
+  width: 100%;
+  background: transparent;
+}
+.contact-form select:focus {
+  outline: none;
+}
+.contact-form input.contact-form-submit {
+  color: #e74c3c;
+  font-family: 'baufrabold';
+  font-size: 1.4em;
+  text-transform: uppercase;
+  width: 15rem;
+  height: 5rem;
+  border: 2px solid #e74c3c;
+  background: white;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 2rem;
+  -webkit-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -moz-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -o-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  -ms-transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+.contact-form input.contact-form-submit:hover {
+  background: #e74c3c;
+  border-color: white;
+  color: white;
+}
+.contact-form-form:before {
+  content: " ";
+  display: table;
+}
+.contact-form-form:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.contact-form-column {
+  width: 50%;
+  padding: 10px 30px;
+  float: left;
+}
+::-webkit-input-placeholder {
+  color: lightgrey;
+  font-style: italic;
+}
+:-moz-placeholder {
+  color: lightgrey;
+  font-style: italic;
+}
+::-moz-placeholder {
+  color: lightgrey;
+  font-style: italic;
+}
+:-ms-input-placeholder {
+  color: lightgrey;
+  font-style: italic;
+}
+.contact-form-submit-wrap {
+  text-align: center;
+  clear: both;
+}
+@media screen and (max-width: 70em) {
+  .contact-form-column {
+    width: 50%;
+  }
+  .contact-form-column:nth-child(3) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 48em) {
+  .contact-form-column {
+    width: 100%;
+    padding: 10px;
+  }
+}
 section.footer {
   height: 20rem;
   background: white;

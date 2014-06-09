@@ -70,6 +70,14 @@ smoothScroll($('#scroll-down-home'), $('section.process'), 50);
 smoothScroll($('#scroll-down-about'), $('.block-work-better'), 0);
 smoothScroll($('#scroll-down-showcase'), $('.showcase-intro'), 0);
 
+// Smooth scroll for anchor links
+$('a:not(nav a)[href!="javascript:void(0)"]').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 1000);
+    return false;
+});
+
 // Full plug/socket animation //
 
 $(function() {
@@ -189,16 +197,8 @@ stickyElement();
 	});
 });*/
 
-//////
 
-
-$('a:not(nav a)[href!="javascript:void(0)"]').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 1000);
-    return false;
-});
-
+// Team member hover overlay
 $(function() {
 	var team = $('.team-member'),
 		ovl = $('.team-member-overlay');
@@ -211,6 +211,8 @@ $(function() {
 	}
 });
 
+
+// Team member lightbox
 $(function() {
 	var team = $('.team-member'),
 		box = $('.lightbox'),
