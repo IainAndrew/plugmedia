@@ -198,3 +198,28 @@ $('a:not(nav a)').click(function(){
     }, 1000);
     return false;
 });
+
+$(function() {
+	var team = $('.team-member'),
+		ovl = $('.team-member-overlay');
+	if ( Modernizr.touch == false) {
+		team.hover(function() {
+			$(this).find(ovl).stop().animate({top:'50%'}, {duration:200});
+		}, function() {
+			$(this).find(ovl).stop().animate({top:'100%'}, {duration:200});
+		});
+	}
+});
+
+$(function() {
+	var team = $('.team-member'),
+		box = $('.lightbox'),
+		exit = $('.icon-exit');
+
+	team.click(function() {
+		$(this).find(box).show(500);
+	});
+	exit.click(function() {
+		box.hide(300);
+	});
+});
