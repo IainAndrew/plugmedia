@@ -37,6 +37,7 @@ section.team {
 		display:inline-block;
 		padding-left:2rem;
 		padding-right:2rem;
+		margin-top:2rem;
 	}
 	.team-member-overlay {
 		background:@primary-color;
@@ -58,12 +59,7 @@ section.team {
 		}
 	}
 	.lightbox {
-		width:60vw;
 		position:fixed;
-		z-index:999;
-		top:20vh;
-		left:50%;
-		margin-left:-30vw;
 		background:@text-grey + 130;
 		padding:2rem;
 		border-radius:4px;
@@ -82,14 +78,25 @@ section.team {
 		}
 		.social-links {
 			text-align:right;
-			color:@primary-color;
+			color:@secondary-color;
+			i {
+				font-size:2em;
+				padding-left:1rem;
+				padding-right:1rem;
+				&:hover {
+					color:@secondary-color - 30;
+				}
+			}
 		}
 		.icon-exit {
 			position:absolute;
 			top:0.5rem;
 			right:0.5rem;
 			font-size:2em;
-			color:black;
+			color:@primary-color;
+			&:hover {
+				color:@primary-color - 30;
+			}
 		}
 	}
 }

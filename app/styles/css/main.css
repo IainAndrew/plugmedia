@@ -1082,6 +1082,7 @@ section.team .team-member {
   display: inline-block;
   padding-left: 2rem;
   padding-right: 2rem;
+  margin-top: 2rem;
 }
 section.team .team-member-overlay {
   background: #e74c3c;
@@ -1103,12 +1104,7 @@ section.team .team-member-overlay p:first-child {
   margin: 0;
 }
 section.team .lightbox {
-  width: 60vw;
   position: fixed;
-  z-index: 999;
-  top: 20vh;
-  left: 50%;
-  margin-left: -30vw;
   background: #e6e6e6;
   padding: 2rem;
   border-radius: 4px;
@@ -1128,14 +1124,25 @@ section.team .lightbox p {
 }
 section.team .lightbox .social-links {
   text-align: right;
-  color: #e74c3c;
+  color: #3498db;
+}
+section.team .lightbox .social-links i {
+  font-size: 2em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+section.team .lightbox .social-links i:hover {
+  color: #167abd;
 }
 section.team .lightbox .icon-exit {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
   font-size: 2em;
-  color: black;
+  color: #e74c3c;
+}
+section.team .lightbox .icon-exit:hover {
+  color: #c92e1e;
 }
 header.showcase-header {
   z-index: -1;
@@ -1923,6 +1930,40 @@ section.footer p {
   section.our-vision .content {
     padding-left: 7rem;
     padding-right: 7rem;
+  }
+}
+@media screen and (min-width: 20rem) {
+  section.team .lightbox {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 10000;
+    overflow-y: scroll;
+  }
+}
+@media screen and (min-width: 40rem) {
+  section.team .lightbox .column.two-thirds,
+  section.team .lightbox .column.third {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 55rem) {
+  section.team .lightbox {
+    width: 80vw;
+    z-index: 999;
+    top: 20vh;
+    left: 50%;
+    margin-left: -40vw;
+    height: auto;
+    overflow-y: auto;
+  }
+  section.team .lightbox .column.two-thirds {
+    width: 66.7%;
+  }
+  section.team .lightbox .column.third {
+    width: 33.3%;
   }
 }
 @-webkit-keyframes neon {

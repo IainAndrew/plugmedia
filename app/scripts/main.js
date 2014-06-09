@@ -192,7 +192,7 @@ stickyElement();
 //////
 
 
-$('a:not(nav a)').click(function(){
+$('a:not(nav a)[href!="javascript:void(0)"]').click(function(){
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 1000);
@@ -221,5 +221,6 @@ $(function() {
 	});
 	exit.click(function() {
 		box.hide(300);
+		return false;
 	});
 });
