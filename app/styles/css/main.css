@@ -1103,6 +1103,9 @@ section.team .team-member-overlay p:first-child {
   font-size: 1.2em;
   margin: 0;
 }
+section.team .team-member-overlay p:nth-child(2) {
+  font-size: 0.7em;
+}
 section.team .lightbox {
   position: fixed;
   background: #e6e6e6;
@@ -1705,6 +1708,7 @@ section.services-blocks .block-consulting .title-and-text p {
   font-family: 'cabrito_norm_regularnormRg';
   font-size: 1.3em;
   text-align: left;
+  color: #646464;
 }
 section.services-blocks .block-design .title-and-text ul,
 section.services-blocks .block-marketing .title-and-text ul,
@@ -1728,13 +1732,7 @@ section.services-blocks .block-consulting .title-and-text ul li {
   padding-right: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-size: 1.8em;
-}
-section.services-blocks .block-marketing .title-and-text ul li {
-  font-family: 'bauframedium';
-}
-section.services-blocks .block-marketing .title-and-text ul li ul li {
-  font-size: 0.8em;
+  font-size: 1.4em;
 }
 .block-blog {
   background: white;
@@ -2226,6 +2224,9 @@ section.footer p {
   section.services-blocks {
     font-size: 1em;
   }
+  section.services-blocks .column.third {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 68rem) {
   section.services-blocks {
@@ -2250,7 +2251,14 @@ section.footer p {
   section.services-blocks .block-training .title-and-text ul li,
   section.services-blocks .block-analysis .title-and-text ul li,
   section.services-blocks .block-consulting .title-and-text ul li {
-    width: auto;
+    font-size: 1.1em;
+  }
+  section.services-blocks .block-design .column.third,
+  section.services-blocks .block-marketing .column.third,
+  section.services-blocks .block-training .column.third,
+  section.services-blocks .block-analysis .column.third,
+  section.services-blocks .block-consulting .column.third {
+    width: 33.3%;
   }
 }
 @-webkit-keyframes neon {
