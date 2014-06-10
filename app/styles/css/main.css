@@ -1655,6 +1655,87 @@ header.services-header .services-header-bg {
   font-family: 'baufraregular';
   text-transform: uppercase;
 }
+section.services-blocks {
+  font-size: 0.8em;
+}
+section.services-blocks .block-design,
+section.services-blocks .block-marketing,
+section.services-blocks .block-training,
+section.services-blocks .block-analysis,
+section.services-blocks .block-consulting {
+  background: white;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-bottom: 1px solid #e74c3c;
+}
+section.services-blocks .block-design .column,
+section.services-blocks .block-marketing .column,
+section.services-blocks .block-training .column,
+section.services-blocks .block-analysis .column,
+section.services-blocks .block-consulting .column {
+  height: 100%;
+  text-align: center;
+}
+section.services-blocks .block-design .title-and-text,
+section.services-blocks .block-marketing .title-and-text,
+section.services-blocks .block-training .title-and-text,
+section.services-blocks .block-analysis .title-and-text,
+section.services-blocks .block-consulting .title-and-text {
+  color: #e74c3c;
+}
+section.services-blocks .block-design .title-and-text h2,
+section.services-blocks .block-marketing .title-and-text h2,
+section.services-blocks .block-training .title-and-text h2,
+section.services-blocks .block-analysis .title-and-text h2,
+section.services-blocks .block-consulting .title-and-text h2 {
+  font-family: 'baufrabold';
+  font-size: 3.5em;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  color: #e74c3c;
+  text-transform: uppercase;
+}
+section.services-blocks .block-design .title-and-text p,
+section.services-blocks .block-marketing .title-and-text p,
+section.services-blocks .block-training .title-and-text p,
+section.services-blocks .block-analysis .title-and-text p,
+section.services-blocks .block-consulting .title-and-text p {
+  font-family: 'cabrito_norm_regularnormRg';
+  font-size: 1.3em;
+  text-align: left;
+}
+section.services-blocks .block-design .title-and-text ul,
+section.services-blocks .block-marketing .title-and-text ul,
+section.services-blocks .block-training .title-and-text ul,
+section.services-blocks .block-analysis .title-and-text ul,
+section.services-blocks .block-consulting .title-and-text ul {
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0;
+}
+section.services-blocks .block-design .title-and-text ul li,
+section.services-blocks .block-marketing .title-and-text ul li,
+section.services-blocks .block-training .title-and-text ul li,
+section.services-blocks .block-analysis .title-and-text ul li,
+section.services-blocks .block-consulting .title-and-text ul li {
+  display: inline-block;
+  width: 100%;
+  font-family: 'baufraregular';
+  text-transform: uppercase;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.8em;
+}
+section.services-blocks .block-marketing .title-and-text ul li {
+  font-family: 'bauframedium';
+}
+section.services-blocks .block-marketing .title-and-text ul li ul li {
+  font-size: 0.8em;
+}
 .block-blog {
   background: white;
   padding-top: 5rem;
@@ -1850,8 +1931,8 @@ section.footer p {
     line-height: 5rem;
     height: 5rem;
     margin-left: 0.4rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   nav.nav-reduced {
     height: 2.5rem;
@@ -1864,10 +1945,10 @@ section.footer p {
     display: block;
   }
 }
-@media screen and (min-width: 51rem) {
+@media screen and (min-width: 56rem) {
   nav ul li a {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 @media screen and (min-width: 40rem) {
@@ -1876,9 +1957,7 @@ section.footer p {
   }
 }
 @media screen and (min-width: 30rem) {
-  nav ul li:first-child {
-    width: 100%;
-  }
+  
 }
 @media screen and (max-width: 48rem) {
   nav {
@@ -1890,7 +1969,7 @@ section.footer p {
     height: auto;
   }
   nav li {
-    width: 50%;
+    width: 33.3%;
     float: left;
     position: relative;
     border-right: 0;
@@ -1947,27 +2026,9 @@ section.footer p {
     width: 100%;
   }
 }
-@media screen and (min-width: 48rem) {
-  .header-text-and-logo .svg-icon {
-    width: 50%;
-    max-height: 10rem;
-    max-width: 10rem;
-  }
-  .header-text-and-logo .home-header-text h1 {
-    font-size: 7em;
-  }
-  .header-text-and-logo .home-header-text p.tagline {
-    font-size: 1.2em;
-    margin-left: 12.2rem;
-    margin-top: -1.4rem;
-  }
-  .office-img p {
-    margin: 0;
-  }
-}
 @media screen and (min-width: 30rem) {
   .plug-and-socket {
-    top: 5.7rem;
+    top: 8.2rem;
   }
 }
 @media screen and (min-width: 40rem) {
@@ -1987,6 +2048,30 @@ section.footer p {
   }
   section.home-blocks {
     font-size: 1em;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .header-text-and-logo .svg-icon {
+    width: 50%;
+    max-height: 10rem;
+    max-width: 10rem;
+  }
+  .header-text-and-logo .home-header-text {
+    margin-top: -1.5rem;
+  }
+  .header-text-and-logo .home-header-text h1 {
+    font-size: 7em;
+  }
+  .header-text-and-logo .home-header-text p.tagline {
+    font-size: 1.2em;
+    margin-left: 12.2rem;
+    margin-top: -1.4rem;
+  }
+  .office-img p {
+    margin: 0;
+  }
+  .plug-and-socket {
+    top: 5.7rem;
   }
 }
 @media screen and (min-width: 74rem) {
@@ -2135,6 +2220,37 @@ section.footer p {
   }
   section.team .lightbox .column.third {
     width: 33.3%;
+  }
+}
+@media screen and (min-width: 40rem) {
+  section.services-blocks {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 68rem) {
+  section.services-blocks {
+    font-size: 1em;
+  }
+  section.services-blocks .block-design .column,
+  section.services-blocks .block-marketing .column,
+  section.services-blocks .block-training .column,
+  section.services-blocks .block-analysis .column,
+  section.services-blocks .block-consulting .column {
+    text-align: left;
+  }
+  section.services-blocks .block-design .title-and-text ul,
+  section.services-blocks .block-marketing .title-and-text ul,
+  section.services-blocks .block-training .title-and-text ul,
+  section.services-blocks .block-analysis .title-and-text ul,
+  section.services-blocks .block-consulting .title-and-text ul {
+    padding-top: 1rem;
+  }
+  section.services-blocks .block-design .title-and-text ul li,
+  section.services-blocks .block-marketing .title-and-text ul li,
+  section.services-blocks .block-training .title-and-text ul li,
+  section.services-blocks .block-analysis .title-and-text ul li,
+  section.services-blocks .block-consulting .title-and-text ul li {
+    width: auto;
   }
 }
 @-webkit-keyframes neon {
