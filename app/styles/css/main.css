@@ -867,13 +867,14 @@ header.about-header {
   width: 100%;
   height: 100vh;
 }
-.header-text {
+.about-header-text {
   width: 100%;
   top: 40vh;
   color: white;
   z-index: -1;
+  font-size: 0.5em;
 }
-.header-text h1 {
+.about-header-text h1 {
   font-size: 7em;
   margin: 0;
   font-family: 'baufrabold';
@@ -1217,6 +1218,7 @@ header.showcase-header .showcase-header-bg {
   top: 40vh;
   color: white;
   z-index: -1;
+  font-size: 0.5em;
 }
 .showcase-header-text h1 {
   font-size: 7em;
@@ -1696,6 +1698,7 @@ header.services-header .services-header-bg {
   top: 40vh;
   color: white;
   z-index: -1;
+  font-size: 0.5em;
 }
 .services-header-text h1 {
   font-size: 7em;
@@ -1716,11 +1719,7 @@ section.services-blocks .block-training,
 section.services-blocks .block-analysis,
 section.services-blocks .block-consulting {
   background: white;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  border-bottom: 1px solid #e74c3c;
+  border-bottom: 2px solid #e74c3c;
 }
 section.services-blocks .block-design .column,
 section.services-blocks .block-marketing .column,
@@ -1729,6 +1728,17 @@ section.services-blocks .block-analysis .column,
 section.services-blocks .block-consulting .column {
   height: 100%;
   text-align: center;
+}
+section.services-blocks .block-design .column.full,
+section.services-blocks .block-marketing .column.full,
+section.services-blocks .block-training .column.full,
+section.services-blocks .block-analysis .column.full,
+section.services-blocks .block-consulting .column.full {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background: rgba(0, 0, 0, 0.7);
 }
 section.services-blocks .block-design .title-and-text,
 section.services-blocks .block-marketing .title-and-text,
@@ -1746,7 +1756,7 @@ section.services-blocks .block-consulting .title-and-text h2 {
   font-size: 3.5em;
   margin-bottom: 1rem;
   margin-top: 0;
-  color: #e74c3c;
+  color: white;
   text-transform: uppercase;
 }
 section.services-blocks .block-design .title-and-text p,
@@ -1757,7 +1767,7 @@ section.services-blocks .block-consulting .title-and-text p {
   font-family: 'cabrito_norm_regularnormRg';
   font-size: 1.3em;
   text-align: left;
-  color: #646464;
+  color: white;
 }
 section.services-blocks .block-design .title-and-text ul,
 section.services-blocks .block-marketing .title-and-text ul,
@@ -1782,6 +1792,65 @@ section.services-blocks .block-consulting .title-and-text ul li {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-size: 1.4em;
+  color: white;
+}
+section.services-blocks .block-marketing {
+  background-image: url(../../images/hook.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section.services-blocks .block-design {
+  background-image: url(../../images/block-design.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section.services-blocks .block-consulting {
+  background-image: url(../../images/block-consulting.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section.services-blocks .block-training {
+  background-image: url(../../images/block-training.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section.services-blocks .block-analysis {
+  background-image: url(../../images/block-analysis.jpg);
+  background-size: cover;
+  background-position: center;
+}
+header.connect-header {
+  z-index: -1;
+  background: url(../../images/multimeter.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+header.connect-header .connect-header-bg {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background: black;
+  opacity: 0.5;
+}
+.connect-header-text {
+  width: 100%;
+  top: 40vh;
+  color: white;
+  z-index: -1;
+  font-size: 0.5em;
+}
+.connect-header-text h1 {
+  font-size: 7em;
+  margin: 0;
+  font-family: 'baufrabold';
+  text-transform: uppercase;
+}
+.connect-header-text p {
+  font-family: 'baufraregular';
+  text-transform: uppercase;
 }
 .block-blog {
   background: white;
@@ -1974,10 +2043,28 @@ section.social-media i {
   padding: 1rem;
   font-size: 1.5em;
   color: #3498db;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+}
+section.social-media i:hover {
+  color: #0266a9;
+}
+section.map {
+  background: white;
+}
+section.map p {
+  font-family: 'cabrito_norm_regularnormRg';
+  color: #646464;
+  font-size: 1.5em;
+  margin: 0;
+  padding-bottom: 2rem;
 }
 section.map .google-map {
   position: relative;
-  padding-bottom: 20%;
+  padding-bottom: 70%;
   height: 0;
   overflow: hidden;
 }
@@ -1988,13 +2075,23 @@ section.map .google-map iframe {
   width: 100% !important;
   height: 100% !important;
 }
-section.footer {
-  height: 20rem;
-  background: white;
+footer {
+  background-image: url(../../images/fuses.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: 'cabrito_norm_regularnormRg';
+  width: 100%;
+  display: none;
 }
-section.footer p {
-  margin: 0;
-  padding: 5rem;
+footer .column.full {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+footer .flow-opposite {
+  text-align: right;
 }
 @media screen and (min-width: 48rem) {
   nav {
@@ -2357,11 +2454,35 @@ section.footer p {
   section.social-media i {
     padding: 2rem;
   }
+  section.map p {
+    font-size: 2em;
+  }
+  section.map .google-map {
+    padding-bottom: 40%;
+  }
+}
+@media screen and (min-width: 48rem) {
+  section.map .google-map {
+    padding-bottom: 30%;
+  }
 }
 @media screen and (min-width: 68rem) {
   section.contact {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+}
+@media screen and (min-width: 30rem) {
+  .connect-header-text {
+    font-size: 0.8em;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .connect-header-text,
+  .about-header-text,
+  .services-header-text,
+  .showcase-header-text {
+    font-size: 1em;
   }
 }
 @-webkit-keyframes neon {

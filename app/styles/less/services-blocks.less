@@ -2,14 +2,18 @@ section.services-blocks {
 	font-size:0.8em;
 	.block-design, .block-marketing, .block-training, .block-analysis, .block-consulting {
 		background:white;
-		padding-top:3rem;
-		padding-bottom:2rem;
-		padding-left:2rem;
-		padding-right:2rem;
-		border-bottom:1px solid @primary-color;
+		
+		border-bottom:2px solid @primary-color;
 		.column {
 			height:100%;
 			text-align:center;
+		}
+		.column.full {
+			padding-top:3rem;
+			padding-bottom:2rem;
+			padding-left:2rem;
+			padding-right:2rem;
+			background:rgba(0, 0, 0, 0.7);
 		}
 		.title-and-text {
 			color:@primary-color;
@@ -18,14 +22,14 @@ section.services-blocks {
 				font-size:3.5em;
 				margin-bottom:1rem;
 				margin-top:0;
-				color:@primary-color;
+				color:white;
 				text-transform:uppercase;
 			}
 			p {
 				font-family:@secondary-font;
 				font-size:1.3em;
 				text-align:left;
-				color:@text-grey;
+				color:white;
 			}
 			ul {
 				text-align:center;
@@ -41,8 +45,34 @@ section.services-blocks {
 					padding-top:0.5rem;
 					padding-bottom:0.5rem;
 					font-size:1.4em;
+					color:white;
 				}
 			}
 		}
+	}
+	.block-marketing {
+		background-image:url(../../images/hook.jpg);
+		background-size:cover;
+		background-position:center;
+	}
+	.block-design {
+		background-image:url(../../images/block-design.jpg);
+		background-size:cover;
+		background-position:center;
+	}
+	.block-consulting {
+		background-image:url(../../images/block-consulting.jpg);
+		background-size:cover;
+		background-position:center;
+	}
+	.block-training {
+		background-image:url(../../images/block-training.jpg);
+		background-size:cover;
+		background-position:center;
+	}
+	.block-analysis {
+		background-image:url(../../images/block-analysis.jpg);
+		background-size:cover;
+		background-position:center;
 	}
 }

@@ -1,0 +1,24 @@
+section.map {
+    background:white;
+    p {
+        font-family:@secondary-font;
+        color:@text-grey;
+        font-size:1.5em;
+        margin:0;
+        padding-bottom:2rem;
+    }
+	.google-map {
+        position: relative;
+        padding-bottom: 70%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-map iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+}

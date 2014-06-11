@@ -193,12 +193,21 @@ stickyElement();
 
 // Footer reveal
 
-/*$(function() {
+$(function() {
 	$('footer').footerReveal({
-		zIndex : 0
+		zIndex : -1
 	});
-});*/
-
+});
+$(function() {
+	$('.block-collaboration').waypoint(function(direction) {
+		if (direction === 'down') {
+			$('footer').show();
+		}
+		else if (direction === 'up') {
+			$('footer').hide();
+		}
+	});
+});
 
 // Team member hover overlay
 $(function() {
