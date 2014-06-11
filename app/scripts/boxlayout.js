@@ -8,24 +8,24 @@
  * Copyright 2013, Codrops
  * http://www.codrops.com
  */
-var Boxlayout = (function() {
+var Boxlayout1 = (function() {
 
-	var $el = $( '#bl-main' ),
+	var $el = $( '#cs-main' ),
 		$sections = $el.children( 'section' ),
 		// works section
-		$sectionWork = $( '#bl-work-section' ),
+		$sectionWork = $( '#cs-work-section' ),
 		// work items
-		$workItems = $( '#bl-work-items > li' ),
+		$workItems = $( '#cs-work-items > li' ),
 		// work panels
-		$workPanelsContainer = $( '#bl-panel-work-items' ),
+		$workPanelsContainer = $( '#cs-panel-work-items' ),
 		$workPanels = $workPanelsContainer.children( 'div' ),
 		totalWorkPanels = $workPanels.length,
 		// navigating the work panels
-		$nextWorkItem = $workPanelsContainer.find( 'nav > span.bl-next-work' ),
+		$nextWorkItem = $workPanelsContainer.find( 'nav > span.cs-next-work' ),
 		// if currently navigating the work items
 		isAnimating = false,
 		// close work panel trigger
-		$closeWorkItem = $workPanelsContainer.find( 'nav > span.bl-icon-close' ),
+		$closeWorkItem = $workPanelsContainer.find( 'nav > span.cs-icon-close' ),
 		transEndEventNames = {
 			'WebkitTransition' : 'webkitTransitionEnd',
 			'MozTransition' : 'transitionend',
@@ -52,23 +52,23 @@ var Boxlayout = (function() {
 			$section.on( 'click', function() {
 
 				if( !$section.data( 'open' ) ) {
-					$section.data( 'open', true ).addClass( 'bl-expand bl-expand-top' );
-					$el.addClass( 'bl-expand-item' );	
+					$section.data( 'open', true ).addClass( 'cs-expand cs-expand-top' );
+					$el.addClass( 'cs-expand-item' );	
 				}
 
-			} ).find( 'span.bl-icon-close' ).on( 'click', function() {
+			} ).find( 'span.cs-icon-close' ).on( 'click', function() {
 				
 				// close the expanded section and scale up the others
-				$section.data( 'open', false ).removeClass( 'bl-expand' ).on( transEndEventName, function( event ) {
+				$section.data( 'open', false ).removeClass( 'cs-expand' ).on( transEndEventName, function( event ) {
 					if( !$( event.target ).is( 'section' ) ) return false;
-					$( this ).off( transEndEventName ).removeClass( 'bl-expand-top' );
+					$( this ).off( transEndEventName ).removeClass( 'cs-expand-top' );
 				} );
 
 				if( !supportTransitions ) {
-					$section.removeClass( 'bl-expand-top' );
+					$section.removeClass( 'cs-expand-top' );
 				}
 
-				$el.removeClass( 'bl-expand-item' );
+				$el.removeClass( 'cs-expand-item' );
 				
 				return false;
 
@@ -80,14 +80,14 @@ var Boxlayout = (function() {
 		$workItems.on( 'click', function( event ) {
 
 			// scale down main section
-			$sectionWork.addClass( 'bl-scale-down' );
+			$sectionWork.addClass( 'cs-scale-down' );
 
 			// show panel for this work item
-			$workPanelsContainer.addClass( 'bl-panel-items-show' );
+			$workPanelsContainer.addClass( 'cs-panel-items-show' );
 
 			var $panel = $workPanelsContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
 			currentWorkPanel = $panel.index();
-			$panel.addClass( 'bl-show-work' );
+			$panel.addClass( 'cs-show-work' );
 
 			return false;
 
@@ -105,18 +105,18 @@ var Boxlayout = (function() {
 			currentWorkPanel = currentWorkPanel < totalWorkPanels - 1 ? currentWorkPanel + 1 : 0;
 			var $nextPanel = $workPanels.eq( currentWorkPanel );
 
-			$currentPanel.removeClass( 'bl-show-work' ).addClass( 'bl-hide-current-work' ).on( transEndEventName, function( event ) {
+			$currentPanel.removeClass( 'cs-show-work' ).addClass( 'cs-hide-current-work' ).on( transEndEventName, function( event ) {
 				if( !$( event.target ).is( 'div' ) ) return false;
-				$( this ).off( transEndEventName ).removeClass( 'bl-hide-current-work' );
+				$( this ).off( transEndEventName ).removeClass( 'cs-hide-current-work' );
 				isAnimating = false;
 			} );
 
 			if( !supportTransitions ) {
-				$currentPanel.removeClass( 'bl-hide-current-work' );
+				$currentPanel.removeClass( 'cs-hide-current-work' );
 				isAnimating = false;
 			}
 			
-			$nextPanel.addClass( 'bl-show-work' );
+			$nextPanel.addClass( 'cs-show-work' );
 
 			return false;
 
@@ -126,9 +126,143 @@ var Boxlayout = (function() {
 		$closeWorkItem.on( 'click', function( event ) {
 
 			// scale up main section
-			$sectionWork.removeClass( 'bl-scale-down' );
-			$workPanelsContainer.removeClass( 'bl-panel-items-show' );
-			$workPanels.eq( currentWorkPanel ).removeClass( 'bl-show-work' );
+			$sectionWork.removeClass( 'cs-scale-down' );
+			$workPanelsContainer.removeClass( 'cs-panel-items-show' );
+			$workPanels.eq( currentWorkPanel ).removeClass( 'cs-show-work' );
+			
+			return false;
+
+		} );
+
+	}
+
+	return { init : init };
+
+})();
+
+//========================================================================================
+
+var Boxlayout2 = (function() {
+
+	var $el = $( '#wk-main' ),
+		$sections = $el.children( 'section' ),
+		// works section
+		$sectionWork = $( '#wk-work-section' ),
+		// work items
+		$workItems = $( '#wk-work-items > li' ),
+		// work panels
+		$workPanelsContainer = $( '#wk-panel-work-items' ),
+		$workPanels = $workPanelsContainer.children( 'div' ),
+		totalWorkPanels = $workPanels.length,
+		// navigating the work panels
+		$nextWorkItem = $workPanelsContainer.find( 'nav > span.wk-next-work' ),
+		// if currently navigating the work items
+		isAnimating = false,
+		// close work panel trigger
+		$closeWorkItem = $workPanelsContainer.find( 'nav > span.wk-icon-close' ),
+		transEndEventNames = {
+			'WebkitTransition' : 'webkitTransitionEnd',
+			'MozTransition' : 'transitionend',
+			'OTransition' : 'oTransitionEnd',
+			'msTransition' : 'MSTransitionEnd',
+			'transition' : 'transitionend'
+		},
+		// transition end event name
+		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+		// support css transitions
+		supportTransitions = Modernizr.csstransitions;
+
+	function init() {
+		initEvents();
+	}
+
+	function initEvents() {
+		
+		$sections.each( function() {
+			
+			var $section = $( this );
+
+			// expand the clicked section and scale down the others
+			$section.on( 'click', function() {
+
+				if( !$section.data( 'open' ) ) {
+					$section.data( 'open', true ).addClass( 'wk-expand wk-expand-top' );
+					$el.addClass( 'wk-expand-item' );	
+				}
+
+			} ).find( 'span.wk-icon-close' ).on( 'click', function() {
+				
+				// close the expanded section and scale up the others
+				$section.data( 'open', false ).removeClass( 'wk-expand' ).on( transEndEventName, function( event ) {
+					if( !$( event.target ).is( 'section' ) ) return false;
+					$( this ).off( transEndEventName ).removeClass( 'wk-expand-top' );
+				} );
+
+				if( !supportTransitions ) {
+					$section.removeClass( 'wk-expand-top' );
+				}
+
+				$el.removeClass( 'wk-expand-item' );
+				
+				return false;
+
+			} );
+
+		} );
+
+		// clicking on a work item: the current section scales down and the respective work panel slides up
+		$workItems.on( 'click', function( event ) {
+
+			// scale down main section
+			$sectionWork.addClass( 'wk-scale-down' );
+
+			// show panel for this work item
+			$workPanelsContainer.addClass( 'wk-panel-items-show' );
+
+			var $panel = $workPanelsContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
+			currentWorkPanel = $panel.index();
+			$panel.addClass( 'wk-show-work' );
+
+			return false;
+
+		} );
+
+		// navigating the work items: current work panel scales down and the next work panel slides up
+		$nextWorkItem.on( 'click', function( event ) {
+			
+			if( isAnimating ) {
+				return false;
+			}
+			isAnimating = true;
+
+			var $currentPanel = $workPanels.eq( currentWorkPanel );
+			currentWorkPanel = currentWorkPanel < totalWorkPanels - 1 ? currentWorkPanel + 1 : 0;
+			var $nextPanel = $workPanels.eq( currentWorkPanel );
+
+			$currentPanel.removeClass( 'wk-show-work' ).addClass( 'wk-hide-current-work' ).on( transEndEventName, function( event ) {
+				if( !$( event.target ).is( 'div' ) ) return false;
+				$( this ).off( transEndEventName ).removeClass( 'wk-hide-current-work' );
+				isAnimating = false;
+			} );
+
+			if( !supportTransitions ) {
+				$currentPanel.removeClass( 'wk-hide-current-work' );
+				isAnimating = false;
+			}
+			
+			$nextPanel.addClass( 'wk-show-work' );
+
+			return false;
+
+		} );
+
+		// clicking the work panels close button: the current work panel slides down and the section scales up again
+		$closeWorkItem.on( 'click', function( event ) {
+
+			// scale up main section
+			$sectionWork.removeClass( 'wk-scale-down' );
+			$workPanelsContainer.removeClass( 'wk-panel-items-show' );
+			$workPanels.eq( currentWorkPanel ).removeClass( 'wk-show-work' );
 			
 			return false;
 

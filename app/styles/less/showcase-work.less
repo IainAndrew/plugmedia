@@ -1,4 +1,4 @@
-.cs-main {
+.wk-main {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -9,12 +9,12 @@
     }
     & > section {
         position: absolute;
-        width: 50%;
-        height: 50%;
+        width: 25%;
+        height: 33.3%;
         -webkit-transition: all 0.5s ease-in-out;
         -moz-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
-        .cs-icon-close {
+        .wk-icon-close {
             position: absolute;
             top: 3rem;
             right: 3rem;
@@ -31,42 +31,83 @@
     }
     & > section:nth-child(2) {
         top: 0;
-        left: 50%;
+        left: 25%;
         background: @primary-color - 10;
     }
     & > section:nth-child(3) {
-        top: 50%;
-        left: 0;
+        top: 0;
+        left: 50%;
         background: @primary-color - 20;
     }
     & > section:nth-child(4) {
-        top: 50%;
+        top: 0;
+        left: 75%;
+        background: @primary-color - 30;
+    }
+    & > section:nth-child(5) {
+        top: 33.3%;
+        left: 0;
+        background: @primary-color - 30;
+    }
+    & > section:nth-child(6) {
+        top: 33.3%;
+        left: 25%;
+        background: @primary-color - 30;
+    }
+    & > section:nth-child(7) {
+        top: 33.3%;
         left: 50%;
         background: @primary-color - 30;
     }
-    & > section.cs-expand {
+    & > section:nth-child(8) {
+        top: 33.3%;
+        left: 75%;
+        background: @primary-color - 30;
+    }
+    & > section:nth-child(9) {
+        top: 66.6%;
+        left: 0;
+        background: @primary-color - 30;
+    }
+    & > section:nth-child(10) {
+        top: 66.6%;
+        left: 25%;
+        background: @primary-color - 30;
+    }
+    & > section:nth-child(11) {
+        top: 66.6%;
+        left: 50%;
+        background: @primary-color - 30;
+    }
+    & > section:nth-child(12) {
+        top: 66.6%;
+        left: 75%;
+        background: @primary-color - 30;
+    }
+    & > section.wk-expand {
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
+        position:fixed;
     }
-    & > section.cs-expand-top {
+    & > section.wk-expand-top {
         z-index: 100;
     }
-    & > section:first-child.cs-expand {
+    & > section:first-child.wk-expand {
         background: #ca5738;
     }
-    & > section:nth-child(2).cs-expand {
+    & > section:nth-child(2).wk-expand {
         background: #F98262;
     }
-    & > section:nth-child(3).cs-expand {
+    & > section:nth-child(3).wk-expand {
         background: #4BBE8E;
     }
-    & > section:nth-child(4).cs-expand {
+    & > section:nth-child(4).wk-expand {
         background: #0D8278;
     }
 }
-.cs-box {
+.wk-box {
     position: relative;
     width: 100%;
     height: 100%;
@@ -110,7 +151,7 @@
         transition: all 0.2s ease-in-out;
     }
 }
-.cs-icon {
+.wk-icon {
     font-family: 'FontAwesome';
     speak: none;
     font-style: normal;
@@ -122,27 +163,27 @@
     -webkit-font-smoothing: antialiased;
     color:white;
 }
-.cs-icon:before {
+.wk-icon:before {
     display: block;
     font-size: 2em;
     margin-bottom: 10px;
 }
-.cs-icon-about:before {
+.wk-icon-about:before {
     content: "\e000";
 }
-.cs-icon-works:before {
+.wk-icon-works:before {
     content: "\e001";
 }
-.cs-icon-blog:before {
+.wk-icon-blog:before {
     content: "\e002";
 }
-.cs-icon-contact:before {
+.wk-icon-contact:before {
     content: "\e003";
 }
-.cs-icon-close:before {
+.wk-icon-close:before {
     content: "\f057";
 }
-.cs-content,div.cs-panel-items &>div &>div {
+.wk-content,div.wk-panel-items &>div &>div {
     opacity: 0;
     pointer-events: none;
     position: absolute;
@@ -154,7 +195,7 @@
     overflow: hidden;
     overflow-y: auto;
 }
-.cs-content {
+.wk-content {
     p {
         margin: 0 auto;
         padding-bottom: 15px;
@@ -200,16 +241,16 @@
         }
     }
 }
-div.cs-panel-items,div.cs-panel-items &>div {
+div.wk-panel-items,div.wk-panel-items &>div {
     width: 100%;
     height: 100%;
-    top: 0;
+    //top: 0;
     left: 0;
-    position: absolute;
+    position: fixed;
 }
-div.cs-panel-items {
+div.wk-panel-items {
     top: 100%;
-    z-index: 9999;
+    z-index: 999;
     & > div {
         background: #3ba5db;
         z-index: 0;
@@ -254,7 +295,7 @@ div.cs-panel-items {
         -webkit-transition: opacity 0.2s ease-in-out 0.5s;
         -moz-transition: opacity 0.2s ease-in-out 0.5s;
         transition: opacity 0.2s ease-in-out 0.5s;
-        span.cs-next-work {
+        span.wk-next-work {
             font-weight: 700;
             letter-spacing: 2px;
             display: block;
@@ -264,7 +305,7 @@ div.cs-panel-items {
             margin-right: 2em;
         }
     }
-    & > div.cs-show-work {
+    & > div.wk-show-work {
         z-index: 1000;
         opacity: 1;
         -webkit-transform: translateY(-100%);
@@ -275,7 +316,7 @@ div.cs-panel-items {
         transition: transform 0.5s ease-in-out;
         -ms-transform: translateY(-100%);
     }
-    & > div.cs-hide-current-work {
+    & > div.wk-hide-current-work {
         opacity: 0;
         -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
         -webkit-transform: translateY(-100%) scale(0.5);
@@ -287,7 +328,7 @@ div.cs-panel-items {
         z-index: 0;
     }
 }
-div.cs-panel-items.cs-panel-items-show {
+div.wk-panel-items.wk-panel-items-show {
     nav {
         opacity: 1;
         top: -70px;
@@ -297,15 +338,15 @@ div.cs-panel-items.cs-panel-items-show {
         }
     }
 }
-.cs-main.cs-expand-item &>section:not(.cs-expand),.cs-main.cs-expand-item &>section.cs-scale-down {
+.wk-main.wk-expand-item &>section:not(.wk-expand),.wk-main.wk-expand-item &>section.wk-scale-down {
     -webkit-transform: scale(0.5);
     -moz-transform: scale(0.5);
     -ms-transform: scale(0.5);
     transform: scale(0.5);
     opacity: 0;
 }
-section.cs-expand {
-    .cs-box {
+section.wk-expand {
+    .wk-box {
         opacity: 0;
         -webkit-transition: opacity 0s linear;
         -moz-transition: opacity 0s linear;
@@ -313,8 +354,8 @@ section.cs-expand {
     }
 }
 .no-touch {
-    section:not(.cs-expand) {
-        .cs-box:hover {
+    section:not(.wk-expand) {
+        .wk-box:hover {
             h3 {
                 -webkit-transform: translateY(-15px);
                 -moz-transform: translateY(-15px);
@@ -325,12 +366,12 @@ section.cs-expand {
         }
     }
 }
-.cs-content,.cs-icon-close {
+.wk-content,.wk-icon-close {
     -webkit-transition: opacity 0.1s linear 0s;
     -moz-transition: opacity 0.1s linear 0s;
     transition: opacity 0.1s linear 0s;
 }
-section.cs-expand .cs-content,section.cs-expand .cs-icon-close {
+section.wk-expand .wk-content,section.wk-expand .wk-icon-close {
     pointer-events: auto;
     opacity: 1;
     -webkit-transition: opacity 0.3s linear 0.5s;
@@ -338,16 +379,16 @@ section.cs-expand .cs-content,section.cs-expand .cs-icon-close {
     transition: opacity 0.3s linear 0.5s;
 }
 @media screen and (max-width: 46.5em) {
-	.cs-content,
-	.cs-box {
+	.wk-content,
+	.wk-box {
 		font-size: 75%;
 	}
 
-	.cs-expand .cs-box {
+	.wk-expand .wk-box {
 		height: 130px;
 	}
 
-	.cs-content > ul li {
+	.wk-content > ul li {
 		width: 40%;
 	}
 }
