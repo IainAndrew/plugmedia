@@ -1042,6 +1042,13 @@ section.our-vision .content .column.full.text-center p {
   color: black;
   font-size: 1.5em;
 }
+section.our-vision .content h4 {
+  font-family: 'baufraregular';
+  color: black;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.2em;
+}
 section.team {
   background: white;
 }
@@ -1083,6 +1090,48 @@ section.team .team-member {
   padding-left: 2rem;
   padding-right: 2rem;
   margin-top: 2rem;
+}
+section.team .team-member .team-member-image {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+section.team .team-member .sam-lyons {
+  background-image: url(../../images/sam-lyons.jpg);
+}
+section.team .team-member .marie-therese {
+  background-image: url(../../images/sam-lyons.jpg);
+}
+section.team .team-member .artur-leitis {
+  background-image: url(../../images/sam-lyons.jpg);
+}
+section.team .team-member .philip-corbally {
+  background-image: url(../../images/sam-lyons.jpg);
+}
+section.team .team-member .andre-lacerda {
+  background-image: url(../../images/andre-lacerda.jpg);
+}
+section.team .team-member .robert-kamenicky {
+  background-image: url(../../images/sam-lyons.jpg);
+}
+section.team .team-member .aidan-mccarthy {
+  background-image: url(../../images/aidan-mccarthy.jpg);
+}
+section.team .team-member .carol-hevia {
+  background-image: url(../../images/carol-hevia.jpg);
+}
+section.team .team-member .conor-fleming {
+  background-image: url(../../images/conor-fleming.jpg);
+}
+section.team .team-member .emma-carroll {
+  background-image: url(../../images/emma-carroll.jpg);
+}
+section.team .team-member .juliana-scodeler {
+  background-image: url(../../images/juliana-scodeler.jpg);
+}
+section.team .team-member .jaroslaw-narkiewicz {
+  background-image: url(../../images/jaroslaw-narkiewicz.jpg);
 }
 section.team .team-member-overlay {
   background: #e74c3c;
@@ -1778,7 +1827,9 @@ section.services-blocks .block-consulting .title-and-text ul li {
 }
 section.contact {
   background: white;
-  padding: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #e74c3c;
 }
 .contact-form {
   position: relative;
@@ -1904,6 +1955,38 @@ section.contact {
     width: 100%;
     padding: 10px;
   }
+}
+section.social-media {
+  background: white;
+  font-family: 'cabrito_norm_regularnormRg';
+  color: #646464;
+  font-size: 1.5em;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+section.social-media a {
+  text-decoration: none;
+  color: inherit;
+}
+section.social-media i {
+  padding: 1rem;
+  font-size: 1.5em;
+  color: #3498db;
+}
+section.map .google-map {
+  position: relative;
+  padding-bottom: 20%;
+  height: 0;
+  overflow: hidden;
+}
+section.map .google-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 section.footer {
   height: 20rem;
@@ -2259,6 +2342,26 @@ section.footer p {
   section.services-blocks .block-analysis .column.third,
   section.services-blocks .block-consulting .column.third {
     width: 33.3%;
+  }
+}
+@media screen and (min-width: 31rem) {
+  section.contact {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (min-width: 40rem) {
+  section.social-media {
+    font-size: 2em;
+  }
+  section.social-media i {
+    padding: 2rem;
+  }
+}
+@media screen and (min-width: 68rem) {
+  section.contact {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 @-webkit-keyframes neon {
