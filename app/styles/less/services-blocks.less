@@ -1,7 +1,25 @@
 section.services-blocks {
 	font-size:0.8em;
-	.block-design, .block-marketing, .block-training, .block-analysis, .block-consulting {
+	.block-services-tagline {
 		background:white;
+		width:100%;
+		.column {
+			height:100%;
+			padding-top:5rem;
+			padding-bottom:5rem;
+			padding-left:1rem;
+			padding-right:1rem;
+		}
+		p {
+			font-family:@primary-font-reg;
+			font-size:2em;
+			text-transform:uppercase;
+			color:@primary-color;
+			margin:0;
+		}
+	}
+	.block-design, .block-marketing, .block-training, .block-analysis, .block-consulting {
+		//background:white;
 		
 		border-bottom:2px solid @primary-color;
 		.column {
@@ -17,6 +35,9 @@ section.services-blocks {
 		}
 		.title-and-text {
 			color:@primary-color;
+			span {
+				color:@primary-color;
+			}
 			h2 {
 				font-family:@primary-font-bold;
 				font-size:3.5em;

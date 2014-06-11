@@ -1713,12 +1713,29 @@ header.services-header .services-header-bg {
 section.services-blocks {
   font-size: 0.8em;
 }
+section.services-blocks .block-services-tagline {
+  background: white;
+  width: 100%;
+}
+section.services-blocks .block-services-tagline .column {
+  height: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+section.services-blocks .block-services-tagline p {
+  font-family: 'baufraregular';
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #e74c3c;
+  margin: 0;
+}
 section.services-blocks .block-design,
 section.services-blocks .block-marketing,
 section.services-blocks .block-training,
 section.services-blocks .block-analysis,
 section.services-blocks .block-consulting {
-  background: white;
   border-bottom: 2px solid #e74c3c;
 }
 section.services-blocks .block-design .column,
@@ -1745,6 +1762,13 @@ section.services-blocks .block-marketing .title-and-text,
 section.services-blocks .block-training .title-and-text,
 section.services-blocks .block-analysis .title-and-text,
 section.services-blocks .block-consulting .title-and-text {
+  color: #e74c3c;
+}
+section.services-blocks .block-design .title-and-text span,
+section.services-blocks .block-marketing .title-and-text span,
+section.services-blocks .block-training .title-and-text span,
+section.services-blocks .block-analysis .title-and-text span,
+section.services-blocks .block-consulting .title-and-text span {
   color: #e74c3c;
 }
 section.services-blocks .block-design .title-and-text h2,

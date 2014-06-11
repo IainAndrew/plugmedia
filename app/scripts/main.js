@@ -199,7 +199,7 @@ $(function() {
 	});
 });
 $(function() {
-	$('.block-collaboration').waypoint(function(direction) {
+	$('.scroll-down').waypoint(function(direction) {
 		if (direction === 'down') {
 			$('footer').show();
 		}
