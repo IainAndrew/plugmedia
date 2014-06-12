@@ -1352,7 +1352,7 @@ header.showcase-header .showcase-header-bg {
 .cs-main > section .cs-icon-close {
   position: absolute;
   top: 3rem;
-  right: 3rem;
+  right: 1rem;
   cursor: pointer;
   z-index: 100;
   opacity: 0;
@@ -1383,6 +1383,7 @@ header.showcase-header .showcase-header-bg {
   height: 100%;
   top: 0;
   left: 0;
+  position: fixed;
 }
 .cs-main > section.cs-expand-top {
   z-index: 100;
@@ -1536,13 +1537,12 @@ div.cs-panel-items,
 div.cs-panel-items  > div {
   width: 100%;
   height: 100%;
-  top: 0;
   left: 0;
-  position: absolute;
+  position: fixed;
 }
 div.cs-panel-items {
   top: 100%;
-  z-index: 9999;
+  z-index: 999;
 }
 div.cs-panel-items > div {
   background: #3ba5db;
@@ -1698,7 +1698,7 @@ section.cs-expand .cs-icon-close {
 .wk-main > section .wk-icon-close {
   position: absolute;
   top: 3rem;
-  right: 3rem;
+  right: 1rem;
   cursor: pointer;
   z-index: 100;
   opacity: 0;
@@ -2721,6 +2721,9 @@ footer .flow-opposite {
     width: 50%;
     height: 10rem;
   }
+  .wk-main > section .wk-icon-close {
+    top: 6rem;
+  }
   .wk-main > section:nth-child(2) {
     left: 50%;
   }
@@ -2767,6 +2770,18 @@ footer .flow-opposite {
   .wk-main > section.wk-expand {
     left: 0;
     top: 0;
+  }
+  .wk-main .wk-content {
+    padding-top: 3rem;
+  }
+}
+@media screen and (max-width: 30rem) {
+  .wk-main > section .wk-icon-close {
+    top: 3rem;
+    right: 3rem;
+  }
+  .wk-main .wk-content {
+    padding-top: 0;
   }
 }
 @media screen and (max-width: 25rem) {
@@ -2822,6 +2837,31 @@ footer .flow-opposite {
     left: 0;
   }
   .wk-main > section.wk-expand {
+    left: 0;
+    top: 0;
+  }
+}
+@media screen and (max-width: 25rem) {
+  .cs-main {
+    height: 40rem;
+  }
+  .cs-main > section {
+    width: 100%;
+    height: 10rem;
+  }
+  .cs-main > section:nth-child(2) {
+    top: 10rem;
+    left: 0;
+  }
+  .cs-main > section:nth-child(3) {
+    top: 20rem;
+    left: 0;
+  }
+  .cs-main > section:nth-child(4) {
+    top: 30rem;
+    left: 0;
+  }
+  .cs-main > section.cs-expand {
     left: 0;
     top: 0;
   }

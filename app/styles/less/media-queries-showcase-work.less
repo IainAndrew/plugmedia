@@ -4,6 +4,9 @@
 		& > section {
 			width:50%;
 			height:10rem;
+			.wk-icon-close {
+				top:6rem;
+			}
 			&:nth-child(2) {
 				left:50%;
 			}
@@ -52,8 +55,26 @@
 			left:0;
 			top:0;
 		}
+		.wk-content {
+			padding-top:3rem;
+		}
 	}
 }
+
+@media screen and (max-width: 30rem) {
+	.wk-main {
+		& > section {
+			.wk-icon-close {
+				top:3rem;
+				right:3rem;
+			}
+		}
+		.wk-content {
+			padding-top:0;
+		}
+	}
+}
+
 @media screen and (max-width: 25rem) {
 	.wk-main {
 		height:120rem;
