@@ -237,3 +237,20 @@ $(function() {
 		return false;
 	});
 });
+
+
+$('#slides-1')
+.add($('#slides-2'))
+.add($('#slides-3'))
+.add($('#slides-4'))
+.add($('#slides-5'))
+.add($('#slides-6'))
+.add($('#slides-7'))
+.add($('#slides-8'))
+.add($('#slides-9'))
+.add($('#slides-10'))
+.add($('#slides-11'))
+.add($('#slides-12'))
+.superslides({
+	play: 4000
+});
