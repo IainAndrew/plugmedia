@@ -189,6 +189,7 @@ var Boxlayout2 = (function() {
 					$section.data( 'open', true ).addClass( 'wk-expand wk-expand-top' );
 					$el.addClass( 'wk-expand-item' );	
 					$section.find('.slides').show();
+					$section.find('.wk-content').show(1000);
 				}
 
 			} ).find( 'span.wk-icon-close' ).on( 'click', function() {
@@ -205,6 +206,7 @@ var Boxlayout2 = (function() {
 
 				$el.removeClass( 'wk-expand-item' );
 				$section.find('.slides').hide();
+				$section.find('.wk-content').hide();
 								
 				return false;
 

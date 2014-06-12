@@ -1,11 +1,13 @@
 @media screen and (max-width: 69rem) {
 	.wk-box {
-		p {
-			font-size:0.9em;
-		}
+		font-size:0.8em;
 	}
 }
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 60rem) {
+	div.wk-panel-items > div > div {
+		width:90%;
+		padding-top:1rem;
+	}
 	.wk-main {
 		height:60rem;
 		& > section {
@@ -13,6 +15,7 @@
 			height:10rem;
 			.wk-icon-close {
 				top:6rem;
+				right:1rem;
 			}
 			&:nth-child(2) {
 				left:50%;
@@ -68,21 +71,40 @@
 	}
 }
 
+@media screen and (max-width: 48rem) {
+	div.wk-panel-items#wk-panel-work-items {
+	    p {
+	        font-size:1em;
+	    }
+	}
+}
+
 @media screen and (max-width: 30rem) {
 	.wk-main {
 		& > section {
 			.wk-icon-close {
 				top:3rem;
-				right:3rem;
+				right:1rem;
 			}
 		}
 		.wk-content {
 			padding-top:0;
 		}
 	}
+	nav > div.wk-show-work {
+        z-index: 1000;
+        opacity: 1;
+        -webkit-transform: translateY(-100%);
+        -webkit-transition: -webkit-transform 0.5s ease-in-out;
+        -moz-transform: translateY(-100%);
+        -moz-transition: -moz-transform 0.5s ease-in-out;
+        transform: translateY(-100%);
+        transition: transform 0.5s ease-in-out;
+        -ms-transform: translateY(-100%);
+    }
 }
 
-@media screen and (max-width: 25rem) {
+@media screen and (max-width: 30rem) {
 	.wk-main {
 		height:120rem;
 		& > section {

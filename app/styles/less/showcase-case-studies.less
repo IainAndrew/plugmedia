@@ -156,16 +156,20 @@
     overflow-y: auto;
 }
 .cs-content {
+    color:white;
     p {
         margin: 0 auto;
         padding-bottom: 15px;
-        font-size: 1.7em;
-        line-height: 1.8;
+        font-family:@secondary-font;
     }
-    h3 {
-        font-size: 3em;
-        font-weight: 300;
-        margin: 0 0 20px 0;
+    h4 {
+        //font-size: 3em;
+        //font-weight: 300;
+        //margin: 0 0 20px 0;
+        font-family:@primary-font-bold;
+        text-transform:uppercase;
+        font-size:2em;
+        margin-bottom:1rem;
     }
     article {
         padding: 20px 40px 20px 0px;
@@ -188,14 +192,67 @@
         li {
             display: inline-block;
             width: 20%;
+            height:auto;
             margin: 1%;
             a {
                 display: block;
                 padding: 0;
-                border: 8px solid rgba(0,0,0,0.1);
+                text-decoration:none;
+                color:inherit;
+                //border: 8px solid rgba(0,0,0,0.1);
                 img {
                     display: block;
                     max-width: 100%;
+                }
+                button {
+                    display:block;
+                    width:100%;
+                    height:100%;
+                    font-size:1em;
+                    padding:2rem;
+                    color:black;
+                    height:200px;
+                }
+                .column {
+                    max-height:200px;
+                    min-height:200px;
+                    width:200px;
+                }
+            }
+        }
+    }
+}
+section.courses {
+    .cs-content {
+        ul {
+            li {
+                &:first-child {
+                    .column {
+                        background:url(../../images/sam-lyons.jpg);
+                        background-size:cover;
+                        background-position:center;
+                    }
+                }
+                &:nth-child(2) {
+                    .column {
+                        background:url(../../images/carol-hevia.jpg);
+                        background-size:cover;
+                        background-position:center;
+                    }
+                }
+                &:nth-child(3) {
+                    .column {
+                        background:url(../../images/andre-lacerda.jpg);
+                        background-size:cover;
+                        background-position:center;
+                    }
+                }
+                &:nth-child(4) {
+                    .column {
+                        background:url(../../images/fuses.jpg);
+                        background-size:cover;
+                        background-position:center;
+                    }
                 }
             }
         }
@@ -212,7 +269,7 @@ div.cs-panel-items {
     top: 100%;
     z-index: 999;
     & > div {
-        background: #3ba5db;
+        background:white;
         z-index: 0;
         opacity: 0;
         -webkit-transform: translateY(0);
@@ -223,19 +280,28 @@ div.cs-panel-items {
         transition: transform 0.5s ease-in-out, opacity 0s linear 0.5s;
         -ms-transform: translateY(0);
         & > div {
-            width: 60%;
+            width: 100%;
             margin: 0 auto;
             opacity: 1;
             bottom: 90px;
             top: 90px;
             pointer-events: auto;
+            .column.half:first-child {
+                background:url(../../images/sam-lyons.jpg);
+                background-size:cover;
+                background-position:center;
+                //width:100%;
+                height:100vh;
+            }
             h3 {
                 font-size: 2.4em;
                 font-weight: 300;
                 margin: 0 0 20px 0;
             }
             p {
-                font-size: 1.3em;
+                font-size: 1em;
+                font-family:@secondary-font;
+                color:@text-grey;
             }
             img {
                 float: left;
@@ -352,36 +418,3 @@ section.cs-expand .cs-content,section.cs-expand .cs-icon-close {
 		width: 40%;
 	}
 }
-
-
-/*@-webkit-keyframes test{
-0% {
-    background-image: url('../../images/fuses.jpg');
-}
-33% {
-    background-image: url('../../images/values.jpg');
-}
-100% {              //Complete the loop.
-    background-image: url('../../images/hook.jpg');
-    }
-}*/
-/*
-.featured{ 
-position:absolute;
-top:0;
-left:0;
-width: 100vw;
-height: 100vh;
-//margin: auto 0px;
-background-size:cover;
-background-position:center;
-/*margin-top: -446px;*/
-//-webkit-transition: margin-top 1s;
-//transition-delay: margin-top 0.2s;*/
-/*
--webkit-animation-name: test;
--webkit-animation-duration: 15s;
--webkit-animation-direction: alternate;
--webkit-animation-timing-function: linear;
--webkit-animation-iteration-count: infinite;
-}*/
