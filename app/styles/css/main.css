@@ -1359,7 +1359,7 @@ header.showcase-header .showcase-header-bg {
 .cs-main > section .cs-icon-close {
   position: absolute;
   top: 3rem;
-  right: 1rem;
+  right: 0.2rem;
   cursor: pointer;
   z-index: 100;
   opacity: 0;
@@ -1368,22 +1368,50 @@ header.showcase-header .showcase-header-bg {
 .cs-main > section:first-child {
   top: 0;
   left: 0;
-  background: #e74c3c;
+  background: white;
+  border: 1px solid #e74c3c;
+}
+.cs-main > section:first-child .cs-box {
+  background: url(../../images/courses-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .cs-main > section:nth-child(2) {
   top: 0;
   left: 50%;
-  background: #dd4232;
+  background: white;
+  border: 1px solid #e74c3c;
+}
+.cs-main > section:nth-child(2) .cs-box {
+  background: url(../../images/openfm-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .cs-main > section:nth-child(3) {
   top: 50%;
   left: 0;
-  background: #d33828;
+  background: white;
+  border: 1px solid #e74c3c;
+}
+.cs-main > section:nth-child(3) .cs-box {
+  background: url(../../images/kcr-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .cs-main > section:nth-child(4) {
   top: 50%;
   left: 50%;
-  background: #c92e1e;
+  background: white;
+  border: 1px solid #e74c3c;
+}
+.cs-main > section:nth-child(4) .cs-box {
+  background: url(../../images/lucca-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .cs-main > section.cs-expand {
   width: 100%;
@@ -1396,16 +1424,16 @@ header.showcase-header .showcase-header-bg {
   z-index: 100;
 }
 .cs-main > section:first-child.cs-expand {
-  background: #ca5738;
+  background: #C0231E;
 }
 .cs-main > section:nth-child(2).cs-expand {
-  background: #F98262;
+  background: #8e44ad;
 }
 .cs-main > section:nth-child(3).cs-expand {
-  background: #4BBE8E;
+  background: #ca5738;
 }
 .cs-main > section:nth-child(4).cs-expand {
-  background: #0D8278;
+  background: #2980b9;
 }
 .cs-box {
   position: relative;
@@ -1434,9 +1462,9 @@ header.showcase-header .showcase-header-bg {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-transition: opacity 0.2s linear 0.5s;
-  -moz-transition: opacity 0.2s linear 0.5s;
-  transition: opacity 0.2s linear 0.5s;
+  -webkit-transition: opacity 0.2s linear 0.2s;
+  -moz-transition: opacity 0.2s linear 0.2s;
+  transition: opacity 0.2s linear 0.2s;
 }
 .cs-box h3 {
   text-align: center;
@@ -1466,7 +1494,7 @@ header.showcase-header .showcase-header-bg {
 .cs-icon:before {
   display: block;
   font-size: 2em;
-  margin-bottom: 10px;
+  margin-top: -0.5rem;
 }
 .cs-icon-about:before {
   content: "\e000";
@@ -1524,6 +1552,20 @@ div.cs-panel-items  > div  > div {
 .cs-content article a {
   color: rgba(0, 0, 0, 0.2);
 }
+.cs-content a {
+  text-decoration: none;
+  color: inherit;
+}
+.cs-content span .cs-thumb {
+  max-height: 200px;
+  min-height: 200px;
+}
+.cs-content span h2 {
+  font-family: 'baufraregular';
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+}
 .cs-content > ul {
   list-style: none;
   padding: 0;
@@ -1554,28 +1596,88 @@ div.cs-panel-items  > div  > div {
   color: black;
   height: 200px;
 }
-.cs-content > ul li a .column {
-  max-height: 200px;
-  min-height: 200px;
-  width: 200px;
-}
-section.courses .cs-content ul li:first-child .column {
-  background: url(../../images/sam-lyons.jpg);
+section.courses .cs-content .clearfix .column .column.fourth:first-child .cs-thumb {
+  background: url(../../images/courses-branding.jpg);
   background-size: cover;
   background-position: center;
 }
-section.courses .cs-content ul li:nth-child(2) .column {
-  background: url(../../images/carol-hevia.jpg);
+section.courses .cs-content .clearfix .column .column.fourth:nth-child(2) .cs-thumb {
+  background: url(../../images/courses-webdev.jpg);
   background-size: cover;
   background-position: center;
 }
-section.courses .cs-content ul li:nth-child(3) .column {
-  background: url(../../images/andre-lacerda.jpg);
+section.courses .cs-content .clearfix .column .column.fourth:nth-child(3) .cs-thumb {
+  background: url(../../images/courses-pr.jpg);
   background-size: cover;
   background-position: center;
 }
-section.courses .cs-content ul li:nth-child(4) .column {
-  background: url(../../images/fuses.jpg);
+section.courses .cs-content .clearfix .column .column.fourth:nth-child(4) .cs-thumb {
+  background: url(../../images/courses-marketing.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section.kcrarea .cs-content .clearfix .column .column.fourth:first-child .cs-thumb {
+  background: url(../../images/kcr-design.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section.kcrarea .cs-content .clearfix .column .column.fourth:nth-child(2) .cs-thumb {
+  background: url(../../images/kcr-webdev.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section.kcrarea .cs-content .clearfix .column .column.fourth:nth-child(3) .cs-thumb {
+  background: url(../../images/kcr-social.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section.openfm .cs-content .clearfix .column .column.fourth:first-child .cs-thumb {
+  background: url(../../images/openfm-branding.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section.openfm .cs-content .clearfix .column .column.fourth:nth-child(2) .cs-thumb {
+  background: url(../../images/openfm-design.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section.openfm .cs-content .clearfix .column .column.fourth:nth-child(3) .cs-thumb {
+  background: url(../../images/openfm-sponsor.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section.openfm .cs-content .clearfix .column .column.fourth:nth-child(4) .cs-thumb {
+  background: url(../../images/openfm-webdev.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section.kcrarea .cs-content ul li:first-child .cs-thumb {
+  background: url(../../images/kcr-design.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section.kcrarea .cs-content ul li:nth-child(2) .cs-thumb {
+  background: url(../../images/kcr-webdev.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section.kcrarea .cs-content ul li:nth-child(3) .cs-thumb {
+  background: url(../../images/kcr-social.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section.lucca .cs-content .clearfix .column .column.fourth:first-child .cs-thumb {
+  background: url(../../images/lucca-consulting.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section.lucca .cs-content .clearfix .column .column.fourth:nth-child(2) .cs-thumb {
+  background: url(../../images/lucca-cloud.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section.lucca .cs-content .clearfix .column .column.fourth:nth-child(3) .cs-thumb {
+  background: url(../../images/lucca-screencasts.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -1603,54 +1705,133 @@ div.cs-panel-items > div {
   -ms-transform: translateY(0);
 }
 div.cs-panel-items > div > div {
-  width: 100%;
-  margin: 0 auto;
-  opacity: 1;
-  bottom: 90px;
-  top: 90px;
-  pointer-events: auto;
+  margin-left: -2rem;
 }
-div.cs-panel-items > div > div .column.half:first-child {
-  background: url(../../images/sam-lyons.jpg);
+div.cs-panel-items > div:first-child > div .clearfix .column.half:nth-child(2) {
+  background: url(../../images/courses-branding-half.jpg);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 30rem;
 }
-div.cs-panel-items > div > div h3 {
-  font-size: 2.4em;
+div.cs-panel-items > div:nth-child(2) > div .clearfix .column.half:nth-child(2) {
+  background: url(../../images/courses-webdev-half.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+div.cs-panel-items > div:nth-child(3) > div .clearfix .column.half:nth-child(2) {
+  background: url(../../images/courses-pr-half.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+div.cs-panel-items > div:nth-child(4) > div .clearfix .column.half:nth-child(2) {
+  background: url(../../images/courses-marketing-half.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+div.cs-panel-items > div:nth-child(5) > div .clearfix .column.half:nth-child(2) {
+  background: url(../../images/openfm-branding-half.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+div.cs-panel-items > div:nth-child(6) > div .clearfix .column.half:nth-child(2) {
+  background: url(../../images/openfm-design-half.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+div.cs-panel-items > div:nth-child(7) > div .clearfix .column.half:nth-child(2) {
+  background: url(../../images/openfm-sponsor-half.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+div.cs-panel-items > div:nth-child(8) > div .clearfix .column.half:nth-child(2) {
+  background: url(../../images/openfm-webdev-half.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+div.cs-panel-items > div:nth-child(9) > div .clearfix .column.half:nth-child(2) {
+  background: url(../../images/kcr-design-half.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+div.cs-panel-items > div:nth-child(10) > div .clearfix .column.half:nth-child(2) {
+  background: url(../../images/kcr-webdev-half.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+div.cs-panel-items > div:nth-child(11) > div .clearfix .column.half:nth-child(2) {
+  background: url(../../images/kcr-social-half.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+div.cs-panel-items > div:nth-child(12) > div .clearfix .column.half:nth-child(2) {
+  background: url(../../images/lucca-consulting-half.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+div.cs-panel-items > div:nth-child(13) > div .clearfix .column.half:nth-child(2) {
+  background: url(../../images/lucca-cloud-half.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+div.cs-panel-items > div:nth-child(14) > div .clearfix .column.half:nth-child(2) {
+  background: url(../../images/lucca-screencasts-half.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+div.cs-panel-items > div > div {
+  width: 100%;
+  padding: 3rem;
+  opacity: 1;
+  pointer-events: auto;
+}
+div.cs-panel-items > div > div h4 {
+  font-size: 2.5em;
   font-weight: 300;
   margin: 0 0 20px 0;
+  font-family: 'baufraregular';
+  text-transform: uppercase;
 }
 div.cs-panel-items > div > div p {
   font-size: 1em;
   font-family: 'cabrito_norm_regularnormRg';
   color: #646464;
 }
-div.cs-panel-items > div > div img {
-  float: left;
-  margin: 0 20px 20px 0;
-  max-width: 100%;
-}
 div.cs-panel-items nav {
   position: absolute;
   z-index: 9999;
-  width: 216px;
+  width: 10rem;
+  height: 3rem;
   left: 50%;
-  top: 0px;
-  margin-left: -108px;
+  margin-left: -5rem;
+  top: -3rem;
+  background: white;
+  border: 2px solid #e74c3c;
   opacity: 0;
   -webkit-transition: opacity 0.2s ease-in-out 0.5s;
   -moz-transition: opacity 0.2s ease-in-out 0.5s;
   transition: opacity 0.2s ease-in-out 0.5s;
+  padding: 1rem;
 }
 div.cs-panel-items nav span.cs-next-work {
-  font-weight: 700;
-  letter-spacing: 2px;
   display: block;
   text-transform: uppercase;
-  line-height: 2em;
   cursor: pointer;
-  margin-right: 2em;
+  font-family: 'baufraregular';
+  color: #e74c3c;
+  float: left;
 }
 div.cs-panel-items > div.cs-show-work {
   z-index: 1000;
@@ -1676,11 +1857,14 @@ div.cs-panel-items > div.cs-hide-current-work {
 }
 div.cs-panel-items.cs-panel-items-show nav {
   opacity: 1;
-  top: -70px;
+  top: -3rem;
 }
-div.cs-panel-items.cs-panel-items-show nav span {
-  float: left;
-  margin: 5px;
+div.cs-panel-items.cs-panel-items-show nav span:first-child {
+  width: 50%;
+}
+div.cs-panel-items.cs-panel-items-show nav span:nth-child(2) {
+  width: 50%;
+  color: #e74c3c;
 }
 .cs-main.cs-expand-item  > section:not(.cs-expand),
 .cs-main.cs-expand-item  > section.cs-scale-down {
@@ -1697,13 +1881,14 @@ section.cs-expand .cs-box {
   transition: opacity 0s linear;
 }
 .no-touch section:not(.cs-expand) .cs-box:hover {
-  background: #ec5141;
-}
-.no-touch section:not(.cs-expand) .cs-box:hover h3 {
-  -webkit-transform: translateY(-15px);
-  -moz-transform: translateY(-15px);
-  -ms-transform: translateY(-15px);
-  transform: translateY(-15px);
+  /*h3 {
+                -webkit-transform: translateY(-15px);
+                -moz-transform: translateY(-15px);
+                -ms-transform: translateY(-15px);
+                transform: translateY(-15px);
+            }*/
+
+  opacity: 0.5;
 }
 .cs-content,
 .cs-icon-close {

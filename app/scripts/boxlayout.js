@@ -15,7 +15,7 @@ var Boxlayout1 = (function() {
 		// works section
 		$sectionWork = $( '#cs-work-section' ),
 		// work items
-		$workItems = $( '#cs-work-items > li' ),
+		$workItems = $( '#cs-work-items > span' ),
 		// work panels
 		$workPanelsContainer = $( '#cs-panel-work-items' ),
 		$workPanels = $workPanelsContainer.children( 'div' ),

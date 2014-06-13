@@ -17,7 +17,7 @@
         .cs-icon-close {
             position: absolute;
             top: 3rem;
-            right: 1rem;
+            right: 0.2rem;
             cursor: pointer;
             z-index: 100;
             opacity: 0;
@@ -27,22 +27,50 @@
     & > section:first-child {
         top: 0;
         left: 0;
-        background: @primary-color;
+        background:white;
+        border:1px solid @primary-color;
+        .cs-box {
+             background: url(../../images/courses-logo.png);
+            background-size:contain;
+            background-position:center;
+            background-repeat:no-repeat;
+        }
     }
     & > section:nth-child(2) {
         top: 0;
         left: 50%;
-        background: @primary-color - 10;
+        background: white;
+        border:1px solid @primary-color;
+        .cs-box {
+             background: url(../../images/openfm-logo.png);
+            background-size:contain;
+            background-position:center;
+            background-repeat:no-repeat;
+        }
     }
     & > section:nth-child(3) {
         top: 50%;
         left: 0;
-        background: @primary-color - 20;
+        background: white;
+        border:1px solid @primary-color;
+        .cs-box {
+             background: url(../../images/kcr-logo.png);
+            background-size:contain;
+            background-position:center;
+            background-repeat:no-repeat;
+        }
     }
     & > section:nth-child(4) {
         top: 50%;
         left: 50%;
-        background: @primary-color - 30;
+        background: white;
+        border:1px solid @primary-color;
+        .cs-box {
+             background: url(../../images/lucca-logo.png);
+            background-size:contain;
+            background-position:center;
+            background-repeat:no-repeat;
+        }
     }
     & > section.cs-expand {
         width: 100%;
@@ -55,16 +83,16 @@
         z-index: 100;
     }
     & > section:first-child.cs-expand {
-        background: #ca5738;
+        background: #C0231E;
     }
     & > section:nth-child(2).cs-expand {
-        background: #F98262;
+        background: #8e44ad;
     }
     & > section:nth-child(3).cs-expand {
-        background: #4BBE8E;
+        background: #ca5738;
     }
     & > section:nth-child(4).cs-expand {
-        background: #0D8278;
+        background: #2980b9;
     }
 }
 .cs-box {
@@ -94,9 +122,9 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-transition: opacity 0.2s linear 0.5s;
-    -moz-transition: opacity 0.2s linear 0.5s;
-    transition: opacity 0.2s linear 0.5s;
+    -webkit-transition: opacity 0.2s linear 0.2s;
+    -moz-transition: opacity 0.2s linear 0.2s;
+    transition: opacity 0.2s linear 0.2s;
     h3 {
         text-align: center;
         margin: 0;
@@ -126,7 +154,8 @@
 .cs-icon:before {
     display: block;
     font-size: 2em;
-    margin-bottom: 10px;
+    //margin-bottom: 10px;
+    margin-top:-0.5rem;
 }
 .cs-icon-about:before {
     content: "\e000";
@@ -185,6 +214,23 @@
             color: rgba(0,0,0,0.2);
         }
     }
+    a {
+        text-decoration:none;
+        color:inherit;
+    }
+    span {
+        .cs-thumb {
+            max-height:200px;
+            min-height:200px;
+            //width:200px;
+        }
+        h2 {
+            font-family:@primary-font-reg;
+            text-transform:uppercase;
+            font-weight:normal;
+            text-align:center;
+        }
+    }
     & > ul {
         list-style: none;
         padding: 0;
@@ -213,45 +259,171 @@
                     color:black;
                     height:200px;
                 }
-                .column {
-                    max-height:200px;
-                    min-height:200px;
-                    width:200px;
-                }
             }
         }
     }
 }
 section.courses {
     .cs-content {
+        .clearfix {
+            .column {
+                .column.fourth {
+                    &:first-child {
+                        .cs-thumb {
+                            background:url(../../images/courses-branding.jpg);
+                            background-size:cover;
+                            background-position:center;
+                        }
+                    }
+                    &:nth-child(2) {
+                        .cs-thumb {
+                            background:url(../../images/courses-webdev.jpg);
+                            background-size:cover;
+                            background-position:center;
+                        }
+                    }
+                    &:nth-child(3) {
+                        .cs-thumb {
+                            background:url(../../images/courses-pr.jpg);
+                            background-size:cover;
+                            background-position:center;
+                        }
+                    }
+                    &:nth-child(4) {
+                        .cs-thumb {
+                            background:url(../../images/courses-marketing.jpg);
+                            background-size:cover;
+                            background-position:center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+section.kcrarea {
+    .cs-content {
+        .clearfix {
+            .column {
+                .column.fourth {
+                    &:first-child {
+                        .cs-thumb {
+                            background:url(../../images/kcr-design.jpg);
+                            background-size:cover;
+                            background-position:center;
+                        }
+                    }
+                    &:nth-child(2) {
+                        .cs-thumb {
+                            background:url(../../images/kcr-webdev.jpg);
+                            background-size:cover;
+                            background-position:center;
+                        }
+                    }
+                    &:nth-child(3) {
+                        .cs-thumb {
+                            background:url(../../images/kcr-social.jpg);
+                            background-size:cover;
+                            background-position:center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+section.openfm {
+    .cs-content {
+        .clearfix {
+            .column {
+                .column.fourth {
+                    &:first-child {
+                        .cs-thumb {
+                            background:url(../../images/openfm-branding.jpg);
+                            background-size:cover;
+                            background-position:center;
+                        }
+                    }
+                    &:nth-child(2) {
+                        .cs-thumb {
+                            background:url(../../images/openfm-design.jpg);
+                            background-size:cover;
+                            background-position:center;
+                        }
+                    }
+                    &:nth-child(3) {
+                        .cs-thumb {
+                            background:url(../../images/openfm-sponsor.jpg);
+                            background-size:cover;
+                            background-position:center;
+                        }
+                    }
+                    &:nth-child(4) {
+                        .cs-thumb {
+                            background:url(../../images/openfm-webdev.jpg);
+                            background-size:cover;
+                            background-position:center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+section.kcrarea {
+    .cs-content {
         ul {
             li {
                 &:first-child {
-                    .column {
-                        background:url(../../images/sam-lyons.jpg);
+                    .cs-thumb {
+                        background:url(../../images/kcr-design.jpg);
                         background-size:cover;
                         background-position:center;
                     }
                 }
                 &:nth-child(2) {
-                    .column {
-                        background:url(../../images/carol-hevia.jpg);
+                    .cs-thumb {
+                        background:url(../../images/kcr-webdev.jpg);
                         background-size:cover;
                         background-position:center;
                     }
                 }
                 &:nth-child(3) {
-                    .column {
-                        background:url(../../images/andre-lacerda.jpg);
+                    .cs-thumb {
+                        background:url(../../images/kcr-social.jpg);
                         background-size:cover;
                         background-position:center;
                     }
                 }
-                &:nth-child(4) {
-                    .column {
-                        background:url(../../images/fuses.jpg);
-                        background-size:cover;
-                        background-position:center;
+            }
+        }
+    }
+}
+section.lucca {
+    .cs-content {
+        .clearfix {
+            .column {
+                .column.fourth {
+                    &:first-child {
+                        .cs-thumb {
+                            background:url(../../images/lucca-consulting.jpg);
+                            background-size:cover;
+                            background-position:center;
+                        }
+                    }
+                    &:nth-child(2) {
+                        .cs-thumb {
+                            background:url(../../images/lucca-cloud.jpg);
+                            background-size:cover;
+                            background-position:center;
+                        }
+                    }
+                    &:nth-child(3) {
+                        .cs-thumb {
+                            background:url(../../images/lucca-screencasts.jpg);
+                            background-size:cover;
+                            background-position:center;
+                        }
                     }
                 }
             }
@@ -280,55 +452,235 @@ div.cs-panel-items {
         transition: transform 0.5s ease-in-out, opacity 0s linear 0.5s;
         -ms-transform: translateY(0);
         & > div {
-            width: 100%;
-            margin: 0 auto;
-            opacity: 1;
-            bottom: 90px;
-            top: 90px;
-            pointer-events: auto;
-            .column.half:first-child {
-                background:url(../../images/sam-lyons.jpg);
-                background-size:cover;
-                background-position:center;
-                //width:100%;
-                height:100vh;
+            margin-left:-2rem;
+        }
+        &:first-child {
+            & > div {
+                .clearfix {
+                    .column.half:nth-child(2) {
+                        background:url(../../images/courses-branding-half.jpg);
+                        background-size:cover;
+                        background-position:center;
+                        //width:100%;
+                        height:30rem;
+                    }
+                }
             }
-            h3 {
-                font-size: 2.4em;
+        }
+        &:nth-child(2) {
+            & > div {
+                .clearfix {
+                    .column.half:nth-child(2) {
+                        background:url(../../images/courses-webdev-half.jpg);
+                        background-size:cover;
+                        background-position:center;
+                        //width:100%;
+                        height:30rem;
+                    }
+                }
+            }
+        }
+        &:nth-child(3) {
+            & > div {
+                .clearfix {
+                    .column.half:nth-child(2) {
+                        background:url(../../images/courses-pr-half.jpg);
+                        background-size:cover;
+                        background-position:center;
+                        //width:100%;
+                        height:30rem;
+                    }
+                }
+            }
+        }
+        &:nth-child(4) {
+            & > div {
+                .clearfix {
+                    .column.half:nth-child(2) {
+                        background:url(../../images/courses-marketing-half.jpg);
+                        background-size:cover;
+                        background-position:center;
+                        //width:100%;
+                        height:30rem;
+                    }
+                }
+            }
+        }
+        &:nth-child(5) {
+            & > div {
+                .clearfix {
+                    .column.half:nth-child(2) {
+                        background:url(../../images/openfm-branding-half.jpg);
+                        background-size:cover;
+                        background-position:center;
+                        //width:100%;
+                        height:30rem;
+                    }
+                }
+            }
+        }
+        &:nth-child(6) {
+            & > div {
+                .clearfix {
+                    .column.half:nth-child(2) {
+                        background:url(../../images/openfm-design-half.jpg);
+                        background-size:cover;
+                        background-position:center;
+                        //width:100%;
+                        height:30rem;
+                    }
+                }
+            }
+        }
+        &:nth-child(7) {
+            & > div {
+                .clearfix {
+                    .column.half:nth-child(2) {
+                        background:url(../../images/openfm-sponsor-half.jpg);
+                        background-size:cover;
+                        background-position:center;
+                        //width:100%;
+                        height:30rem;
+                    }
+                }
+            }
+        }
+        &:nth-child(8) {
+            & > div {
+                .clearfix {
+                    .column.half:nth-child(2) {
+                        background:url(../../images/openfm-webdev-half.jpg);
+                        background-size:cover;
+                        background-position:center;
+                        //width:100%;
+                        height:30rem;
+                    }
+                }
+            }
+        }
+        &:nth-child(9) {
+            & > div {
+                .clearfix {
+                    .column.half:nth-child(2) {
+                        background:url(../../images/kcr-design-half.jpg);
+                        background-size:cover;
+                        background-position:center;
+                        //width:100%;
+                        height:30rem;
+                    }
+                }
+            }
+        }
+        &:nth-child(10) {
+            & > div {
+                .clearfix {
+                    .column.half:nth-child(2) {
+                        background:url(../../images/kcr-webdev-half.jpg);
+                        background-size:cover;
+                        background-position:center;
+                        //width:100%;
+                        height:30rem;
+                    }
+                }
+            }
+        }
+        &:nth-child(11) {
+            & > div {
+                .clearfix {
+                    .column.half:nth-child(2) {
+                        background:url(../../images/kcr-social-half.jpg);
+                        background-size:cover;
+                        background-position:center;
+                        //width:100%;
+                        height:30rem;
+                    }
+                }
+            }
+        }
+        &:nth-child(12) {
+            & > div {
+                .clearfix {
+                    .column.half:nth-child(2) {
+                        background:url(../../images/lucca-consulting-half.jpg);
+                        background-size:cover;
+                        background-position:center;
+                        //width:100%;
+                        height:30rem;
+                    }
+                }
+            }
+        }
+        &:nth-child(13) {
+            & > div {
+                .clearfix {
+                    .column.half:nth-child(2) {
+                        background:url(../../images/lucca-cloud-half.jpg);
+                        background-size:cover;
+                        background-position:center;
+                        //width:100%;
+                        height:30rem;
+                    }
+                }
+            }
+        }
+        &:nth-child(14) {
+            & > div {
+                .clearfix {
+                    .column.half:nth-child(2) {
+                        background:url(../../images/lucca-screencasts-half.jpg);
+                        background-size:cover;
+                        background-position:center;
+                        //width:100%;
+                        height:30rem;
+                    }
+                }
+            }
+        }
+        & > div {
+            width: 100%;
+            //margin: 0 auto;
+            padding:3rem;
+            opacity: 1;
+            //bottom: 90px;
+            //top: 90px;
+            pointer-events: auto;
+            h4 {
+                font-size: 2.5em;
                 font-weight: 300;
                 margin: 0 0 20px 0;
+                font-family:@primary-font-reg;
+                text-transform:uppercase;
             }
             p {
                 font-size: 1em;
                 font-family:@secondary-font;
                 color:@text-grey;
             }
-            img {
-                float: left;
-                margin: 0 20px 20px 0;
-                max-width: 100%;
-            }
         }
     }
     nav {
         position: absolute;
         z-index: 9999;
-        width: 216px;
+        width: 10rem;
+        height:3rem;
         left: 50%;
-        top: 0px;
-        margin-left: -108px;
+        margin-left:-5rem;
+        top: -3rem;
+        background:white;
+        border:2px solid @primary-color;
+        //margin-left: -108px;
         opacity: 0;
         -webkit-transition: opacity 0.2s ease-in-out 0.5s;
         -moz-transition: opacity 0.2s ease-in-out 0.5s;
         transition: opacity 0.2s ease-in-out 0.5s;
+        padding:1rem;
         span.cs-next-work {
-            font-weight: 700;
-            letter-spacing: 2px;
             display: block;
             text-transform: uppercase;
-            line-height: 2em;
             cursor: pointer;
-            margin-right: 2em;
+            font-family:@primary-font-reg;
+            color:@primary-color;
+            float:left;
         }
     }
     & > div.cs-show-work {
@@ -357,10 +709,15 @@ div.cs-panel-items {
 div.cs-panel-items.cs-panel-items-show {
     nav {
         opacity: 1;
-        top: -70px;
+        top: -3rem;
         span {
-            float: left;
-            margin: 5px;
+            &:first-child {
+                width:50%;
+            }
+            &:nth-child(2) {
+                width:50%;
+                color:@primary-color;
+            }
         }
     }
 }
@@ -382,13 +739,13 @@ section.cs-expand {
 .no-touch {
     section:not(.cs-expand) {
         .cs-box:hover {
-            h3 {
+            /*h3 {
                 -webkit-transform: translateY(-15px);
                 -moz-transform: translateY(-15px);
                 -ms-transform: translateY(-15px);
                 transform: translateY(-15px);
-            }
-            background: @primary-color + 5;
+            }*/
+            opacity:0.5;
         }
     }
 }
@@ -396,6 +753,7 @@ section.cs-expand {
     -webkit-transition: opacity 0.1s linear 0s;
     -moz-transition: opacity 0.1s linear 0s;
     transition: opacity 0.1s linear 0s;
+    //color:@primary-color;
 }
 section.cs-expand .cs-content,section.cs-expand .cs-icon-close {
     pointer-events: auto;
