@@ -190,7 +190,6 @@ var stickyElement = function () {
 
 stickyElement();
 
-
 // Footer reveal
 
 $(function() {

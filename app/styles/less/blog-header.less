@@ -1,0 +1,46 @@
+header.blog-header {
+	z-index:-1;
+	background:url(../../images/blog-header.jpg);
+	background-size:cover;
+	background-position:center;
+	width:100%;
+	height:100vh;
+	.blog-header-bg {
+		position:absolute;
+		top:0;
+		height:100vh;
+		width:100%;
+		background:black;
+		opacity:0.5;
+	}
+}
+.blog-header-text {
+	width:100%;
+	top:40vh;
+	color:white;
+	z-index:-1;
+	font-size:0.5em;
+	h1 {
+		font-size:7em;
+		margin:0;
+		font-family:@primary-font-bold;
+		text-transform:uppercase;
+	}
+	p {
+		font-family:@primary-font-reg;
+		text-transform:uppercase;
+	}
+}
+
+section.blog {
+	background:white;
+	font-family:@primary-font-reg;
+	text-transform:uppercase;
+	text-align:center;
+	padding:3rem;
+	height:40rem;
+	h2 {
+		color:@primary-color;
+		font-size:3em;
+	}
+}
