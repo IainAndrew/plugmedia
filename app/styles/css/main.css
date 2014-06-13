@@ -801,12 +801,25 @@ section.home-blocks .block-collaboration .column {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-section.home-blocks .block-collaboration .text-and-button p {
+section.home-blocks .block-collaboration .title-and-text {
   color: white;
-  font-family: 'cabrito_norm_regularnormRg';
-  font-size: 2em;
 }
-section.home-blocks .block-collaboration .text-and-button button {
+section.home-blocks .block-collaboration .title-and-text h3 {
+  font-family: 'baufraregular';
+  font-size: 3em;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+section.home-blocks .block-collaboration .title-and-text hr {
+  width: 20%;
+  border: 1px solid white;
+  margin-bottom: 3rem;
+}
+section.home-blocks .block-collaboration .title-and-text p {
+  font-family: 'cabrito_norm_regularnormRg';
+  font-size: 1.2em;
+}
+section.home-blocks .block-collaboration .title-and-text button {
   color: white;
   font-family: 'baufrabold';
   font-size: 1.4em;
@@ -815,15 +828,16 @@ section.home-blocks .block-collaboration .text-and-button button {
   height: 5rem;
   border: 2px solid white;
   background: none;
+  margin-top: 2rem;
   -webkit-transition: background 0.2s, border-color 0.2s, color 0.2s;
   transition: background 0.2s, border-color 0.2s, color 0.2s;
   -moz-transition: background 0.2s, border-color 0.2s, color 0.2s;
   -o-transition: background 0.2s, border-color 0.2s, color 0.2s;
   -ms-transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
-section.home-blocks .block-collaboration .text-and-button button:hover {
+section.home-blocks .block-collaboration .title-and-text button:hover {
   background: white;
-  border-color: white;
+  border-color: #e74c3c;
   color: #e74c3c;
 }
 .block-contact {
@@ -874,6 +888,14 @@ header.about-header {
   width: 100%;
   height: 100vh;
 }
+header.about-header .about-header-bg {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background: black;
+  opacity: 0.4;
+}
 .about-header-text {
   width: 100%;
   top: 40vh;
@@ -885,6 +907,10 @@ header.about-header {
   font-size: 7em;
   margin: 0;
   font-family: 'baufrabold';
+  text-transform: uppercase;
+}
+.about-header-text p {
+  font-family: 'baufraregular';
   text-transform: uppercase;
 }
 section.about-intro {
@@ -1044,7 +1070,9 @@ section.our-vision .content ul {
   color: #646464;
 }
 section.our-vision .content ul li {
-  line-height: 2em;
+  line-height: auto;
+  list-style-type: none;
+  padding-bottom: 1rem;
 }
 section.our-vision .content .column.full.text-center p {
   color: black;
@@ -1056,6 +1084,7 @@ section.our-vision .content h4 {
   text-transform: uppercase;
   font-weight: normal;
   font-size: 1.2em;
+  margin-bottom: 1rem;
 }
 section.team {
   background: white;
@@ -1063,6 +1092,13 @@ section.team {
 section.team a {
   text-decoration: none;
   color: inherit;
+}
+section.team .team-intro {
+  color: #646464;
+  font-family: 'cabrito_norm_regularnormRg';
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
 }
 section.team .in-house-team {
   padding: 3rem;
@@ -1109,19 +1145,19 @@ section.team .team-member .sam-lyons {
   background-image: url(../../images/sam-lyons.jpg);
 }
 section.team .team-member .marie-therese {
-  background-image: url(../../images/sam-lyons.jpg);
+  background-image: url(http://placehold.it/200x200);
 }
 section.team .team-member .artur-leitis {
-  background-image: url(../../images/sam-lyons.jpg);
+  background-image: url(http://placehold.it/200x200);
 }
 section.team .team-member .philip-corbally {
-  background-image: url(../../images/sam-lyons.jpg);
+  background-image: url(http://placehold.it/200x200);
 }
 section.team .team-member .andre-lacerda {
   background-image: url(../../images/andre-lacerda.jpg);
 }
 section.team .team-member .robert-kamenicky {
-  background-image: url(../../images/sam-lyons.jpg);
+  background-image: url(http://placehold.it/200x200);
 }
 section.team .team-member .aidan-mccarthy {
   background-image: url(../../images/aidan-mccarthy.jpg);
@@ -1225,7 +1261,7 @@ header.showcase-header .showcase-header-bg {
   top: 40vh;
   color: white;
   z-index: -1;
-  font-size: 0.5em;
+  font-size: 0.4em;
 }
 .showcase-header-text h1 {
   font-size: 7em;
@@ -1236,6 +1272,7 @@ header.showcase-header .showcase-header-bg {
 .showcase-header-text p {
   font-family: 'baufraregular';
   text-transform: uppercase;
+  font-size: 1.5em;
 }
 .showcase-intro {
   background: white;
@@ -1314,7 +1351,7 @@ header.showcase-header .showcase-header-bg {
 }
 .block-case-studies .column h2 {
   font-family: 'baufrabold';
-  font-size: 5em;
+  font-size: 3em;
   text-transform: uppercase;
   margin: 0;
 }
@@ -1334,7 +1371,7 @@ header.showcase-header .showcase-header-bg {
 }
 .block-work .column h2 {
   font-family: 'baufrabold';
-  font-size: 5em;
+  font-size: 3em;
   text-transform: uppercase;
   margin: 0;
 }
@@ -1824,6 +1861,7 @@ div.cs-panel-items nav {
   -moz-transition: opacity 0.2s ease-in-out 0.5s;
   transition: opacity 0.2s ease-in-out 0.5s;
   padding: 1rem;
+  display: none;
 }
 div.cs-panel-items nav span.cs-next-work {
   display: block;
@@ -2255,7 +2293,7 @@ div.wk-panel-items {
   z-index: 999;
 }
 div.wk-panel-items > div {
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   border-top: 5px solid #e74c3c;
   z-index: 0;
   opacity: 0;
@@ -2302,6 +2340,7 @@ div.wk-panel-items nav {
   height: 2rem;
   background: #646464;
   bottom: 0;
+  display: none;
 }
 div.wk-panel-items nav .wk-icon-close:before {
   content: "\f107";
@@ -2459,7 +2498,7 @@ section.services-blocks .block-services-tagline .column {
 }
 section.services-blocks .block-services-tagline p {
   font-family: 'baufraregular';
-  font-size: 2em;
+  font-size: 1.5rem;
   text-transform: uppercase;
   color: #e74c3c;
   margin: 0;
@@ -2559,7 +2598,7 @@ section.services-blocks .block-marketing {
 section.services-blocks .block-design {
   background-image: url(../../images/block-design.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: 50% 70%;
 }
 section.services-blocks .block-consulting {
   background-image: url(../../images/block-consulting.jpg);
@@ -3060,6 +3099,12 @@ footer .flow-opposite {
     padding-bottom: 3rem;
   }
 }
+@media screen and (min-width: 48rem) {
+  .block-work .column h2,
+  .block-case-studies .column h2 {
+    font-size: 4rem;
+  }
+}
 @media screen and (max-width: 69rem) {
   .wk-box {
     font-size: 0.8em;
@@ -3214,6 +3259,11 @@ footer .flow-opposite {
     top: 0;
   }
 }
+@media screen and (max-width: 48rem) {
+  .cs-main > section .cs-icon-close {
+    top: 6rem;
+  }
+}
 @media screen and (max-width: 30rem) {
   .cs-main {
     height: 40rem;
@@ -3233,6 +3283,9 @@ footer .flow-opposite {
   .cs-main > section:nth-child(4) {
     top: 30rem;
     left: 0;
+  }
+  .cs-main > section .cs-icon-close {
+    top: 3rem;
   }
   .cs-main > section.cs-expand {
     left: 0;
@@ -3317,6 +3370,10 @@ footer .flow-opposite {
   section.team .lightbox .column.two-thirds,
   section.team .lightbox .column.third {
     width: 100%;
+  }
+  section.team .team-intro {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 @media screen and (min-width: 55rem) {
@@ -3418,6 +3475,9 @@ footer .flow-opposite {
   .about-header-text,
   .services-header-text,
   .showcase-header-text {
+    font-size: 1em;
+  }
+  .showcase-header-text p {
     font-size: 1em;
   }
 }

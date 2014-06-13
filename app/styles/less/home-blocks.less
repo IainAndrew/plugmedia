@@ -115,13 +115,22 @@ section.home-blocks {
 			z-index:-1;
 			top:0;
 		}*/
-		.text-and-button {
+		.title-and-text {
+			color:white;
+			h3 {
+				font-family:@primary-font-reg;
+				font-size:3em;
+				margin-bottom:1rem;
+				margin-top:0;
+			}
+			hr {
+				width:20%;
+				border:1px solid white;
+				margin-bottom:3rem;
+			}
 			p {
-				color:white;
 				font-family:@secondary-font;
-				font-size:2em;
-				//vertical-align:middle;
-				//line-height:100vh;
+				font-size:1.2em;
 			}
 			button {
 				color:white;
@@ -132,11 +141,11 @@ section.home-blocks {
 				height:5rem;
 				border:2px solid white;
 				background:none;
-				//margin-top:3rem;
+				margin-top:2rem;
 				.block-button-transition;
 				&:hover {
 					background:white;
-					border-color:white;
+					border-color:@primary-color;
 					color:@primary-color;
 				}
 			}

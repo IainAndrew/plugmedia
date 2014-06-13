@@ -53,7 +53,8 @@ var Boxlayout1 = (function() {
 
 				if( !$section.data( 'open' ) ) {
 					$section.data( 'open', true ).addClass( 'cs-expand cs-expand-top' );
-					$el.addClass( 'cs-expand-item' );	
+					$el.addClass( 'cs-expand-item' );
+					$('div.cs-panel-items nav').show();	
 				}
 
 			} ).find( 'span.cs-icon-close' ).on( 'click', function() {
@@ -69,6 +70,7 @@ var Boxlayout1 = (function() {
 				}
 
 				$el.removeClass( 'cs-expand-item' );
+				$('div.cs-panel-items nav').hide();
 				
 				return false;
 
@@ -190,6 +192,7 @@ var Boxlayout2 = (function() {
 					$el.addClass( 'wk-expand-item' );	
 					$section.find('.slides').show();
 					$section.find('.wk-content').show(1000);
+					$('div.wk-panel-items nav').show();
 					$('div.cs-panel-items nav').hide();
 				}
 
@@ -209,6 +212,7 @@ var Boxlayout2 = (function() {
 				$section.find('.slides').hide();
 				$section.find('.wk-content').hide();
 				$('div.cs-panel-items nav').show();
+				$('div.wk-panel-items nav').hide();
 								
 				return false;
 
