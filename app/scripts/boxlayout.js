@@ -15,7 +15,7 @@ var Boxlayout1 = (function() {
 		// works section
 		$sectionWork = $( '#cs-work-section' ),
 		// work items
-		$workItems = $( '#cs-work-items > span' ),
+		$workItems = $( '#cs-work-items span' ),
 		// work panels
 		$workPanelsContainer = $( '#cs-panel-work-items' ),
 		$workPanels = $workPanelsContainer.children( 'div' ),
@@ -190,6 +190,7 @@ var Boxlayout2 = (function() {
 					$el.addClass( 'wk-expand-item' );	
 					$section.find('.slides').show();
 					$section.find('.wk-content').show(1000);
+					$('div.cs-panel-items nav').hide();
 				}
 
 			} ).find( 'span.wk-icon-close' ).on( 'click', function() {
@@ -207,6 +208,7 @@ var Boxlayout2 = (function() {
 				$el.removeClass( 'wk-expand-item' );
 				$section.find('.slides').hide();
 				$section.find('.wk-content').hide();
+				$('div.cs-panel-items nav').show();
 								
 				return false;
 
