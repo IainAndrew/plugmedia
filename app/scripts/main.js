@@ -1,9 +1,14 @@
 'use strict';
 
+
+if ( !Modernizr.touch ) {
+
 var width = window.innerWidth;
 
 if (width > 640) {
 	var s = skrollr.init();
+}
+
 }
 
 // Mobile navbar functionality //
