@@ -3688,3 +3688,6 @@ html.no-js .ribbon-protector {
 html.no-js .how-do-we {
   top: 88rem;
 }
+p {
+  line-height: 28px;
+}
