@@ -3443,6 +3443,7 @@ section.map .google-map iframe {
   left: 0;
   width: 100% !important;
   height: 100% !important;
+  pointer-events: none;
 }
 @media screen and (min-width: 31rem) {
   section.contact {

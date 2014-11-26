@@ -241,3 +241,8 @@ $(function() {
 		return false;
 	});
 });
+
+// Enable click events on google map 
+$('.google-map').click(function () {
+    $('.google-map iframe').css("pointer-events", "auto");
+});
