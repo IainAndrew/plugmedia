@@ -16,12 +16,13 @@
         transition: all 0.5s ease-in-out;
         .cs-icon-close {
             position: absolute;
-            top: 3rem;
-            right: 0.2rem;
             cursor: pointer;
             z-index: 100;
             opacity: 0;
             pointer-events: none;
+            font-size:1.5em;
+            top: 3.5rem;
+            right: 0.5rem;
         }
     }
     & > section:first-child {
@@ -662,26 +663,24 @@ div.cs-panel-items {
         position: absolute;
         z-index: 9999;
         width: 10rem;
-        height:3rem;
+        height: 3rem;
         left: 50%;
-        margin-left:-5rem;
+        margin-left: -5rem;
         top: -3rem;
-        background:white;
-        border:2px solid @primary-color;
-        //margin-left: -108px;
+        background: white;
+        border: 2px solid #e74c3c;
         opacity: 0;
         -webkit-transition: opacity 0.2s ease-in-out 0.5s;
         -moz-transition: opacity 0.2s ease-in-out 0.5s;
         transition: opacity 0.2s ease-in-out 0.5s;
-        padding:1rem;
-        display:none;
-        span.cs-next-work {
+        padding: 1rem;
+        display: none;
+        span {
             display: block;
             text-transform: uppercase;
             cursor: pointer;
-            font-family:@primary-font-reg;
             color:@primary-color;
-            float:left;
+            width:100%;
         }
     }
     & > div.cs-show-work {
@@ -711,15 +710,6 @@ div.cs-panel-items.cs-panel-items-show {
     nav {
         opacity: 1;
         top: -3rem;
-        span {
-            &:first-child {
-                width:50%;
-            }
-            &:nth-child(2) {
-                width:50%;
-                color:@primary-color;
-            }
-        }
     }
 }
 .cs-main.cs-expand-item &>section:not(.cs-expand),.cs-main.cs-expand-item &>section.cs-scale-down {

@@ -1418,6 +1418,7 @@ section.team .team-member-overlay p {
   color: white;
   font-family: 'baufraregular';
   text-transform: uppercase;
+  line-height: 16px;
 }
 section.team .team-member-overlay p:first-child {
   font-size: 1.2em;
@@ -1433,6 +1434,11 @@ section.team .lightbox {
   border-radius: 4px;
   color: #646464;
   display: none;
+  -webkit-box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.2);
 }
 section.team .lightbox h3 {
   font-family: 'baufraregular';
@@ -1723,12 +1729,13 @@ header.showcase-header .showcase-header-bg {
 }
 .cs-main > section .cs-icon-close {
   position: absolute;
-  top: 3rem;
-  right: 0.2rem;
   cursor: pointer;
   z-index: 100;
   opacity: 0;
   pointer-events: none;
+  font-size: 1.5em;
+  top: 3.5rem;
+  right: 0.5rem;
 }
 .cs-main > section:first-child {
   top: 0;
@@ -2191,13 +2198,12 @@ div.cs-panel-items nav {
   padding: 1rem;
   display: none;
 }
-div.cs-panel-items nav span.cs-next-work {
+div.cs-panel-items nav span {
   display: block;
   text-transform: uppercase;
   cursor: pointer;
-  font-family: 'baufraregular';
   color: #e74c3c;
-  float: left;
+  width: 100%;
 }
 div.cs-panel-items > div.cs-show-work {
   z-index: 1000;
@@ -2224,13 +2230,6 @@ div.cs-panel-items > div.cs-hide-current-work {
 div.cs-panel-items.cs-panel-items-show nav {
   opacity: 1;
   top: -3rem;
-}
-div.cs-panel-items.cs-panel-items-show nav span:first-child {
-  width: 50%;
-}
-div.cs-panel-items.cs-panel-items-show nav span:nth-child(2) {
-  width: 50%;
-  color: #e74c3c;
 }
 .cs-main.cs-expand-item  > section:not(.cs-expand),
 .cs-main.cs-expand-item  > section.cs-scale-down {
@@ -2305,12 +2304,13 @@ section.cs-expand .cs-icon-close {
 }
 .wk-main > section .wk-icon-close {
   position: absolute;
-  top: 3rem;
-  right: 1rem;
   cursor: pointer;
   z-index: 100;
   opacity: 0;
   pointer-events: none;
+  font-size: 1.5em;
+  top: 3rem;
+  right: 0.5rem;
 }
 .wk-main > section h3,
 .wk-main > section p,
@@ -2501,6 +2501,7 @@ section.cs-expand .cs-icon-close {
   color: white;
   font-family: 'cabrito_norm_regularnormRg';
   margin-top: -3rem;
+  line-height: 16px;
 }
 .wk-icon {
   font-family: 'FontAwesome';
@@ -2742,9 +2743,16 @@ section.wk-expand .wk-box {
 .touch section:not(.wk-expand) .wk-box {
   background: rgba(231, 76, 60, 0.9);
 }
+.touch section:not(.wk-expand) .wk-box:not(:last-child) {
+  border-bottom: 1px solid #fff;
+}
 .touch section:not(.wk-expand) .wk-box h3,
 .touch section:not(.wk-expand) .wk-box p {
   opacity: 1;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px);
 }
 .wk-content,
 .wk-icon-close {
@@ -2811,7 +2819,6 @@ div.wk-panel-items#wk-panel-work-items p {
     height: 10rem;
   }
   .wk-main > section .wk-icon-close {
-    top: 6rem;
     right: 1rem;
   }
   .wk-main > section:nth-child(2) {
@@ -2872,7 +2879,6 @@ div.wk-panel-items#wk-panel-work-items p {
 }
 @media screen and (max-width: 30rem) {
   .wk-main > section .wk-icon-close {
-    top: 3rem;
     right: 1rem;
   }
   .wk-main .wk-content {
@@ -2948,9 +2954,7 @@ div.wk-panel-items#wk-panel-work-items p {
   }
 }
 @media screen and (max-width: 48rem) {
-  .cs-main > section .cs-icon-close {
-    top: 6rem;
-  }
+  
 }
 @media screen and (max-width: 30rem) {
   .cs-main {
@@ -2971,9 +2975,6 @@ div.wk-panel-items#wk-panel-work-items p {
   .cs-main > section:nth-child(4) {
     top: 30rem;
     left: 0;
-  }
-  .cs-main > section .cs-icon-close {
-    top: 3rem;
   }
   .cs-main > section.cs-expand {
     left: 0;

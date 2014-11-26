@@ -20,12 +20,13 @@
         transition: all 0.5s ease-in-out;
         .wk-icon-close {
             position: absolute;
-            top: 3rem;
-            right: 1rem;
             cursor: pointer;
             z-index: 100;
             opacity: 0;
             pointer-events: none;
+            font-size:1.5em;
+            top: 3rem;
+            right: 0.5rem;
         }
         h3, p, img.icon-plugmedia {
             opacity:0;
@@ -219,6 +220,7 @@
         color:white;
         font-family:@secondary-font;
         margin-top:-3rem;
+        line-height:16px;
     }
 }
 .wk-icon {
@@ -474,8 +476,15 @@ section.wk-expand {
     section:not(.wk-expand) {
         .wk-box {
             background:rgba(231, 76, 60, 0.9);
+            &:not(:last-child) {
+                border-bottom:1px solid #fff;
+            }
             h3, p {
                 opacity:1;
+                -webkit-transform: translateY(-20px);
+                -moz-transform: translateY(-20px);
+                -ms-transform: translateY(-20px);
+                transform: translateY(-20px);
             }
         }
     }
