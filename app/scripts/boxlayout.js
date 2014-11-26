@@ -202,6 +202,9 @@ var Boxlayout2 = (function() {
 				$section.data( 'open', false ).removeClass( 'wk-expand' ).on( transEndEventName, function( event ) {
 					if( !$( event.target ).is( 'section' ) ) return false;
 					$( this ).off( transEndEventName ).removeClass( 'wk-expand-top' );
+					$sectionWork.removeClass( 'wk-scale-down' );
+					$workPanelsContainer.removeClass( 'wk-panel-items-show' );
+					$workPanels.eq( currentWorkPanel ).removeClass( 'wk-show-work' );
 				} );
 
 				if( !supportTransitions ) {
