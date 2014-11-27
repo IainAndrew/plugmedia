@@ -147,7 +147,7 @@ module.exports = function (grunt) {
         // Add vendor prefixed styles
         autoprefixer: {
             options: {
-                browsers: ['last 3 versions']
+                browsers: ['last 1 version']
             },
             dist: {
                 files: [{
@@ -167,20 +167,7 @@ module.exports = function (grunt) {
             }
         },
 
-        // Renames files for browser caching purposes
-        rev: {
-            dist: {
-                files: {
-                    src: [
-                        '<%= config.dist %>/scripts/{,*/}*.js',
-                        '<%= config.dist %>/styles/{,*/}*.css',
-                        '<%= config.dist %>/images/{,*/}*.*',
-                        '<%= config.dist %>/styles/fonts/{,*/}*.*',
-                        '<%= config.dist %>/*.{ico,png}'
-                    ]
-                }
-            }
-        },
+       
 
         // Reads HTML for usemin blocks to enable smart builds that automatically
         // concat, minify and revision files. Creates configurations in memory so
@@ -202,16 +189,7 @@ module.exports = function (grunt) {
         },
 
         // The following *-min tasks produce minified files in the dist folder
-        imagemin: {
-            dist: {
-                files: [{
-                    expand: true,
-                    cwd: '<%= config.app %>/images',
-                    src: '{,*/}*.{gif,jpeg,jpg,png}',
-                    dest: '<%= config.dist %>/images'
-                }]
-            }
-        },
+        
 
         svgmin: {
             dist: {
@@ -299,20 +277,7 @@ module.exports = function (grunt) {
 
         // Generates a custom Modernizr build that includes only the tests you
         // reference in your app
-        modernizr: {
-            dist: {
-                devFile: '<%= config.app %>/bower_components/modernizr/modernizr.js',
-                outputFile: '<%= config.dist %>/scripts/vendor/modernizr.js',
-                files: {
-                    src: [
-                        '<%= config.dist %>/scripts/{,*/}*.js',
-                        '<%= config.dist %>/styles/{,*/}*.css',
-                        '!<%= config.dist %>/scripts/vendor/*'
-                    ]
-                },
-                uglify: true
-            }
-        },
+        
 
         // Run some tasks in parallel to speed up build process
         concurrent: {
@@ -324,7 +289,7 @@ module.exports = function (grunt) {
             ],
             dist: [
                 'copy:styles',
-                'imagemin',
+                //'imagemin',
                 'svgmin'
             ]
         }
@@ -371,13 +336,13 @@ module.exports = function (grunt) {
         'concurrent:dist',
         'autoprefixer',
         'concat',
-        'cssmin',
-        'uglify',
+        //'cssmin',
+        //'uglify',
         'copy:dist',
-        'modernizr',
-        'rev',
-        'usemin',
-        'htmlmin'
+        //'modernizr',
+        //'rev',
+        'usemin'
+        //'htmlmin'
     ]);
 
     grunt.registerTask('default', [
