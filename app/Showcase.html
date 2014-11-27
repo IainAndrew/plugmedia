@@ -9,7 +9,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
-        <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css">
+        <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
@@ -17,7 +17,7 @@
         <!--<link rel="stylesheet" type="text/css" href="styles/css/component.css"/>-->
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="../bower_components/modernizr/modernizr.js"></script>
+        <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
 	</head>
 	<body>
@@ -1157,12 +1157,13 @@
             </div>
         </footer>
 
-		<!-- build:js scripts/vendor.js -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
-        <script src="../bower_components/jquery/dist/jquery.js"></script>
-        <script src="../bower_components/jquery-waypoints/waypoints.min.js"></script>
-        <script src="../bower_components/jquery-waypoints/shortcuts/sticky-elements/waypoints-sticky.min.js"></script>
-        <script src="../bower_components/skrollr/dist/skrollr.min.js"></script>
+        <script src="bower_components/jquery-waypoints/waypoints.min.js"></script>
+        <script src="bower_components/jquery-waypoints/shortcuts/sticky-elements/waypoints-sticky.min.js"></script>
+        <script src="bower_components/skrollr/dist/skrollr.min.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -1179,30 +1180,8 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/footerreveal.js"></script>
         <script src="scripts/jquery.superslides.min.js"></script>
-        <script src="scripts/main.js"></script>
         <script src="scripts/boxlayout.js"></script>
-		<script>
-			$(function() {
-				Boxlayout1.init();
-				Boxlayout2.init();
-			});
-
-			$('#slides-1')
-			.add($('#slides-2'))
-			.add($('#slides-3'))
-			.add($('#slides-4'))
-			.add($('#slides-5'))
-			.add($('#slides-6'))
-			.add($('#slides-7'))
-			.add($('#slides-8'))
-			.add($('#slides-9'))
-			.add($('#slides-10'))
-			.add($('#slides-11'))
-			.add($('#slides-12'))
-			.superslides({
-				play: 4000
-			});
-		</script>
+        <script src="scripts/main.js"></script>
         <!-- endbuild -->
 	</body>
 </html>

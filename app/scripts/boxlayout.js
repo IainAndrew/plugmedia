@@ -201,10 +201,10 @@ var Boxlayout2 = (function() {
 				// close the expanded section and scale up the others
 				$section.data( 'open', false ).removeClass( 'wk-expand' ).on( transEndEventName, function( event ) {
 					if( !$( event.target ).is( 'section' ) ) return false;
-					$( this ).off( transEndEventName ).removeClass( 'wk-expand-top' );
+					$( this ).off( transEndEventName ).removeClass( 'wk-expand-top', 'wk-show-work' );
 					$sectionWork.removeClass( 'wk-scale-down' );
 					$workPanelsContainer.removeClass( 'wk-panel-items-show' );
-					$workPanels.eq( currentWorkPanel ).removeClass( 'wk-show-work' );
+					//$workPanels.eq( currentWorkPanel ).removeClass( 'wk-show-work' );
 				} );
 
 				if( !supportTransitions ) {
