@@ -3793,18 +3793,15 @@ div.cs-panel-items > div > div p {
 div.cs-panel-items nav {
   position: absolute;
   z-index: 9999;
-  width: 10rem;
+  width: 4rem;
   height: 3rem;
-  left: 50%;
-  margin-left: -5rem;
-  top: -3rem;
-  background: white;
-  border: 2px solid #e74c3c;
+  right: 0;
+  background: transparent;
   opacity: 0;
-  -webkit-transition: opacity 0.2s ease-in-out 0.5s;
-  -moz-transition: opacity 0.2s ease-in-out 0.5s;
-  transition: opacity 0.2s ease-in-out 0.5s;
-  padding: 1rem;
+  -webkit-transition: opacity 0.2s ease-in-out 0.2s;
+  -moz-transition: opacity 0.2s ease-in-out 0.2s;
+  transition: opacity 0.2s ease-in-out 0.2s;
+  padding: 0.5rem;
   display: none;
 }
 div.cs-panel-items nav span {
@@ -3838,7 +3835,7 @@ div.cs-panel-items > div.cs-hide-current-work {
 }
 div.cs-panel-items.cs-panel-items-show nav {
   opacity: 1;
-  top: -3rem;
+  top: -90%;
 }
 .cs-main.cs-expand-item  > section:not(.cs-expand),
 .cs-main.cs-expand-item  > section.cs-scale-down {
