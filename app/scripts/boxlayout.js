@@ -201,10 +201,10 @@ var Boxlayout2 = (function() {
 				// close the expanded section and scale up the others
 				$section.data( 'open', false ).removeClass( 'wk-expand' ).on( transEndEventName, function( event ) {
 					if( !$( event.target ).is( 'section' ) ) return false;
-					$( this ).off( transEndEventName ).removeClass( 'wk-expand-top', 'wk-show-work' );
+					$( this ).off( transEndEventName ).removeClass( 'wk-expand-top' );
 					$sectionWork.removeClass( 'wk-scale-down' );
-					$workPanelsContainer.removeClass( 'wk-panel-items-show' );
-					//$workPanels.eq( currentWorkPanel ).removeClass( 'wk-show-work' );
+                    $workPanelsContainer.removeClass( 'wk-panel-items-show' );
+                    $workPanels.eq( currentWorkPanel ).removeClass( 'wk-show-work' );
 				} );
 
 				if( !supportTransitions ) {
@@ -249,7 +249,7 @@ var Boxlayout2 = (function() {
 			isAnimating = true;
 
 			var $currentPanel = $workPanels.eq( currentWorkPanel );
-			currentWorkPanel = currentWorkPanel < totalWorkPanels - 1 ? currentWorkPanel + 1 : 0;
+			var currentWorkPanel = currentWorkPanel < totalWorkPanels - 1 ? currentWorkPanel + 1 : 0;
 			var $nextPanel = $workPanels.eq( currentWorkPanel );
 
 			$currentPanel.removeClass( 'wk-show-work' ).addClass( 'wk-hide-current-work' ).on( transEndEventName, function( event ) {
