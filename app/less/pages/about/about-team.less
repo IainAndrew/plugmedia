@@ -116,10 +116,11 @@ section.team {
 	}
 	.lightbox {
 		position:fixed;
-		background:@text-grey + 130;
+		background:#fff;
 		padding:2rem;
 		border-radius:4px;
 		color:@text-grey;
+		border:1px solid lightgrey;
 		display:none;
 		-webkit-box-shadow:-2px 5px 10px rgba(0,0,0,0.2);
 		-moz-box-shadow:-2px 5px 10px rgba(0,0,0,0.2);
@@ -160,4 +161,13 @@ section.team {
 			}
 		}
 	}
+}
+.lightbox-background {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.6);
+	display:none;
 }

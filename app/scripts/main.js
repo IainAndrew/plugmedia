@@ -231,13 +231,16 @@ $(function() {
 $(function() {
 	var team = $('.team-member'),
 		box = $('.lightbox'),
-		exit = $('.icon-exit');
+		exit = $('.icon-exit'),
+		darkLayer = $('.lightbox-background');
 
 	team.click(function() {
 		$(this).find(box).show(500);
+		darkLayer.show(300);
 	});
 	exit.click(function() {
 		box.hide(300);
+		darkLayer.hide(200);
 		return false;
 	});
 });
