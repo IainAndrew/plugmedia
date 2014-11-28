@@ -1927,7 +1927,7 @@ nav a#nav-toggle {
 	}
 }
 */footer {
-  background-image: url(../../images/fuses.jpg);
+  background-image: url('../images/fuses.jpg');
   background-size: cover;
   background-position: center;
   color: white;
@@ -2073,7 +2073,7 @@ h2 {
   color: white;
 }
 header.home-header {
-  background: url('../../images/bridge.jpg');
+  background: url('../images/bridge.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -2397,7 +2397,7 @@ section.what-we-do ul.what-we-do-list li {
   top: -30rem;
 }
 .office-img {
-  background: url('../../images/office.jpg');
+  background: url('../images/office.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -2522,7 +2522,7 @@ section.home-blocks .block-bombarded .text-and-button button:hover {
   color: white;
 }
 section.home-blocks .block-collaboration {
-  background: url('../../images/pen.jpg');
+  background: url('../images/pen.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -2713,7 +2713,7 @@ section.home-blocks .block-collaboration .title-and-text button:hover {
 }
 header.about-header {
   z-index: -1;
-  background: url(../../images/digitaldepot.jpg);
+  background: url('../images/digitaldepot.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -2803,7 +2803,7 @@ section.about-intro .column.full p {
   margin: 0;
 }
 .block-why-we-do-it {
-  background: url('../../images/block-why-we-do-it.jpg');
+  background: url('../images/block-why-we-do-it.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -2829,7 +2829,7 @@ section.about-intro .column.full p {
   text-transform: uppercase;
 }
 .block-our-vision {
-  background: url('../../images/block-values.jpg');
+  background: url('../images/block-values.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -2855,7 +2855,7 @@ section.about-intro .column.full p {
   text-transform: uppercase;
 }
 .block-team {
-  background: url('../../images/block-team.jpg');
+  background: url('../images/block-team.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -2973,7 +2973,7 @@ section.team .team-member .team-member-image {
   background-position: center;
 }
 section.team .team-member .sam-lyons {
-  background-image: url(../../images/sam-lyons.jpg);
+  background-image: url(../images/sam-lyons.jpg);
 }
 section.team .team-member .marie-therese {
   background-image: url(http://placehold.it/200x200);
@@ -2985,28 +2985,28 @@ section.team .team-member .philip-corbally {
   background-image: url(http://placehold.it/200x200);
 }
 section.team .team-member .andre-lacerda {
-  background-image: url(../../images/andre-lacerda.jpg);
+  background-image: url(../images/andre-lacerda.jpg);
 }
 section.team .team-member .robert-kamenicky {
   background-image: url(http://placehold.it/200x200);
 }
 section.team .team-member .aidan-mccarthy {
-  background-image: url(../../images/aidan-mccarthy.jpg);
+  background-image: url(../images/aidan-mccarthy.jpg);
 }
 section.team .team-member .carol-hevia {
-  background-image: url(../../images/carol-hevia.jpg);
+  background-image: url(../images/carol-hevia.jpg);
 }
 section.team .team-member .conor-fleming {
-  background-image: url(../../images/conor-fleming.jpg);
+  background-image: url(../images/conor-fleming.jpg);
 }
 section.team .team-member .emma-carroll {
-  background-image: url(../../images/emma-carroll.jpg);
+  background-image: url(../images/emma-carroll.jpg);
 }
 section.team .team-member .juliana-scodeler {
-  background-image: url(../../images/juliana-scodeler.jpg);
+  background-image: url(../images/juliana-scodeler.jpg);
 }
 section.team .team-member .jaroslaw-narkiewicz {
-  background-image: url(../../images/jaroslaw-narkiewicz.jpg);
+  background-image: url(../images/jaroslaw-narkiewicz.jpg);
 }
 section.team .team-member-overlay {
   background: #e74c3c;
@@ -3183,7 +3183,7 @@ section.team .lightbox .icon-exit:hover {
 }
 header.showcase-header {
   z-index: -1;
-  background: url(../../images/pencils.jpg);
+  background: url('../images/pencils.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -3277,7 +3277,7 @@ header.showcase-header .showcase-header-bg {
   padding-right: 3rem;
 }
 .block-case-studies {
-  background: url('../../images/block-case-studies.jpg');
+  background: url('../images/block-case-studies.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -3297,7 +3297,7 @@ header.showcase-header .showcase-header-bg {
   margin: 0;
 }
 .block-work {
-  background: url('../../images/block-work.jpg');
+  background: url('../images/block-work.jpg');
   background-size: cover;
   background-position: 50% 20%;
   width: 100%;
@@ -3351,7 +3351,7 @@ header.showcase-header .showcase-header-bg {
   border: 1px solid #e74c3c;
 }
 .cs-main > section:first-child .cs-box {
-  background: url(../../images/courses-logo.png);
+  background: url('../images/courses-logo.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -3363,7 +3363,7 @@ header.showcase-header .showcase-header-bg {
   border: 1px solid #e74c3c;
 }
 .cs-main > section:nth-child(2) .cs-box {
-  background: url(../../images/openfm-logo.png);
+  background: url('../images/openfm-logo.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -3375,7 +3375,7 @@ header.showcase-header .showcase-header-bg {
   border: 1px solid #e74c3c;
 }
 .cs-main > section:nth-child(3) .cs-box {
-  background: url(../../images/kcr-logo.png);
+  background: url('../images/kcr-logo.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -3387,7 +3387,7 @@ header.showcase-header .showcase-header-bg {
   border: 1px solid #e74c3c;
 }
 .cs-main > section:nth-child(4) .cs-box {
-  background: url(../../images/lucca-logo.png);
+  background: url('../images/lucca-logo.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -3576,87 +3576,87 @@ div.cs-panel-items  > div  > div {
   height: 200px;
 }
 section.courses .cs-content .clearfix .column .column.fourth:first-child .cs-thumb {
-  background: url(../../images/courses-branding.jpg);
+  background: url('../images/courses-branding.jpg');
   background-size: cover;
   background-position: center;
 }
 section.courses .cs-content .clearfix .column .column.fourth:nth-child(2) .cs-thumb {
-  background: url(../../images/courses-webdev.jpg);
+  background: url('../images/courses-webdev.jpg');
   background-size: cover;
   background-position: center;
 }
 section.courses .cs-content .clearfix .column .column.fourth:nth-child(3) .cs-thumb {
-  background: url(../../images/courses-pr.jpg);
+  background: url('../images/courses-pr.jpg');
   background-size: cover;
   background-position: center;
 }
 section.courses .cs-content .clearfix .column .column.fourth:nth-child(4) .cs-thumb {
-  background: url(../../images/courses-marketing.jpg);
+  background: url('../images/courses-marketing.jpg');
   background-size: cover;
   background-position: center;
 }
 section.kcrarea .cs-content .clearfix .column .column.fourth:first-child .cs-thumb {
-  background: url(../../images/kcr-design.jpg);
+  background: url('../images/kcr-design.jpg');
   background-size: cover;
   background-position: center;
 }
 section.kcrarea .cs-content .clearfix .column .column.fourth:nth-child(2) .cs-thumb {
-  background: url(../../images/kcr-webdev.jpg);
+  background: url('../images/kcr-webdev.jpg');
   background-size: cover;
   background-position: center;
 }
 section.kcrarea .cs-content .clearfix .column .column.fourth:nth-child(3) .cs-thumb {
-  background: url(../../images/kcr-social.jpg);
+  background: url('../images/kcr-social.jpg');
   background-size: cover;
   background-position: center;
 }
 section.openfm .cs-content .clearfix .column .column.fourth:first-child .cs-thumb {
-  background: url(../../images/openfm-branding.jpg);
+  background: url('../images/openfm-branding.jpg');
   background-size: cover;
   background-position: center;
 }
 section.openfm .cs-content .clearfix .column .column.fourth:nth-child(2) .cs-thumb {
-  background: url(../../images/openfm-design.jpg);
+  background: url('../images/openfm-design.jpg');
   background-size: cover;
   background-position: center;
 }
 section.openfm .cs-content .clearfix .column .column.fourth:nth-child(3) .cs-thumb {
-  background: url(../../images/openfm-sponsor.jpg);
+  background: url('../images/openfm-sponsor.jpg');
   background-size: cover;
   background-position: center;
 }
 section.openfm .cs-content .clearfix .column .column.fourth:nth-child(4) .cs-thumb {
-  background: url(../../images/openfm-webdev.jpg);
+  background: url('../images/openfm-webdev.jpg');
   background-size: cover;
   background-position: center;
 }
 section.kcrarea .cs-content ul li:first-child .cs-thumb {
-  background: url(../../images/kcr-design.jpg);
+  background: url('../images/kcr-design.jpg');
   background-size: cover;
   background-position: center;
 }
 section.kcrarea .cs-content ul li:nth-child(2) .cs-thumb {
-  background: url(../../images/kcr-webdev.jpg);
+  background: url('../images/kcr-webdev.jpg');
   background-size: cover;
   background-position: center;
 }
 section.kcrarea .cs-content ul li:nth-child(3) .cs-thumb {
-  background: url(../../images/kcr-social.jpg);
+  background: url('../images/kcr-social.jpg');
   background-size: cover;
   background-position: center;
 }
 section.lucca .cs-content .clearfix .column .column.fourth:first-child .cs-thumb {
-  background: url(../../images/lucca-consulting.jpg);
+  background: url('../images/lucca-consulting.jpg');
   background-size: cover;
   background-position: center;
 }
 section.lucca .cs-content .clearfix .column .column.fourth:nth-child(2) .cs-thumb {
-  background: url(../../images/lucca-cloud.jpg);
+  background: url('../images/lucca-cloud.jpg');
   background-size: cover;
   background-position: center;
 }
 section.lucca .cs-content .clearfix .column .column.fourth:nth-child(3) .cs-thumb {
-  background: url(../../images/lucca-screencasts.jpg);
+  background: url('../images/lucca-screencasts.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -3687,85 +3687,85 @@ div.cs-panel-items > div > div {
   margin-left: -2rem;
 }
 div.cs-panel-items > div:first-child > div .clearfix .column.half:nth-child(2) {
-  background: url(../../images/courses-branding-half.jpg);
+  background: url('../images/courses-branding-half.jpg');
   background-size: cover;
   background-position: center;
   height: 30rem;
 }
 div.cs-panel-items > div:nth-child(2) > div .clearfix .column.half:nth-child(2) {
-  background: url(../../images/courses-webdev-half.jpg);
+  background: url('../images/courses-webdev-half.jpg');
   background-size: cover;
   background-position: center;
   height: 30rem;
 }
 div.cs-panel-items > div:nth-child(3) > div .clearfix .column.half:nth-child(2) {
-  background: url(../../images/courses-pr-half.jpg);
+  background: url('../images/courses-pr-half.jpg');
   background-size: cover;
   background-position: center;
   height: 30rem;
 }
 div.cs-panel-items > div:nth-child(4) > div .clearfix .column.half:nth-child(2) {
-  background: url(../../images/courses-marketing-half.jpg);
+  background: url('../images/courses-marketing-half.jpg');
   background-size: cover;
   background-position: center;
   height: 30rem;
 }
 div.cs-panel-items > div:nth-child(5) > div .clearfix .column.half:nth-child(2) {
-  background: url(../../images/openfm-branding-half.jpg);
+  background: url('../images/openfm-branding-half.jpg');
   background-size: cover;
   background-position: center;
   height: 30rem;
 }
 div.cs-panel-items > div:nth-child(6) > div .clearfix .column.half:nth-child(2) {
-  background: url(../../images/openfm-design-half.jpg);
+  background: url('../images/openfm-design-half.jpg');
   background-size: cover;
   background-position: center;
   height: 30rem;
 }
 div.cs-panel-items > div:nth-child(7) > div .clearfix .column.half:nth-child(2) {
-  background: url(../../images/openfm-sponsor-half.jpg);
+  background: url('../images/openfm-sponsor-half.jpg');
   background-size: cover;
   background-position: center;
   height: 30rem;
 }
 div.cs-panel-items > div:nth-child(8) > div .clearfix .column.half:nth-child(2) {
-  background: url(../../images/openfm-webdev-half.jpg);
+  background: url('../images/openfm-webdev-half.jpg');
   background-size: cover;
   background-position: center;
   height: 30rem;
 }
 div.cs-panel-items > div:nth-child(9) > div .clearfix .column.half:nth-child(2) {
-  background: url(../../images/kcr-design-half.jpg);
+  background: url('../images/kcr-design-half.jpg');
   background-size: cover;
   background-position: center;
   height: 30rem;
 }
 div.cs-panel-items > div:nth-child(10) > div .clearfix .column.half:nth-child(2) {
-  background: url(../../images/kcr-webdev-half.jpg);
+  background: url('../images/kcr-webdev-half.jpg');
   background-size: cover;
   background-position: center;
   height: 30rem;
 }
 div.cs-panel-items > div:nth-child(11) > div .clearfix .column.half:nth-child(2) {
-  background: url(../../images/kcr-social-half.jpg);
+  background: url('../images/kcr-social-half.jpg');
   background-size: cover;
   background-position: center;
   height: 30rem;
 }
 div.cs-panel-items > div:nth-child(12) > div .clearfix .column.half:nth-child(2) {
-  background: url(../../images/lucca-consulting-half.jpg);
+  background: url('../images/lucca-consulting-half.jpg');
   background-size: cover;
   background-position: center;
   height: 30rem;
 }
 div.cs-panel-items > div:nth-child(13) > div .clearfix .column.half:nth-child(2) {
-  background: url(../../images/lucca-cloud-half.jpg);
+  background: url('../images/lucca-cloud-half.jpg');
   background-size: cover;
   background-position: center;
   height: 30rem;
 }
 div.cs-panel-items > div:nth-child(14) > div .clearfix .column.half:nth-child(2) {
-  background: url(../../images/lucca-screencasts-half.jpg);
+  background: url('../images/lucca-screencasts-half.jpg');
   background-size: cover;
   background-position: center;
   height: 30rem;
@@ -3927,28 +3927,28 @@ section.cs-expand .cs-icon-close {
 .wk-main > section:first-child {
   top: 0;
   left: 0;
-  background: url(../../images/ely-thumb.jpg);
+  background: url('../images/ely-thumb.jpg');
   background-position: center;
   background-size: cover;
 }
 .wk-main > section:nth-child(2) {
   top: 0;
   left: 25%;
-  background: url(../../images/diageo-thumb.jpg);
+  background: url('../images/diageo-thumb.jpg');
   background-position: 50% 0%;
   background-size: cover;
 }
 .wk-main > section:nth-child(3) {
   top: 0;
   left: 50%;
-  background: url(../../images/h2-thumb.jpg);
+  background: url('../images/h2-thumb.jpg');
   background-position: center;
   background-size: cover;
 }
 .wk-main > section:nth-child(4) {
   top: 0;
   left: 75%;
-  background: url(../../images/dhda-thumb.jpg);
+  background: url('../images/dhda-thumb.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -3958,14 +3958,14 @@ section.cs-expand .cs-icon-close {
 .wk-main > section:nth-child(5) {
   top: 33.3%;
   left: 0;
-  background: url(../../images/goc-thumb.jpg);
+  background: url('../images/goc-thumb.jpg');
   background-position: center;
   background-size: cover;
 }
 .wk-main > section:nth-child(6) {
   top: 33.3%;
   left: 25%;
-  background: url(../../images/lincoln-thumb.jpg);
+  background: url('../images/lincoln-thumb.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -3975,7 +3975,7 @@ section.cs-expand .cs-icon-close {
 .wk-main > section:nth-child(7) {
   top: 33.3%;
   left: 50%;
-  background: url(../../images/relo-thumb.jpg);
+  background: url('../images/relo-thumb.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -3985,7 +3985,7 @@ section.cs-expand .cs-icon-close {
 .wk-main > section:nth-child(8) {
   top: 33.3%;
   left: 75%;
-  background: url(../../images/mutz-thumb.jpg);
+  background: url('../images/mutz-thumb.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -3995,7 +3995,7 @@ section.cs-expand .cs-icon-close {
 .wk-main > section:nth-child(9) {
   top: 66.6%;
   left: 0;
-  background: url(../../images/flowers-thumb.jpg);
+  background: url('../images/flowers-thumb.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -4005,21 +4005,21 @@ section.cs-expand .cs-icon-close {
 .wk-main > section:nth-child(10) {
   top: 66.6%;
   left: 25%;
-  background: url(../../images/energy-thumb.jpg);
+  background: url('../images/energy-thumb.jpg');
   background-position: center;
   background-size: cover;
 }
 .wk-main > section:nth-child(11) {
   top: 66.6%;
   left: 50%;
-  background: url(../../images/mactivate-thumb.jpg);
+  background: url('../images/mactivate-thumb.jpg');
   background-position: center;
   background-size: cover;
 }
 .wk-main > section:nth-child(12) {
   top: 66.6%;
   left: 75%;
-  background: url(../../images/irishtimes-thumb.jpg);
+  background: url('../images/irishtimes-thumb.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -4590,7 +4590,7 @@ div.wk-panel-items#wk-panel-work-items p {
 }
 header.services-header {
   z-index: -1;
-  background: url(../../images/meter.jpg);
+  background: url('../images/meter.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -4730,27 +4730,27 @@ section.services-blocks .block-consulting .title-and-text ul li {
   color: white;
 }
 section.services-blocks .block-marketing {
-  background-image: url(../../images/hook.jpg);
+  background-image: url('../images/hook.jpg');
   background-size: cover;
   background-position: center;
 }
 section.services-blocks .block-design {
-  background-image: url(../../images/block-design.jpg);
+  background-image: url('../images/block-design.jpg');
   background-size: cover;
   background-position: 50% 70%;
 }
 section.services-blocks .block-consulting {
-  background-image: url(../../images/block-consulting.jpg);
+  background-image: url('../images/block-consulting.jpg');
   background-size: cover;
   background-position: center;
 }
 section.services-blocks .block-training {
-  background-image: url(../../images/block-training.jpg);
+  background-image: url('../images/block-training.jpg');
   background-size: cover;
   background-position: center;
 }
 section.services-blocks .block-analysis {
-  background-image: url(../../images/block-analysis.jpg);
+  background-image: url('../images/block-analysis.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -4797,7 +4797,7 @@ section.services-blocks .block-analysis {
 }
 header.connect-header {
   z-index: -1;
-  background: url(../../images/multimeter.jpg);
+  background: url('../images/multimeter.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -5085,7 +5085,7 @@ section.map .google-map iframe {
 }
 header.blog-header {
   z-index: -1;
-  background: url(../../images/blog-header.jpg);
+  background: url(../images/blog-header.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
