@@ -1712,10 +1712,10 @@ html {
 }
 .icon-nudge {
   -webkit-transition: margin-left 0.3s;
-  transition: margin-left 0.3s;
   -moz-transition: margin-left 0.3s;
   -o-transition: margin-left 0.3s;
   -ms-transition: margin-left 0.3s;
+  transition: margin-left 0.3s;
 }
 .plug-rotate,
 .icon-rotate {
@@ -1732,11 +1732,13 @@ html {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .icon-rotated {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .scroll-down-animation {
   -webkit-animation: scrolldown 0.8s ease-in-out infinite;
@@ -1747,10 +1749,10 @@ html {
 }
 .block-button-transition {
   -webkit-transition: background 0.2s, border-color 0.2s, color 0.2s;
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
   -moz-transition: background 0.2s, border-color 0.2s, color 0.2s;
   -o-transition: background 0.2s, border-color 0.2s, color 0.2s;
   -ms-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 nav {
   height: 2.5rem;
@@ -1779,10 +1781,10 @@ nav a#home-icon {
   margin-left: 0.5rem;
   background: transparent;
   -webkit-transition: margin-left 0.3s;
-  transition: margin-left 0.3s;
   -moz-transition: margin-left 0.3s;
   -o-transition: margin-left 0.3s;
   -ms-transition: margin-left 0.3s;
+  transition: margin-left 0.3s;
 }
 nav a#home-icon:hover {
   margin-left: 1rem;
@@ -1818,10 +1820,10 @@ nav a {
   text-decoration: none;
   line-height: 2.5rem;
   -webkit-transition: background 0.2s;
-  transition: background 0.2s;
   -moz-transition: background 0.2s;
   -o-transition: background 0.2s;
   -ms-transition: background 0.2s;
+  transition: background 0.2s;
 }
 nav a:hover {
   background: rgba(0, 0, 0, 0.4);
@@ -1834,10 +1836,10 @@ nav #nav-toggle {
   height: 2.5rem;
   background: rgba(0, 0, 0, 0.3);
   -webkit-transition: background 0.3s;
-  transition: background 0.3s;
   -moz-transition: background 0.3s;
   -o-transition: background 0.3s;
   -ms-transition: background 0.3s;
+  transition: background 0.3s;
 }
 nav #nav-toggle:hover {
   background: rgba(0, 0, 0, 0.4);
@@ -1854,10 +1856,10 @@ nav #nav-toggle .svg-icon-nav {
   margin-left: -1rem;
   margin-top: 0.2rem;
   -webkit-transition: margin-left 0.3s;
-  transition: margin-left 0.3s;
   -moz-transition: margin-left 0.3s;
   -o-transition: margin-left 0.3s;
   -ms-transition: margin-left 0.3s;
+  transition: margin-left 0.3s;
 }
 nav #nav-toggle .svg-icon-nav:hover {
   margin-left: -0.6rem;
@@ -2163,10 +2165,10 @@ header.home-header .header-img {
   background-color: rgba(255, 255, 255, 0.2);
   height: 1.2rem;
   -webkit-transition: height 0.3s;
-  transition: height 0.3s;
   -moz-transition: height 0.3s;
   -o-transition: height 0.3s;
   -ms-transition: height 0.3s;
+  transition: height 0.3s;
   cursor: pointer;
   cursor: hand;
 }
@@ -2186,10 +2188,10 @@ header.home-header .header-img {
   border-radius: 90px 90px 0 0;
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-transition: height 0.3s, width 0.3s, margin-top 0.3s;
-  transition: height 0.3s, width 0.3s, margin-top 0.3s;
   -moz-transition: height 0.3s, width 0.3s, margin-top 0.3s;
   -o-transition: height 0.3s, width 0.3s, margin-top 0.3s;
   -ms-transition: height 0.3s, width 0.3s, margin-top 0.3s;
+  transition: height 0.3s, width 0.3s, margin-top 0.3s;
 }
 .scroll-down .semi-circle.semi-circle-hover {
   height: 2.3rem;
@@ -2477,10 +2479,10 @@ section.home-blocks .block-swarm-tactics .title-and-text button {
   background: none;
   margin-top: 2rem;
   -webkit-transition: background 0.2s, border-color 0.2s, color 0.2s;
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
   -moz-transition: background 0.2s, border-color 0.2s, color 0.2s;
   -o-transition: background 0.2s, border-color 0.2s, color 0.2s;
   -ms-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 section.home-blocks .block-swarm-tactics .title-and-text button:hover {
   background: #e74c3c;
@@ -2511,10 +2513,10 @@ section.home-blocks .block-bombarded .text-and-button button {
   background: none;
   margin-top: 2rem;
   -webkit-transition: background 0.2s, border-color 0.2s, color 0.2s;
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
   -moz-transition: background 0.2s, border-color 0.2s, color 0.2s;
   -o-transition: background 0.2s, border-color 0.2s, color 0.2s;
   -ms-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 section.home-blocks .block-bombarded .text-and-button button:hover {
   background: #e74c3c;
@@ -2574,10 +2576,10 @@ section.home-blocks .block-collaboration .title-and-text button {
   background: none;
   margin-top: 2rem;
   -webkit-transition: background 0.2s, border-color 0.2s, color 0.2s;
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
   -moz-transition: background 0.2s, border-color 0.2s, color 0.2s;
   -o-transition: background 0.2s, border-color 0.2s, color 0.2s;
   -ms-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 section.home-blocks .block-collaboration .title-and-text button:hover {
   background: white;
@@ -2614,10 +2616,10 @@ section.home-blocks .block-collaboration .title-and-text button:hover {
   border: 2px solid white;
   background: none;
   -webkit-transition: background 0.2s, border-color 0.2s, color 0.2s;
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
   -moz-transition: background 0.2s, border-color 0.2s, color 0.2s;
   -o-transition: background 0.2s, border-color 0.2s, color 0.2s;
   -ms-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 .block-contact .text-and-button button:hover {
   background: white;
@@ -3259,10 +3261,10 @@ header.showcase-header .showcase-header-bg {
   color: black;
   margin-bottom: 2rem;
   -webkit-transition: background 0.2s, border-color 0.2s, color 0.2s;
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
   -moz-transition: background 0.2s, border-color 0.2s, color 0.2s;
   -o-transition: background 0.2s, border-color 0.2s, color 0.2s;
   -ms-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 .showcase-intro .showcase-intro-buttons button:focus {
   outline: none;
@@ -3676,12 +3678,12 @@ div.cs-panel-items > div {
   z-index: 0;
   opacity: 0;
   -webkit-transform: translateY(0);
-  -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0s linear 0.5s;
   -moz-transform: translateY(0);
-  -moz-transition: -moz-transform 0.5s ease-in-out, opacity 0s linear 0.5s;
-  transform: translateY(0);
-  transition: transform 0.5s ease-in-out, opacity 0s linear 0.5s;
   -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0s linear 0.5s;
+  -moz-transition: -moz-transform 0.5s ease-in-out, opacity 0s linear 0.5s;
+  transition: transform 0.5s ease-in-out, opacity 0s linear 0.5s;
 }
 div.cs-panel-items > div > div {
   margin-left: -2rem;
@@ -3816,22 +3818,22 @@ div.cs-panel-items > div.cs-show-work {
   z-index: 1000;
   opacity: 1;
   -webkit-transform: translateY(-100%);
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
   -moz-transform: translateY(-100%);
-  -moz-transition: -moz-transform 0.5s ease-in-out;
-  transform: translateY(-100%);
-  transition: transform 0.5s ease-in-out;
   -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  -moz-transition: -moz-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 div.cs-panel-items > div.cs-hide-current-work {
   opacity: 0;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   -webkit-transform: translateY(-100%) scale(0.5);
-  -moz-transition: -moz-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   -moz-transform: translateY(-100%) scale(0.5);
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  transform: translateY(-100%) scale(0.5);
   -ms-transform: translateY(-100%) scale(0.5);
+  transform: translateY(-100%) scale(0.5);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  -moz-transition: -moz-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   z-index: 0;
 }
 div.cs-panel-items.cs-panel-items-show nav {
@@ -4234,12 +4236,12 @@ div.wk-panel-items > div {
   z-index: 0;
   opacity: 0;
   -webkit-transform: translateY(0);
-  -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0s linear 0.5s;
   -moz-transform: translateY(0);
-  -moz-transition: -moz-transform 0.5s ease-in-out, opacity 0s linear 0.5s;
-  transform: translateY(0);
-  transition: transform 0.5s ease-in-out, opacity 0s linear 0.5s;
   -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0s linear 0.5s;
+  -moz-transition: -moz-transform 0.5s ease-in-out, opacity 0s linear 0.5s;
+  transition: transform 0.5s ease-in-out, opacity 0s linear 0.5s;
 }
 div.wk-panel-items > div > div {
   width: 60%;
@@ -4294,22 +4296,22 @@ div.wk-panel-items > div.wk-show-work {
   z-index: 1000;
   opacity: 1;
   -webkit-transform: translateY(-50%);
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
   -moz-transform: translateY(-50%);
-  -moz-transition: -moz-transform 0.5s ease-in-out;
-  transform: translateY(-50%);
-  transition: transform 0.5s ease-in-out;
   -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  -moz-transition: -moz-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 div.wk-panel-items > div.wk-hide-current-work {
   opacity: 0;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   -webkit-transform: translateY(-100%) scale(0.5);
-  -moz-transition: -moz-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   -moz-transform: translateY(-100%) scale(0.5);
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   transform: translateY(-100%) scale(0.5);
   -ms-transform: translateY(-100%) scale(0.5);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  -moz-transition: -moz-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   z-index: 0;
 }
 div.wk-panel-items.wk-panel-items-show nav {
@@ -4495,12 +4497,12 @@ div.wk-panel-items#wk-panel-work-items p {
     z-index: 1000;
     opacity: 1;
     -webkit-transform: translateY(-100%);
-    -webkit-transition: -webkit-transform 0.5s ease-in-out;
     -moz-transform: translateY(-100%);
-    -moz-transition: -moz-transform 0.5s ease-in-out;
-    transform: translateY(-100%);
-    transition: transform 0.5s ease-in-out;
     -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    -moz-transition: -moz-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
   }
 }
 @media screen and (max-width: 30rem) {
@@ -4857,10 +4859,10 @@ header.connect-header .connect-header-bg {
   width: 17rem;
   height: 5rem;
   -webkit-transition: background 0.2s, border-color 0.2s, color 0.2s;
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
   -moz-transition: background 0.2s, border-color 0.2s, color 0.2s;
   -o-transition: background 0.2s, border-color 0.2s, color 0.2s;
   -ms-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 .block-blog .text-and-button button:focus {
   outline: none;
@@ -4943,10 +4945,10 @@ section.contact {
   display: inline-block;
   margin-top: 2rem;
   -webkit-transition: background 0.2s, border-color 0.2s, color 0.2s;
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
   -moz-transition: background 0.2s, border-color 0.2s, color 0.2s;
   -o-transition: background 0.2s, border-color 0.2s, color 0.2s;
   -ms-transition: background 0.2s, border-color 0.2s, color 0.2s;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 .contact-form input.contact-form-submit:hover {
   background: #e74c3c;
@@ -5153,68 +5155,12 @@ section.blog h2 {
     text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
   }
 }
-@-webkit-keyframes neonsvg {
-  from {
-    filter: drop-shadow(0 0 10px #ffffff);
-    -webkit-filter: drop-shadow(0 0 10px #ffffff);
-    -moz-filter: drop-shadow(0 0 10px #ffffff);
-    -o-filter: drop-shadow(0 0 10px #ffffff);
-    -ms-filter: drop-shadow(0 0 10px #ffffff);
-  }
-  to {
-    filter: drop-shadow(0 0 5px #ffffff);
-    -webkit-filter: drop-shadow(0 0 5px #ffffff);
-    -moz-filter: drop-shadow(0 0 5px #ffffff);
-    -o-filter: drop-shadow(0 0 5px #ffffff);
-    -ms-filter: drop-shadow(0 0 5px #ffffff);
-  }
-}
-@keyframes neon {
-  from {
-    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
-  }
-  to {
-    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
-  }
-}
-@keyframes neonsvg {
-  from {
-    filter: drop-shadow(0 0 10px #ffffff);
-    -webkit-filter: drop-shadow(0 0 10px #ffffff);
-    -moz-filter: drop-shadow(0 0 10px #ffffff);
-    -o-filter: drop-shadow(0 0 10px #ffffff);
-    -ms-filter: drop-shadow(0 0 10px #ffffff);
-  }
-  to {
-    filter: drop-shadow(0 0 5px #ffffff);
-    -webkit-filter: drop-shadow(0 0 5px #ffffff);
-    -moz-filter: drop-shadow(0 0 5px #ffffff);
-    -o-filter: drop-shadow(0 0 5px #ffffff);
-    -ms-filter: drop-shadow(0 0 5px #ffffff);
-  }
-}
 @-moz-keyframes neon {
   from {
     text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
   }
   to {
     text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
-  }
-}
-@-moz-keyframes neonsvg {
-  from {
-    filter: drop-shadow(0 0 10px #ffffff);
-    -webkit-filter: drop-shadow(0 0 10px #ffffff);
-    -moz-filter: drop-shadow(0 0 10px #ffffff);
-    -o-filter: drop-shadow(0 0 10px #ffffff);
-    -ms-filter: drop-shadow(0 0 10px #ffffff);
-  }
-  to {
-    filter: drop-shadow(0 0 5px #ffffff);
-    -webkit-filter: drop-shadow(0 0 5px #ffffff);
-    -moz-filter: drop-shadow(0 0 5px #ffffff);
-    -o-filter: drop-shadow(0 0 5px #ffffff);
-    -ms-filter: drop-shadow(0 0 5px #ffffff);
   }
 }
 @-o-keyframes neon {
@@ -5225,34 +5171,79 @@ section.blog h2 {
     text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
   }
 }
-@-o-keyframes neonsvg {
+@keyframes neon {
   from {
-    filter: drop-shadow(0 0 10px #ffffff);
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+  }
+  to {
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
+  }
+}
+@-webkit-keyframes neonsvg {
+  from {
     -webkit-filter: drop-shadow(0 0 10px #ffffff);
     -moz-filter: drop-shadow(0 0 10px #ffffff);
     -o-filter: drop-shadow(0 0 10px #ffffff);
     -ms-filter: drop-shadow(0 0 10px #ffffff);
+    filter: drop-shadow(0 0 10px #ffffff);
   }
   to {
-    filter: drop-shadow(0 0 5px #ffffff);
     -webkit-filter: drop-shadow(0 0 5px #ffffff);
     -moz-filter: drop-shadow(0 0 5px #ffffff);
     -o-filter: drop-shadow(0 0 5px #ffffff);
     -ms-filter: drop-shadow(0 0 5px #ffffff);
+    filter: drop-shadow(0 0 5px #ffffff);
+  }
+}
+@-moz-keyframes neonsvg {
+  from {
+    -webkit-filter: drop-shadow(0 0 10px #ffffff);
+    -moz-filter: drop-shadow(0 0 10px #ffffff);
+    -o-filter: drop-shadow(0 0 10px #ffffff);
+    -ms-filter: drop-shadow(0 0 10px #ffffff);
+    filter: drop-shadow(0 0 10px #ffffff);
+  }
+  to {
+    -webkit-filter: drop-shadow(0 0 5px #ffffff);
+    -moz-filter: drop-shadow(0 0 5px #ffffff);
+    -o-filter: drop-shadow(0 0 5px #ffffff);
+    -ms-filter: drop-shadow(0 0 5px #ffffff);
+    filter: drop-shadow(0 0 5px #ffffff);
+  }
+}
+@-o-keyframes neonsvg {
+  from {
+    -webkit-filter: drop-shadow(0 0 10px #ffffff);
+    -moz-filter: drop-shadow(0 0 10px #ffffff);
+    -o-filter: drop-shadow(0 0 10px #ffffff);
+    -ms-filter: drop-shadow(0 0 10px #ffffff);
+    filter: drop-shadow(0 0 10px #ffffff);
+  }
+  to {
+    -webkit-filter: drop-shadow(0 0 5px #ffffff);
+    -moz-filter: drop-shadow(0 0 5px #ffffff);
+    -o-filter: drop-shadow(0 0 5px #ffffff);
+    -ms-filter: drop-shadow(0 0 5px #ffffff);
+    filter: drop-shadow(0 0 5px #ffffff);
+  }
+}
+@keyframes neonsvg {
+  from {
+    -webkit-filter: drop-shadow(0 0 10px #ffffff);
+    -moz-filter: drop-shadow(0 0 10px #ffffff);
+    -o-filter: drop-shadow(0 0 10px #ffffff);
+    -ms-filter: drop-shadow(0 0 10px #ffffff);
+    filter: drop-shadow(0 0 10px #ffffff);
+  }
+  to {
+    -webkit-filter: drop-shadow(0 0 5px #ffffff);
+    -moz-filter: drop-shadow(0 0 5px #ffffff);
+    -o-filter: drop-shadow(0 0 5px #ffffff);
+    -ms-filter: drop-shadow(0 0 5px #ffffff);
+    filter: drop-shadow(0 0 5px #ffffff);
   }
 }
 @-webkit-keyframes scrolldown {
-  0% {
-    margin-top: -1rem;
-  }
-  50% {
-    margin-top: -1.2rem;
-  }
-  100% {
-    margin-top: -1rem;
-  }
-}
-@keyframes scrolldown {
   0% {
     margin-top: -1rem;
   }
@@ -5275,6 +5266,17 @@ section.blog h2 {
   }
 }
 @-o-keyframes scrolldown {
+  0% {
+    margin-top: -1rem;
+  }
+  50% {
+    margin-top: -1.2rem;
+  }
+  100% {
+    margin-top: -1rem;
+  }
+}
+@keyframes scrolldown {
   0% {
     margin-top: -1rem;
   }
