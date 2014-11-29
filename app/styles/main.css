@@ -2417,6 +2417,7 @@ section.what-we-do ul.what-we-do-list li {
 }
 .office-img .column {
   height: 100%;
+  text-align: center;
 }
 .office-img .darken {
   width: 100%;
@@ -2427,12 +2428,20 @@ section.what-we-do ul.what-we-do-list li {
   z-index: -1;
   top: 0;
 }
-.office-img p {
+.office-img .text-and-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.office-img .text-and-button p {
   color: white;
   font-family: 'baufrabold';
   text-transform: uppercase;
-  margin-top: 10rem;
+  margin: 0;
   font-size: 2.5em;
+  line-height: 45px;
 }
 section.home-blocks {
   position: relative;
