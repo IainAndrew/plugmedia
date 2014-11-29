@@ -2135,6 +2135,11 @@ header.home-header .header-img {
   margin-top: -1.2rem;
   margin-left: 8rem;
 }
+.header-text-and-logo .home-header-text p.sub-tagline {
+  font-family: 'baufraregular';
+  font-size: 0.7em;
+  margin-top: 2.5rem;
+}
 .plug-and-socket {
   position: fixed;
   left: 0;
@@ -2640,7 +2645,7 @@ section.home-blocks .block-collaboration .title-and-text button:hover {
   }
   .header-text-and-logo .home-header-text p.tagline {
     font-size: 1em;
-    margin-top: -1.2rem;
+    margin-top: -1.4rem;
     margin-left: 9.3rem;
   }
   .block-contact button {
@@ -2668,7 +2673,7 @@ section.home-blocks .block-collaboration .title-and-text button:hover {
   .header-text-and-logo .home-header-text p.tagline {
     font-size: 1.2em;
     margin-left: 12.2rem;
-    margin-top: -1.4rem;
+    margin-top: -1.55rem;
   }
   .office-img p {
     margin: 0;
