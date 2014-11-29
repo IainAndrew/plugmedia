@@ -4481,6 +4481,10 @@ div.wk-panel-items#wk-panel-work-items p {
   div.wk-panel-items#wk-panel-work-items p {
     font-size: 1em;
   }
+  div.wk-panel-items > div.wk-show-work {
+    top: 40px;
+    background: #ffffff;
+  }
 }
 @media screen and (max-width: 30rem) {
   .wk-main > section .wk-icon-close {
