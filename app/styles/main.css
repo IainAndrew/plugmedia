@@ -2041,7 +2041,8 @@ footer .flow-opposite {
     text-align: left;
     text-indent: 25px;
   }
-  nav #home-icon {
+  nav #home-icon,
+  nav .home-icon {
     display: none;
   }
   nav #nav-toggle {
