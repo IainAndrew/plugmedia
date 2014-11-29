@@ -445,13 +445,8 @@ div.cs-panel-items {
         background:white;
         z-index: 0;
         opacity: 0;
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0s linear 0.5s;
-        -moz-transition: -moz-transform 0.5s ease-in-out, opacity 0s linear 0.5s;
-        transition: transform 0.5s ease-in-out, opacity 0s linear 0.5s;
+        top:100%;
+        transition: top 0.5s ease-in-out, opacity 0s linear 0.5s;
         & > div {
             margin-left:-2rem;
         }
@@ -686,23 +681,13 @@ div.cs-panel-items {
     & > div.cs-show-work {
         z-index: 1000;
         opacity: 1;
-        -webkit-transform: translateY(-100%);
-        -moz-transform: translateY(-100%);
-        -ms-transform: translateY(-100%);
-        transform: translateY(-100%);
-        -webkit-transition: -webkit-transform 0.5s ease-in-out;
-        -moz-transition: -moz-transform 0.5s ease-in-out;
-        transition: transform 0.5s ease-in-out;
+        top:0;
+        transition: top 0.5s ease-in-out;
     }
     & > div.cs-hide-current-work {
         opacity: 0;
-        -webkit-transform: translateY(-100%) scale(0.5);
-        -moz-transform: translateY(-100%) scale(0.5);
-        -ms-transform: translateY(-100%) scale(0.5);
-        transform: translateY(-100%) scale(0.5);
-        -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-        -moz-transition: -moz-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        top:0;
+        transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
         z-index: 0;
     }
 }
