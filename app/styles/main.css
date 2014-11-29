@@ -3068,6 +3068,9 @@ section.team .lightbox .social-links {
   text-align: right;
   color: #3498db;
 }
+section.team .lightbox .social-links a[href="javascript:void(0)"] {
+  display: none;
+}
 section.team .lightbox .social-links i {
   font-size: 2em;
   padding-left: 1rem;

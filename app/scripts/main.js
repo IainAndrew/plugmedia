@@ -197,7 +197,7 @@ stickyElement();
 
 // Footer reveal
 
-$(function() {
+/*$(function() {
 	$('footer').footerReveal({
 		zIndex : -1
 	});
@@ -211,7 +211,7 @@ $(function() {
 			$('footer').hide();
 		}
 	});
-});
+});*/
 
 // Team member hover overlay
 $(function() {
