@@ -2173,6 +2173,7 @@ header.home-header .header-img {
   left: 0;
   background-color: rgba(255, 255, 255, 0.2);
   height: 1.2rem;
+  margin-bottom: 0 !important;
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
   -o-transition: height 0.3s;
@@ -4482,7 +4483,7 @@ div.wk-panel-items#wk-panel-work-items p {
     font-size: 1em;
   }
   div.wk-panel-items > div.wk-show-work {
-    top: 40px;
+    top: 40%;
     background: #ffffff;
   }
 }
@@ -4506,6 +4507,10 @@ div.wk-panel-items#wk-panel-work-items p {
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
     -moz-transition: -moz-transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
+  }
+  div.wk-panel-items > div.wk-show-work {
+    top: 40px;
+    background: #ffffff;
   }
 }
 @media screen and (max-width: 30rem) {
