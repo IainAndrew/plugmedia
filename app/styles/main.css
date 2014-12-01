@@ -3209,6 +3209,11 @@ section.team .lightbox .icon-exit:hover {
     padding-right: 7rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .no-cssvhunit section.team .lightbox {
+    height: 595px;
+  }
+}
 @media screen and (min-width: 20rem) {
   section.team .lightbox {
     width: 100%;
@@ -3232,9 +3237,9 @@ section.team .lightbox .icon-exit:hover {
 }
 @media screen and (min-width: 55rem) {
   section.team .lightbox {
-    width: 80vw;
+    width: 80%;
     z-index: 999;
-    top: 20vh;
+    top: 20%;
     left: 50%;
     margin-left: -40vw;
     height: auto;
@@ -3255,13 +3260,19 @@ header.showcase-header {
   width: 100%;
   height: 100vh;
 }
+.no-cssvhunit header.showcase-header {
+  height: 595px;
+}
 header.showcase-header .showcase-header-bg {
   position: absolute;
   top: 0;
   height: 100vh;
   width: 100%;
   background: black;
-  opacity: 0.5;
+  opacity: 0.4;
+}
+.no-cssvhunit header.showcase-header .showcase-header-bg {
+  height: 595px;
 }
 .showcase-header-text {
   width: 100%;
@@ -3269,6 +3280,9 @@ header.showcase-header .showcase-header-bg {
   color: white;
   z-index: -1;
   font-size: 0.4em;
+}
+.no-cssvhunit .showcase-header-text {
+  top: 250px;
 }
 .showcase-header-text h1 {
   font-size: 7em;
@@ -3387,6 +3401,10 @@ header.showcase-header .showcase-header-bg {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  max-height: 595px;
+}
+.no-cssvhunit .cs-main {
+  height: 595px;
 }
 .cs-main h3 {
   color: white;
@@ -3944,6 +3962,10 @@ section.cs-expand .cs-icon-close {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  max-height: 595px;
+}
+.no-cssvhunit .wk-main {
+  height: 595px;
 }
 .wk-main h3 {
   color: white;
@@ -4602,13 +4624,19 @@ header.services-header {
   width: 100%;
   height: 100vh;
 }
+.no-cssvhunit header.services-header {
+  height: 595px;
+}
 header.services-header .services-header-bg {
   position: absolute;
   top: 0;
   height: 100vh;
   width: 100%;
   background: black;
-  opacity: 0.5;
+  opacity: 0.4;
+}
+.no-cssvhunit header.services-header .services-header-bg {
+  height: 595px;
 }
 .services-header-text {
   width: 100%;
@@ -4616,6 +4644,9 @@ header.services-header .services-header-bg {
   color: white;
   z-index: -1;
   font-size: 0.5em;
+}
+.no-cssvhunit .services-header-text {
+  top: 250px;
 }
 .services-header-text h1 {
   font-size: 7em;
@@ -4809,13 +4840,19 @@ header.connect-header {
   width: 100%;
   height: 100vh;
 }
+.no-cssvhunit header.connect-header {
+  height: 595px;
+}
 header.connect-header .connect-header-bg {
   position: absolute;
   top: 0;
   height: 100vh;
   width: 100%;
   background: black;
-  opacity: 0.5;
+  opacity: 0.4;
+}
+.no-cssvhunit header.connect-header .connect-header-bg {
+  height: 595px;
 }
 .connect-header-text {
   width: 100%;
@@ -4823,6 +4860,9 @@ header.connect-header .connect-header-bg {
   color: white;
   z-index: -1;
   font-size: 0.5em;
+}
+.no-cssvhunit .connect-header-text {
+  top: 250px;
 }
 .connect-header-text h1 {
   font-size: 7em;
@@ -5091,12 +5131,14 @@ section.map .google-map iframe {
 }
 header.blog-header {
   z-index: -1;
-  background: url(../images/blog-header.jpg);
+  background: url('../images/blog-header.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   width: 100%;
   height: 100vh;
+}
+.no-cssvhunit header.blog-header {
+  height: 595px;
 }
 header.blog-header .blog-header-bg {
   position: absolute;
@@ -5104,8 +5146,10 @@ header.blog-header .blog-header-bg {
   height: 100vh;
   width: 100%;
   background: black;
-  opacity: 0.5;
-  display: none;
+  opacity: 0.4;
+}
+.no-cssvhunit header.blog-header .blog-header-bg {
+  height: 595px;
 }
 .blog-header-text {
   width: 100%;
@@ -5115,6 +5159,9 @@ header.blog-header .blog-header-bg {
   z-index: -1;
   font-size: 0.5em;
   z-index: 1;
+}
+.no-cssvhunit .blog-header-text {
+  top: 250px;
 }
 .blog-header-text h1 {
   font-size: 7em;

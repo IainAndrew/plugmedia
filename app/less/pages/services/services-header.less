@@ -5,13 +5,19 @@ header.services-header {
 	background-position:center;
 	width:100%;
 	height:100vh;
+	.no-cssvhunit & {
+		height:595px;
+	}
 	.services-header-bg {
 		position:absolute;
 		top:0;
 		height:100vh;
 		width:100%;
 		background:black;
-		opacity:0.5;
+		opacity:0.4;
+		.no-cssvhunit & {
+			height:595px;
+		}
 	}
 }
 .services-header-text {
@@ -20,6 +26,9 @@ header.services-header {
 	color:white;
 	z-index:-1;
 	font-size:0.5em;
+	.no-cssvhunit & {
+		top:250px;
+	}
 	h1 {
 		font-size:7em;
 		margin:0;
