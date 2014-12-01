@@ -1,13 +1,14 @@
 'use strict';
 
+window.viewportUnitsBuggyfill.init();
 
 if ( !Modernizr.touch ) {
 
-var width = window.innerWidth;
+	var width = window.innerWidth;
 
-if (width > 640) {
-	var s = skrollr.init();
-}
+	if (width > 640) {
+		var s = skrollr.init();
+	}
 
 }
 
