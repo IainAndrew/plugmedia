@@ -1,12 +1,12 @@
 'use strict';
 
-window.viewportUnitsBuggyfill.init();
+//window.viewportUnitsBuggyfill.init();
 
 if ( !Modernizr.touch ) {
 
 	var width = window.innerWidth;
 
-	if (width > 640) {
+	if (width > 768) {
 		var s = skrollr.init();
 	}
 
@@ -198,7 +198,7 @@ stickyElement();
 
 // Footer reveal
 
-/*$(function() {
+$(function() {
 	$('footer').footerReveal({
 		zIndex : -1
 	});
@@ -212,7 +212,7 @@ $(function() {
 			$('footer').hide();
 		}
 	});
-});*/
+});
 
 // Team member hover overlay
 $(function() {
