@@ -3401,7 +3401,6 @@ header.showcase-header .showcase-header-bg {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  max-height: 595px;
 }
 .no-cssvhunit .cs-main {
   height: 595px;
@@ -3962,7 +3961,6 @@ section.cs-expand .cs-icon-close {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  max-height: 595px;
 }
 .no-cssvhunit .wk-main {
   height: 595px;
@@ -4588,6 +4586,11 @@ div.wk-panel-items#wk-panel-work-items p {
     top: 0;
   }
 }
+@media screen and (min-width: 961px) {
+  .wk-main {
+    max-height: 595px;
+  }
+}
 @media screen and (max-width: 48rem) {
   
 }
@@ -4614,6 +4617,11 @@ div.wk-panel-items#wk-panel-work-items p {
   .cs-main > section.cs-expand {
     left: 0;
     top: 0;
+  }
+}
+@media screen and (min-width: 961px) {
+  .cs-main {
+    max-height: 595px;
   }
 }
 header.services-header {
@@ -5154,7 +5162,7 @@ header.blog-header .blog-header-bg {
 .blog-header-text {
   width: 100%;
   position: relative;
-  top: 40%;
+  top: 40vh;
   color: white;
   z-index: -1;
   font-size: 0.5em;

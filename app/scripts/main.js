@@ -77,6 +77,7 @@ smoothScroll($('#scroll-down-about'), $('.block-work-better'), 0);
 smoothScroll($('#scroll-down-showcase'), $('.showcase-intro'), 0);
 smoothScroll($('#scroll-down-connect'), $('section.contact'), 0);
 smoothScroll($('#scroll-down-services'), $('.block-services-tagline'), 0);
+smoothScroll($('#scroll-down-blog'), $('section.blog'), 0);
 
 // Smooth scroll for anchor links
 $('a:not(nav a)[href!="javascript:void(0)"]').click(function(){
