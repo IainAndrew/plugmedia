@@ -299,20 +299,7 @@ module.exports = function (grunt) {
 
         // Generates a custom Modernizr build that includes only the tests you
         // reference in your app
-        modernizr: {
-            dist: {
-                devFile: '<%= config.app %>/bower_components/modernizr/modernizr.js',
-                outputFile: '<%= config.dist %>/scripts/vendor/modernizr.js',
-                files: {
-                    src: [
-                        '<%= config.dist %>/scripts/{,*/}*.js',
-                        '<%= config.dist %>/styles/{,*/}*.css',
-                        '!<%= config.dist %>/scripts/vendor/*'
-                    ]
-                },
-                uglify: true
-            }
-        },
+        
 
         // Run some tasks in parallel to speed up build process
         concurrent: {
@@ -374,7 +361,7 @@ module.exports = function (grunt) {
         'cssmin',
         'uglify',
         'copy:dist',
-        'modernizr',
+        //'modernizr',
         'rev',
         'usemin',
         'htmlmin'
