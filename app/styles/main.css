@@ -3402,9 +3402,6 @@ header.showcase-header .showcase-header-bg {
   height: 100vh;
   overflow: hidden;
 }
-.no-cssvhunit .cs-main {
-  height: 595px;
-}
 .cs-main h3 {
   color: white;
   font-family: 'baufraregular';
@@ -3961,9 +3958,6 @@ section.cs-expand .cs-icon-close {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-}
-.no-cssvhunit .wk-main {
-  height: 595px;
 }
 .wk-main h3 {
   color: white;
@@ -4590,6 +4584,9 @@ div.wk-panel-items#wk-panel-work-items p {
   .wk-main {
     max-height: 595px;
   }
+  .no-cssvhunit .wk-main {
+    height: 595px;
+  }
 }
 @media screen and (max-width: 48rem) {
   
@@ -4622,6 +4619,9 @@ div.wk-panel-items#wk-panel-work-items p {
 @media screen and (min-width: 961px) {
   .cs-main {
     max-height: 595px;
+  }
+  .no-cssvhunit .cs-main {
+    height: 595px;
   }
 }
 header.services-header {
