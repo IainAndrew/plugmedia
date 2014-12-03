@@ -3252,6 +3252,13 @@ section.team .lightbox .icon-exit:hover {
     width: 33.3%;
   }
 }
+@media screen and (max-width: 880px) {
+  section.team .lightbox .icon-exit {
+    font-size: 2.5em;
+    top: 1rem;
+    right: 1rem;
+  }
+}
 header.showcase-header {
   z-index: -1;
   background: url('../images/pencils.jpg');
