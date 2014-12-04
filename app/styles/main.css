@@ -3965,13 +3965,17 @@ section.cs-expand .cs-icon-close {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  margin-bottom: -1px;
 }
 .wk-main h3 {
   color: white;
   font-family: 'baufrabold';
 }
 .wk-main > section {
-  position: absolute;
+  position: relative;
+  top: 0;
+  left: 0;
+  float: left;
   width: 25%;
   height: 33.333333333333336%;
   -webkit-transition: all 0.5s ease-in-out;
@@ -3994,29 +3998,21 @@ section.cs-expand .cs-icon-close {
   opacity: 0;
 }
 .wk-main > section:first-child {
-  top: 0;
-  left: 0;
   background: url('../images/ely-thumb.jpg');
   background-position: center;
   background-size: cover;
 }
 .wk-main > section:nth-child(2) {
-  top: 0;
-  left: 25%;
   background: url('../images/diageo-thumb.jpg');
   background-position: 50% 0%;
   background-size: cover;
 }
 .wk-main > section:nth-child(3) {
-  top: 0;
-  left: 50%;
   background: url('../images/h2-thumb.jpg');
   background-position: center;
   background-size: cover;
 }
 .wk-main > section:nth-child(4) {
-  top: 0;
-  left: 75%;
   background: url('../images/dhda-thumb.jpg');
   background-position: center;
   background-size: cover;
@@ -4025,57 +4021,41 @@ section.cs-expand .cs-icon-close {
   font-size: 1.4em;
 }
 .wk-main > section:nth-child(5) {
-  top: 33.3%;
-  left: 0;
   background: url('../images/goc-thumb.jpg');
   background-position: center;
   background-size: cover;
 }
 .wk-main > section:nth-child(6) {
-  top: 33.3%;
-  left: 25%;
   background: url('../images/lincoln-thumb.jpg');
   background-position: center;
   background-size: cover;
 }
 .wk-main > section:nth-child(7) {
-  top: 33.3%;
-  left: 50%;
   background: url('../images/relo-thumb.jpg');
   background-position: center;
   background-size: cover;
 }
 .wk-main > section:nth-child(8) {
-  top: 33.3%;
-  left: 75%;
   background: url('../images/mutz-thumb.jpg');
   background-position: center;
   background-size: cover;
 }
 .wk-main > section:nth-child(9) {
-  top: 66.6%;
-  left: 0;
   background: url('../images/flowers-thumb.jpg');
   background-position: center;
   background-size: cover;
 }
 .wk-main > section:nth-child(10) {
-  top: 66.6%;
-  left: 25%;
   background: url('../images/energy-thumb.jpg');
   background-position: center;
   background-size: cover;
 }
 .wk-main > section:nth-child(11) {
-  top: 66.6%;
-  left: 50%;
   background: url('../images/mactivate-thumb.jpg');
   background-position: center;
   background-size: cover;
 }
 .wk-main > section:nth-child(12) {
-  top: 66.6%;
-  left: 75%;
   background: url('../images/irishtimes-thumb.jpg');
   background-position: center;
   background-size: cover;
@@ -4083,7 +4063,7 @@ section.cs-expand .cs-icon-close {
 .wk-main > section.wk-expand {
   width: 100%;
   height: 100%;
-  top: 0;
+  top: 10px;
   left: 0;
   position: fixed;
 }
@@ -4103,7 +4083,7 @@ section.cs-expand .cs-icon-close {
   background: #0D8278;
 }
 .wk-box {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -4113,6 +4093,7 @@ section.cs-expand .cs-icon-close {
   transition: opacity 0.2s linear 0.5s;
   text-align: center;
   padding: 1rem;
+  font-size: 1em;
 }
 .wk-box h3,
 .wk-box p {
@@ -4444,49 +4425,6 @@ div.wk-panel-items#wk-panel-work-items p {
   .wk-main > section .wk-icon-close {
     right: 1rem;
   }
-  .wk-main > section:nth-child(2) {
-    left: 50%;
-  }
-  .wk-main > section:nth-child(3) {
-    top: 10rem;
-    left: 0;
-  }
-  .wk-main > section:nth-child(4) {
-    top: 10rem;
-    left: 50%;
-  }
-  .wk-main > section:nth-child(5) {
-    left: 0;
-    top: 20rem;
-  }
-  .wk-main > section:nth-child(6) {
-    left: 50%;
-    top: 20rem;
-  }
-  .wk-main > section:nth-child(7) {
-    top: 30rem;
-    left: 0;
-  }
-  .wk-main > section:nth-child(8) {
-    top: 30rem;
-    left: 50%;
-  }
-  .wk-main > section:nth-child(9) {
-    top: 40rem;
-    left: 0;
-  }
-  .wk-main > section:nth-child(10) {
-    top: 40rem;
-    left: 50%;
-  }
-  .wk-main > section:nth-child(11) {
-    top: 50rem;
-    left: 0;
-  }
-  .wk-main > section:nth-child(12) {
-    top: 50rem;
-    left: 50%;
-  }
   .wk-main > section.wk-expand {
     left: 0;
     top: 0;
@@ -4538,50 +4476,6 @@ div.wk-panel-items#wk-panel-work-items p {
     width: 100%;
     height: 10rem;
   }
-  .wk-main > section:nth-child(2) {
-    top: 10rem;
-    left: 0;
-  }
-  .wk-main > section:nth-child(3) {
-    top: 20rem;
-    left: 0;
-  }
-  .wk-main > section:nth-child(4) {
-    top: 30rem;
-    left: 0;
-  }
-  .wk-main > section:nth-child(5) {
-    left: 0;
-    top: 40rem;
-  }
-  .wk-main > section:nth-child(6) {
-    left: 0;
-    top: 50rem;
-  }
-  .wk-main > section:nth-child(7) {
-    top: 60rem;
-    left: 0;
-  }
-  .wk-main > section:nth-child(8) {
-    top: 70rem;
-    left: 0;
-  }
-  .wk-main > section:nth-child(9) {
-    top: 80rem;
-    left: 0;
-  }
-  .wk-main > section:nth-child(10) {
-    top: 90rem;
-    left: 0;
-  }
-  .wk-main > section:nth-child(11) {
-    top: 100rem;
-    left: 0;
-  }
-  .wk-main > section:nth-child(12) {
-    top: 110rem;
-    left: 0;
-  }
   .wk-main > section.wk-expand {
     left: 0;
     top: 0;
@@ -4590,6 +4484,7 @@ div.wk-panel-items#wk-panel-work-items p {
 @media screen and (min-width: 961px) {
   .wk-main {
     max-height: 595px;
+    min-height: 550px;
   }
   .no-cssvhunit .wk-main {
     height: 595px;

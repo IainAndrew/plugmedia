@@ -241,7 +241,7 @@ var Boxlayout2 = (function() {
 		} );
 
 		// navigating the work items: current work panel scales down and the next work panel slides up
-		$nextWorkItem.on( 'click', function( event ) {
+		/*$nextWorkItem.on( 'click', function( event ) {
 			
 			if( isAnimating ) {
 				return false;
@@ -267,7 +267,7 @@ var Boxlayout2 = (function() {
 
 			return false;
 
-		} );
+		} );*/
 
 		// clicking the work panels close button: the current work panel slides down and the section scales up again
 		$closeWorkItem.on( 'click', function( event ) {
