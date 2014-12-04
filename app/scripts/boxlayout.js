@@ -204,7 +204,7 @@ var Boxlayout2 = (function() {
 					$( this ).off( transEndEventName ).removeClass( 'wk-expand-top' );
 					$sectionWork.removeClass( 'wk-scale-down' );
                     $workPanelsContainer.removeClass( 'wk-panel-items-show' );
-                    $workPanels.eq( currentWorkPanel ).removeClass( 'wk-show-work' );
+                    $workPanels./*eq( currentWorkPanel ).*/removeClass( 'wk-show-work' );
 				} );
 
 				if( !supportTransitions ) {
