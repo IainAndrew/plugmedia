@@ -233,7 +233,9 @@ $(function() {
 $(function() {
 	var team = $('.team-member'),
 		box = $('.lightbox'),
-		exit = $('.icon-exit'),
+		exit = box.find('.icon-exit'),
+		privacy = $('.privacy-lightbox'),
+		privacyExit = privacy.find('.icon-exit'),
 		darkLayer = $('.lightbox-background');
 
 	team.click(function() {
@@ -242,6 +244,16 @@ $(function() {
 	});
 	exit.click(function() {
 		box.hide(300);
+		darkLayer.hide(200);
+		return false;
+	});
+
+	$('.open-privacy-policy').click(function() {
+		privacy.show(500);
+		darkLayer.show(300);
+	});
+	privacyExit.click(function() {
+		privacy.hide(300);
 		darkLayer.hide(200);
 		return false;
 	});
