@@ -199,7 +199,7 @@ stickyElement();
 
 // Footer reveal
 
-$(function() {
+/*$(function() {
 	$('footer').footerReveal({
 		zIndex : -1
 	});
@@ -214,7 +214,7 @@ $(function() {
 		}
 	});
 });
-
+*/
 // Team member hover overlay
 $(function() {
 	var team = $('.team-member'),

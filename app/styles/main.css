@@ -1935,7 +1935,6 @@ nav a#nav-toggle {
   color: white;
   font-family: 'cabrito_norm_regularnormRg';
   width: 100%;
-  display: none;
 }
 footer .column.full {
   height: 100%;
@@ -5266,4 +5265,8 @@ html.no-js .how-do-we {
 }
 p {
   line-height: 28px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
 }
