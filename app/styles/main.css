@@ -1936,6 +1936,7 @@ nav a#nav-toggle {
   font-family: 'baufraregular';
   font-size: 0.8em;
   width: 100%;
+  display: none;
 }
 footer hr {
   width: 100%;
