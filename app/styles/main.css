@@ -4078,7 +4078,7 @@ section.cs-expand .cs-icon-close {
 .wk-main {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 595px;
   overflow: hidden;
   margin-bottom: -1px;
 }
@@ -4092,7 +4092,7 @@ section.cs-expand .cs-icon-close {
   left: 0;
   float: left;
   width: 25%;
-  height: 33.333333333333336%;
+  height: 198.33333333333333333px;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -4218,6 +4218,10 @@ section.cs-expand .cs-icon-close {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  -webkit-transform: translateY(15px);
+  -moz-transform: translateY(15px);
+  -ms-transform: translateY(15px);
+  transform: translateY(15px);
 }
 .wk-box img.icon-plugmedia {
   max-width: 3em;
@@ -4226,6 +4230,10 @@ section.cs-expand .cs-icon-close {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  -webkit-transform: translateY(15px);
+  -moz-transform: translateY(15px);
+  -ms-transform: translateY(15px);
+  transform: translateY(15px);
 }
 .wk-box h3 {
   font-size: 1.2em;
@@ -4456,10 +4464,10 @@ section.wk-expand .wk-box {
 .no-touch section:not(.wk-expand) .wk-box:hover h3,
 .no-touch section:not(.wk-expand) .wk-box:hover p,
 .no-touch section:not(.wk-expand) .wk-box:hover img.icon-plugmedia {
-  -webkit-transform: translateY(-15px);
-  -moz-transform: translateY(-15px);
-  -ms-transform: translateY(-15px);
-  transform: translateY(-15px);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
   opacity: 1;
 }
 .touch section:not(.wk-expand) .wk-box {
@@ -4530,12 +4538,8 @@ div.wk-panel-items#wk-panel-work-items p {
     width: 90%;
     padding-top: 1rem;
   }
-  .wk-main {
-    height: 60rem;
-  }
   .wk-main > section {
     width: 50%;
-    height: 10rem;
   }
   .wk-main > section .wk-icon-close {
     right: 1rem;
@@ -4584,25 +4588,17 @@ div.wk-panel-items#wk-panel-work-items p {
   }
 }
 @media screen and (max-width: 30rem) {
-  .wk-main {
-    height: 120rem;
-  }
   .wk-main > section {
     width: 100%;
-    height: 10rem;
   }
   .wk-main > section.wk-expand {
     left: 0;
     top: 0;
   }
 }
-@media screen and (min-width: 961px) {
+@media screen and (max-width: 961px) {
   .wk-main {
-    max-height: 595px;
-    min-height: 550px;
-  }
-  .no-cssvhunit .wk-main {
-    height: 595px;
+    height: auto;
   }
 }
 @media screen and (max-width: 48rem) {
