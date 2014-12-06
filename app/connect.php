@@ -27,7 +27,7 @@
                 //Wrap message for php
                 $message = wordwrap($message, 70);
                 //Send mail
-                mail("iainbruceandrew@gmail.com",$message,"From: $email\n");
+                mail("sam@plugmedia.net",$message,"From: $email\n");
                 echo "Thanks for contacting us";
             }
         }
