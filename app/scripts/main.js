@@ -282,5 +282,6 @@ $('#slides-1')
 .add($('#slides-11'))
 .add($('#slides-12'))
 .superslides({
-	play: 4000
+	play: 4000,
+	pagination:false
 });
