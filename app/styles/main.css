@@ -2095,13 +2095,13 @@ footer .email-signup .mc-field-group input[type="submit"] {
     display: block;
   }
 }
-@media screen and (min-width: 56rem) {
+@media screen and (min-width: 896px) {
   nav ul li a {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 }
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 640px) {
   nav ul li a:hover {
     background: rgba(0, 0, 0, 0.1);
   }
@@ -2131,7 +2131,7 @@ footer .email-signup .mc-field-group input[type="submit"] {
 		}
 	}
 }*/
-@media only screen and (max-width: 48rem) {
+@media only screen and (max-width: 768px) {
   nav {
     border-bottom: 0;
     background: transparent;
@@ -2173,7 +2173,7 @@ footer .email-signup .mc-field-group input[type="submit"] {
     display: block;
   }
 }
-@media only screen and (max-width: 20rem) {
+@media only screen and (max-width: 320px) {
   nav li {
     display: block;
     float: none;
@@ -2786,12 +2786,12 @@ section.home-blocks .block-collaboration .title-and-text button:hover {
   border-color: #e74c3c;
   color: #e74c3c;
 }
-@media screen and (min-width: 30rem) {
+@media screen and (min-width: 480px) {
   .plug-and-socket {
     top: 8.2rem;
   }
 }
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 640px) {
   .header-text-and-logo .home-header-text h1 {
     font-size: 5.5em;
   }
@@ -2835,18 +2835,18 @@ section.home-blocks .block-collaboration .title-and-text button:hover {
     display: block;
   }
 }
-@media screen and (min-width: 74rem) {
+@media screen and (min-width: 1184px) {
   .office-img p {
     margin-top: 0;
   }
 }
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 768px) {
   .process {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 }
-@media screen and (max-width: 40rem) {
+@media screen and (max-width: 640px) {
   .plug-scroll {
     display: none;
   }
@@ -3272,7 +3272,7 @@ section.team .lightbox .icon-exit:hover {
   z-index: 100;
   display: none;
 }
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 640px) {
   section.about-intro {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -3289,13 +3289,13 @@ section.team .lightbox .icon-exit:hover {
     padding-top: 1rem;
   }
 }
-@media screen and (min-width: 58rem) {
+@media screen and (min-width: 928px) {
   section.about-intro i {
     font-size: 3em;
     padding-top: 2rem;
   }
 }
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 640px) {
   .block-why-we-do-it h2 {
     font-size: 3em;
   }
@@ -3306,7 +3306,7 @@ section.team .lightbox .icon-exit:hover {
     font-size: 3em;
   }
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .block-why-we-do-it h2 {
     font-size: 4em;
   }
@@ -3317,7 +3317,7 @@ section.team .lightbox .icon-exit:hover {
     font-size: 4em;
   }
 }
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 640px) {
   section.why-we-do-it .content .column.full.text-center p {
     font-size: 2em;
   }
@@ -3325,7 +3325,7 @@ section.team .lightbox .icon-exit:hover {
     font-size: 2em;
   }
 }
-@media screen and (min-width: 58rem) {
+@media screen and (min-width: 928px) {
   section.why-we-do-it .content {
     padding-left: 7rem;
     padding-right: 7rem;
@@ -3340,7 +3340,7 @@ section.team .lightbox .icon-exit:hover {
     height: 595px;
   }
 }
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 640px) {
   section.team .lightbox .column.two-thirds,
   section.team .lightbox .column.third {
     width: 100%;
@@ -3350,7 +3350,7 @@ section.team .lightbox .icon-exit:hover {
     padding-right: 5rem;
   }
 }
-@media screen and (min-width: 55rem) {
+@media screen and (min-width: 880px) {
   section.team .lightbox {
     width: 80%;
     z-index: 999;
@@ -4512,7 +4512,7 @@ div.wk-panel-items#wk-panel-work-items p {
   font-size: 1.2em;
   color: #646464;
 }
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 640px) {
   .showcase-intro {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -4522,18 +4522,18 @@ div.wk-panel-items#wk-panel-work-items p {
     padding-bottom: 3rem;
   }
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .block-work .column h2,
   .block-case-studies .column h2 {
     font-size: 4rem;
   }
 }
-@media screen and (max-width: 69rem) {
+@media screen and (max-width: 1104px) {
   .wk-box {
     font-size: 0.8em;
   }
 }
-@media screen and (max-width: 60rem) {
+@media screen and (max-width: 960px) {
   div.wk-panel-items > div > div {
     width: 90%;
     padding-top: 1rem;
@@ -4552,7 +4552,7 @@ div.wk-panel-items#wk-panel-work-items p {
     padding-top: 3rem;
   }
 }
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 768px) {
   div.wk-panel-items#wk-panel-work-items p {
     font-size: 1em;
   }
@@ -4561,7 +4561,7 @@ div.wk-panel-items#wk-panel-work-items p {
     background: #ffffff;
   }
 }
-@media screen and (max-width: 30rem) {
+@media screen and (max-width: 480px) {
   .wk-main > section .wk-icon-close {
     right: 1rem;
   }
@@ -4587,7 +4587,7 @@ div.wk-panel-items#wk-panel-work-items p {
     background: #ffffff;
   }
 }
-@media screen and (max-width: 30rem) {
+@media screen and (max-width: 480px) {
   .wk-main > section {
     width: 100%;
   }
@@ -4601,10 +4601,10 @@ div.wk-panel-items#wk-panel-work-items p {
     height: auto;
   }
 }
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 768px) {
   
 }
-@media screen and (max-width: 30rem) {
+@media screen and (max-width: 480px) {
   .cs-main {
     height: 40rem;
   }
@@ -4812,7 +4812,7 @@ section.services-blocks .block-analysis {
   background-size: cover;
   background-position: center;
 }
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 640px) {
   section.services-blocks {
     font-size: 1em;
   }
@@ -4820,7 +4820,7 @@ section.services-blocks .block-analysis {
     width: 100%;
   }
 }
-@media screen and (min-width: 68rem) {
+@media screen and (min-width: 1088px) {
   section.services-blocks {
     font-size: 1em;
   }
@@ -5119,13 +5119,13 @@ section.map .google-map iframe {
   height: 100% !important;
   pointer-events: none;
 }
-@media screen and (min-width: 31rem) {
+@media screen and (min-width: 496px) {
   section.contact {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 640px) {
   section.social-media {
     font-size: 2em;
   }
@@ -5139,12 +5139,12 @@ section.map .google-map iframe {
     padding-bottom: 40%;
   }
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   section.map .google-map {
     padding-bottom: 30%;
   }
 }
-@media screen and (min-width: 68rem) {
+@media screen and (min-width: 1088px) {
   section.contact {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -5206,12 +5206,12 @@ section.blog h2 {
   color: #e74c3c;
   font-size: 3em;
 }
-@media screen and (min-width: 30rem) {
+@media screen and (min-width: 480px) {
   .connect-header-text {
     font-size: 0.8em;
   }
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .connect-header-text,
   .about-header-text,
   .services-header-text,
