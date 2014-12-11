@@ -10,67 +10,47 @@
 
 (function($) {
 
-	$.fn.footerReveal = function(options) {
+  $.fn.footerReveal = function(options) {
 
-		var $this = $(this),
-		    $prev = $this.prev(),
-		    $win = $(window),
+    var $this = $(this),
+        $prev = $this.prev(),
+        $win = $(window),
 
-		defaults = $.extend ({
-            shadow : true,
-            shadowOpacity: 0.8,
-            zIndex : -100
-        }, options );
+        defaults = $.extend ({
+          shadow : true,
+          shadowOpacity: 0.8,
+          zIndex : -100
+        }, options ),
 
-        if (defaults.zIndex) {
-			$this.css({
-				'z-index' : defaults.zIndex
-			});
-		} else {
-			$this.css({
-				'z-index' : options.zIndex
-			});
-		}
+        settings = $.extend(true, {}, defaults, options);
 
+    if ($this.outerHeight() <= $win.outerHeight()) {
+      $this.css({
+        'z-index' : defaults.zIndex,
+        position : 'fixed',
+        bottom : 0
+      });
+
+      if (defaults.shadow) {
+        $prev.css ({
+          '-moz-box-shadow' : '0 20px 30px -20px rgba(0,0,0,' + defaults.shadowOpacity + ')',
+          '-webkit-box-shadow' : '0 20px 30px -20px rgba(0,0,0,' + defaults.shadowOpacity +')',
+          'box-shadow' : '0 20px 30px -20px rgba(0,0,0,' + defaults.shadowOpacity + ')'
+        });
+      }
+
+      $win.on('load resize', function() {
         $this.css({
-		   position : 'fixed',
-		   bottom : 0,
-		});
+          'width' : $prev.outerWidth()
+        });
+        $prev.css({
+          'margin-bottom' : $this.outerHeight()
+        });
+      });
+    }
 
-		if (defaults.shadow) {
-			if (defaults.shadowOpacity) {
-				$prev.css({
-					'-moz-box-shadow' : '0 20px 30px -20px rgba(0,0,0,' + defaults.shadowOpacity + ')',
-					'-webkit-box-shadow' : '0 20px 30px -20px rgba(0,0,0,' + defaults.shadowOpacity +')',
-					'box-shadow' : '0 20px 30px -20px rgba(0,0,0,' + defaults.shadowOpacity + ')'
-				});
-			} else {
-				$prev.css({
-					'-moz-box-shadow' : '0 20px 30px -20px rgba(0,0,0,' + options.shadowOpacity + ')',
-					'-webkit-box-shadow' : '0 20px 30px -20px rgba(0,0,0,' + options.shadowOpacity + ')',
-					'box-shadow' : '0 20px 30px -20px rgba(0,0,0,' + options.shadowOpacity + ')'
-				});
-			}
-		}
+    return this;
 
-		var footerRevealResize = function() {
-
-			$this.css({
-				'width' : $prev.outerWidth()
-			});
-
-			$prev.css({
-				'margin-bottom' : $this.outerHeight()
-			});
-		};
-
-		$win.load(function() {
-		    footerRevealResize();
-		});
-		$win.resize(function() {
-		    footerRevealResize();
-		});
-
-	}
+  };
 
 }) (jQuery);
