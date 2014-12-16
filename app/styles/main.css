@@ -1936,7 +1936,6 @@ nav a#nav-toggle {
   font-family: 'baufraregular';
   font-size: 0.8em;
   width: 100%;
-  display: none;
 }
 footer hr {
   width: 100%;
@@ -2318,7 +2317,7 @@ header.home-header .header-img {
   cursor: hand;
 }
 .no-cssvhunit .scroll-down {
-  display: none;
+  display: none !important;
 }
 .scroll-down:hover {
   height: 1.5rem;
