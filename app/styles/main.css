@@ -2018,7 +2018,7 @@ footer .email-signup .mc-field-group input[type="submit"] {
   left: 0;
   margin: 0;
   z-index: 10000;
-  overflow-y: scroll;
+  overflow-y: auto;
   -webkit-box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.2);
   -ms-box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.2);
@@ -2201,44 +2201,28 @@ h2 {
   color: white;
 }
 header.home-header {
+  position: relative;
   background: url('../images/bridge.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
+  background-attachment: scroll;
   background-attachment: fixed;
   width: 100%;
-  height: 100vh;
-  z-index: -100;
-}
-.no-cssvhunit header.home-header {
   height: 595px;
+  z-index: -100;
 }
 header.home-header .home-header-bg {
   background-color: rgba(231, 76, 60, 0.93);
   width: 100vw;
-  height: 100vh;
-}
-.no-cssvhunit header.home-header .home-header-bg {
-  height: 595px;
-}
-header.home-header .header-img {
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-.no-cssvhunit header.home-header .header-img {
   height: 595px;
 }
 .header-text-and-logo {
   width: 100%;
-  position: absolute;
-  top: 25vh;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 0;
-}
-.no-cssvhunit .header-text-and-logo {
-  top: 150px;
 }
 .header-text-and-logo .svg-icon {
   display: inline-block;
@@ -2278,7 +2262,7 @@ header.home-header .header-img {
   margin-top: 2.5rem;
 }
 .plug-and-socket {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 3rem;
   left: -1.5rem;
@@ -2304,12 +2288,12 @@ header.home-header .header-img {
 }
 .scroll-down {
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  bottom: 1.2rem;
+  margin-bottom: -1.2rem;
   left: 0;
   background-color: rgba(255, 255, 255, 0.2);
   height: 1.2rem;
-  margin-bottom: 0 !important;
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
   -o-transition: height 0.3s;
@@ -2317,23 +2301,23 @@ header.home-header .header-img {
   transition: height 0.3s;
   cursor: pointer;
   cursor: hand;
-}
-.no-cssvhunit .scroll-down {
   display: none;
 }
-.scroll-down:hover {
-  height: 1.5rem;
+.cssvhunit .scroll-down {
+  display: block;
 }
 .scroll-down:hover .semi-circle {
   height: 2.3rem;
   width: 4.5rem;
-  margin-top: -2.3rem;
+  margin-top: -0.3rem;
 }
 .scroll-down .semi-circle {
   height: 2rem;
   width: 4rem;
-  margin: 0 auto;
-  margin-top: -2rem;
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 90px 90px 0 0;
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-transition: height 0.3s, width 0.3s, margin-top 0.3s;
@@ -2350,6 +2334,9 @@ header.home-header .header-img {
 .scroll-down .chevron {
   height: 1.6rem;
   width: 1.6rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 50%;
   background-color: white;
   color: black;
@@ -2817,9 +2804,6 @@ section.home-blocks .block-collaboration .title-and-text button:hover {
     max-height: 10rem;
     max-width: 10rem;
   }
-  .header-text-and-logo .home-header-text {
-    margin-top: -1.5rem;
-  }
   .header-text-and-logo .home-header-text h1 {
     font-size: 7em;
   }
@@ -2875,36 +2859,30 @@ section.home-blocks .block-collaboration .title-and-text button:hover {
   }
 }
 header.about-header {
-  z-index: -1;
+  position: relative;
   background: url('../images/digitaldepot.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
+  background-attachment: scroll;
+  background-attachment: fixed;
   width: 100%;
-  height: 100vh;
-}
-.no-cssvhunit header.about-header {
   height: 595px;
+  z-index: -100;
 }
 header.about-header .about-header-bg {
-  position: absolute;
-  top: 0;
-  height: 100vh;
-  width: 100%;
-  background: black;
-  opacity: 0.4;
-}
-.no-cssvhunit header.about-header .about-header-bg {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100vw;
   height: 595px;
 }
 .about-header-text {
   width: 100%;
-  top: 40vh;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
   color: white;
-  z-index: -1;
   font-size: 0.5em;
-}
-.no-cssvhunit .about-header-text {
-  top: 250px;
 }
 .about-header-text h1 {
   font-size: 7em;
@@ -3376,36 +3354,30 @@ section.team .lightbox .icon-exit:hover {
   }
 }
 header.showcase-header {
-  z-index: -1;
+  position: relative;
   background: url('../images/pencils.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
+  background-attachment: scroll;
+  background-attachment: fixed;
   width: 100%;
-  height: 100vh;
-}
-.no-cssvhunit header.showcase-header {
   height: 595px;
+  z-index: -100;
 }
 header.showcase-header .showcase-header-bg {
-  position: absolute;
-  top: 0;
-  height: 100vh;
-  width: 100%;
-  background: black;
-  opacity: 0.4;
-}
-.no-cssvhunit header.showcase-header .showcase-header-bg {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100vw;
   height: 595px;
 }
 .showcase-header-text {
   width: 100%;
-  top: 40vh;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
   color: white;
-  z-index: -1;
   font-size: 0.4em;
-}
-.no-cssvhunit .showcase-header-text {
-  top: 250px;
 }
 .showcase-header-text h1 {
   font-size: 7em;
@@ -4639,36 +4611,30 @@ div.wk-panel-items#wk-panel-work-items p {
   }
 }
 header.services-header {
-  z-index: -1;
+  position: relative;
   background: url('../images/meter.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
+  background-attachment: scroll;
+  background-attachment: fixed;
   width: 100%;
-  height: 100vh;
-}
-.no-cssvhunit header.services-header {
   height: 595px;
+  z-index: -100;
 }
 header.services-header .services-header-bg {
-  position: absolute;
-  top: 0;
-  height: 100vh;
-  width: 100%;
-  background: black;
-  opacity: 0.4;
-}
-.no-cssvhunit header.services-header .services-header-bg {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100vw;
   height: 595px;
 }
 .services-header-text {
   width: 100%;
-  top: 40vh;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
   color: white;
-  z-index: -1;
   font-size: 0.5em;
-}
-.no-cssvhunit .services-header-text {
-  top: 250px;
 }
 .services-header-text h1 {
   font-size: 7em;
@@ -4855,36 +4821,30 @@ section.services-blocks .block-analysis {
   }
 }
 header.connect-header {
-  z-index: -1;
+  position: relative;
   background: url('../images/multimeter.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
+  background-attachment: scroll;
+  background-attachment: fixed;
   width: 100%;
-  height: 100vh;
-}
-.no-cssvhunit header.connect-header {
   height: 595px;
+  z-index: -100;
 }
 header.connect-header .connect-header-bg {
-  position: absolute;
-  top: 0;
-  height: 100vh;
-  width: 100%;
-  background: black;
-  opacity: 0.4;
-}
-.no-cssvhunit header.connect-header .connect-header-bg {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100vw;
   height: 595px;
 }
 .connect-header-text {
   width: 100%;
-  top: 40vh;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
   color: white;
-  z-index: -1;
   font-size: 0.5em;
-}
-.no-cssvhunit .connect-header-text {
-  top: 250px;
 }
 .connect-header-text h1 {
   font-size: 7em;
