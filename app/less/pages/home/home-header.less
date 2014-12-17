@@ -25,17 +25,13 @@ header.home-header {
 	position:relative;
 	background:url('../images/bridge.jpg');
 	background-size:cover;
-	background-repeat:no-repeat;
 	background-position:center;
-	background-attachment:scroll;
-	background-attachment:fixed;
 	width:100%;
 	height:595px;
-	z-index:-100;
 	.home-header-bg {
 		background-color:@home-header-bg-color;
-		width:100vw;
-		height:595px;
+		width:100%;
+		height:100%;
 	}
 }
 .header-text-and-logo {
@@ -109,10 +105,6 @@ header.home-header {
 	transition: height 0.3s;
 	cursor:pointer;
 	cursor:hand;
-	display:none;
-	.cssvhunit & {
-		display:block;
-	}
 	&:hover {
 		.semi-circle {
 			height:2.3rem;
